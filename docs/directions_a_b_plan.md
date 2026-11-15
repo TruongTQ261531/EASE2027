@@ -93,7 +93,7 @@ dùng khi chưa có nghiên cứu người dùng. Xem [prior art](directions_pri
    tại risk 5/10/20%; không chọn mức đẹp sau khi nhìn test. Negative finding vẫn là kết quả.
 7. Cỡ mẫu dựa trên precision, không chỉ số vòng lặp. Với 0 lỗi, một policy cố định cần ít nhất
    29 accepted độc lập để upper bound 95% <=10%, 59 cho <=5%. Với family 225 và 5 strata:
-   cần tối thiểu 80/165 accepted **mỗi stratum**, tương ứng 400/825 tổng, trong trường hợp lý
+   cần tối thiểu 80/164 accepted **mỗi stratum**, tương ứng 400/820 tổng, trong trường hợp lý
    tưởng 0 lỗi. Đây là lower bound calibration, chưa phải power analysis, chưa gồm train/test,
    không bảo đảm 50% coverage. Thu thêm bao nhiêu phải dựa trên pilot v2 và thiết kế dependency.
 8. CPU-first. Đo wall time/RSS, browser collection và dung lượng thật; chạy batches có stop rule

@@ -1,0 +1,18 @@
+{
+  "version": "directions-analysis-v1",
+  "frozen_at_utc": "2026-11-15T19:03:59.544129+00:00",
+  "scope": "Fixed retrospective analysis before model execution; not prospective collection or preregistration",
+  "plan_commit": "68ed47887e0104fcc7a7403b438f924b04deb37b",
+  "files_sha256": {
+    "configs/analysis/directions_v1.json": "1d1b3bba6abd7769a919e0833f6167447bfb5c7c2b347b2d3b64dc7fd2e7ac93",
+    "scripts/diagnostic_analysis.py": "a2e58e9a811a594306fbc270ab405e2a47c83abb4a789c7a9399cd5c78c44c3b",
+    "scripts/oracle_validity_audit.py": "6fc6a6d84f06411eac9ffbb2e115e01734816a433a52cde1e4624d9320b06a8e",
+    "uv.lock": "edd5ecdd0ad321c31ca9123d5b6b675aeb9628aa6bc44ca262bb1fead4772021"
+  },
+  "rules": [
+    "Do not overwrite frozen analysis/config/results",
+    "Use new version for substantive analysis changes; disclose prior test exposure",
+    "No tuning on seed300/target host",
+    "Zero coverage is not zero selective risk"
+  ]
+}
