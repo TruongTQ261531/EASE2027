@@ -1,0 +1,1017 @@
+{
+  "accessed_date_utc": "2026-11-15",
+  "reading_scope": "Selected sections, not complete full-text audit or artifact reproduction; see directions_prior_art.md",
+  "search_limit": "OpenAlex six queries x up to six ranked results; no absence/novelty inference",
+  "searches": [
+    {
+      "query": "selective classification risk coverage diagnostic uncertainty",
+      "url": "https://api.openalex.org/works?search=selective+classification+risk+coverage+diagnostic+uncertainty&per-page=6",
+      "file": "22d585bf35f0.json",
+      "sha256": "3b904fda3a2d408ab7430ad18bee238fe39b1e04d15de7de747955dd79bfce65",
+      "results": [
+        {
+          "title": "Selective classification under imbalance in multiclass settings: A novel metric for bias-aware risk–coverage evaluation",
+          "doi": "https://doi.org/10.1016/j.jbi.2026.105084",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7170067331",
+          "oa": {
+            "is_oa": false,
+            "oa_status": "closed",
+            "oa_url": null,
+            "any_repository_has_fulltext": false
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1016/j.jbi.2026.105084",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42486266",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "The Possibility of Selective Skin Lesion Classification in Convolutional Neural Networks",
+          "doi": null,
+          "year": 2020,
+          "openalex_id": "https://openalex.org/W3120660907",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "https://gssrr.org/JournalOfBasicAndApplied/article/download/11853/5800",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://gssrr.org/JournalOfBasicAndApplied/article/view/11853",
+              "pdf_url": "https://gssrr.org/JournalOfBasicAndApplied/article/download/11853/5800"
+            },
+            {
+              "landing_page_url": "https://www.gssrr.org/index.php/JournalOfBasicAndApplied/article/download/11853/5800",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Leveraging Uncertainty in Deep Learning for Selective Classification",
+          "doi": "https://doi.org/10.48550/arxiv.1905.09509",
+          "year": 2019,
+          "openalex_id": "https://openalex.org/W2946729778",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/1905.09509",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "http://arxiv.org/abs/1905.09509",
+              "pdf_url": "https://arxiv.org/pdf/1905.09509"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.1905.09509",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Reproducibility Materials for From Coverage Control to Selective Decision Risk: A Two-Cohort Evaluation of Sequential Electroencephalographic Classification",
+          "doi": "https://doi.org/10.5281/zenodo.23697378",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7223984954",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://doi.org/10.5281/zenodo.23697378",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.5281/zenodo.23697378",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://doi.org/10.5281/zenodo.23697379",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Uncertainty-Aware Selective Prediction in Brain-Tumour MRI Classification: Selective Risk Reduction and Component-Wise Reliability Findings",
+          "doi": "https://doi.org/10.3390/bioengineering13101184",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7221554701",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "gold",
+            "oa_url": "https://doi.org/10.3390/bioengineering13101184",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.3390/bioengineering13101184",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13701398/",
+              "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13701398/pdf/bioengineering-13-01184.pdf"
+            },
+            {
+              "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42939039",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Selective Prediction and Uncertainty-Aware Referral for Pap Smear Classification",
+          "doi": "https://doi.org/10.20944/preprints202607.1763.v1",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7170367300",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://doi.org/10.20944/preprints202607.1763.v1",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.20944/preprints202607.1763.v1",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://arxiv.org/abs/2609.17545",
+              "pdf_url": "https://arxiv.org/pdf/2609.17545"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2609.17545",
+              "pdf_url": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "root cause analysis abstention uncertainty software systems",
+      "url": "https://api.openalex.org/works?search=root+cause+analysis+abstention+uncertainty+software+systems&per-page=6",
+      "file": "d0b495e950ea.json",
+      "sha256": "4558a66952441e72ce9634edf26bdc0c7f595789f364e4982ecb27e931366e9d",
+      "results": [
+        {
+          "title": "Automated Root Cause Analysis of Security Incidents Using Causal Machine Learning",
+          "doi": "https://doi.org/10.21203/rs.3.rs-11654311/v1",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7225754864",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://www.researchsquare.com/article/rs-11654311/latest.pdf",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.21203/rs.3.rs-11654311/v1",
+              "pdf_url": "https://www.researchsquare.com/article/rs-11654311/latest.pdf"
+            }
+          ]
+        },
+        {
+          "title": "ACT, WAIT, or EXPERIMENT: A Causal Governance Framework for Retail Price Optimization Under Abstentions",
+          "doi": "https://doi.org/10.48550/arxiv.2609.10615",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7212230585",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2609.10615",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://arxiv.org/abs/2609.10615",
+              "pdf_url": "https://arxiv.org/pdf/2609.10615"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2609.10615",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "EARS: Explanatory Abstention for Reliable Sub-Agent Modeling in Large-Scale Multi-Agent Systems",
+          "doi": "https://doi.org/10.18653/2026.realm-1.57",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7165207995",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "bronze",
+            "oa_url": "https://aclanthology.org/2026.realm-1.57.pdf",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.18653/2026.realm-1.57",
+              "pdf_url": "https://aclanthology.org/2026.realm-1.57.pdf"
+            },
+            {
+              "landing_page_url": "https://arxiv.org/abs/2606.18668",
+              "pdf_url": "https://arxiv.org/pdf/2606.18668"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2606.18668",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+          "doi": "https://doi.org/10.48550/arxiv.2610.31657",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7223406000",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2610.31657",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://arxiv.org/abs/2610.31657",
+              "pdf_url": "https://arxiv.org/pdf/2610.31657"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2610.31657",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "A Multisensor Baseline and Abstention Architecture for Low Voltage Rotating Machine Condition Assessment",
+          "doi": "https://doi.org/10.22214/ijraset.2026.85078",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7221332478",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "https://doi.org/10.22214/ijraset.2026.85078",
+            "any_repository_has_fulltext": false
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.22214/ijraset.2026.85078",
+              "pdf_url": "https://doi.org/10.22214/ijraset.2026.85078"
+            }
+          ]
+        },
+        {
+          "title": "EVIDENCE GATED ROOT CAUSE DIAGNOSIS FOR FINTECH MICROSERVICES UNDER TELEMETRY LOSS",
+          "doi": "https://doi.org/10.58175/gjarr.2026.4.4.0091",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7225566941",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "hybrid",
+            "oa_url": "https://gsjournals.com/gjarr/sites/default/files/fulltext_pdf/GJARR-2026-0091.pdf",
+            "any_repository_has_fulltext": false
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.58175/gjarr.2026.4.4.0091",
+              "pdf_url": "https://gsjournals.com/gjarr/sites/default/files/fulltext_pdf/GJARR-2026-0091.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "fault diagnosis diagnosability observational equivalence",
+      "url": "https://api.openalex.org/works?search=fault+diagnosis+diagnosability+observational+equivalence&per-page=6",
+      "file": "90add7eac3f6.json",
+      "sha256": "62eeba7317cdf2677416f2997aa8acea03c7694ee7e8b7bc2249615c426a668b",
+      "results": [
+        {
+          "title": "A Realization-Theoretic Foundation for Fault Diagnosis, with Diagnosability Equivalence Predictions",
+          "doi": "https://doi.org/10.4230/oasics.dx.2026.1",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7223766769",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://drops.dagstuhl.de/storage/01oasics/oasics-vol148-dx2026/OASIcs.DX.2026.1/OASIcs.DX.2026.1.pdf",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.DX.2026.1",
+              "pdf_url": "https://drops.dagstuhl.de/storage/01oasics/oasics-vol148-dx2026/OASIcs.DX.2026.1/OASIcs.DX.2026.1.pdf"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.4230/oasics.dx.2026.1",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Fault Diagnosis Using Timed Automata",
+          "doi": "https://doi.org/10.1007/978-3-540-31982-5_14",
+          "year": 2005,
+          "openalex_id": "https://openalex.org/W1496022251",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "bronze",
+            "oa_url": "https://link.springer.com/content/pdf/10.1007/978-3-540-31982-5_14.pdf",
+            "any_repository_has_fulltext": false
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1007/978-3-540-31982-5_14",
+              "pdf_url": "https://link.springer.com/content/pdf/10.1007/978-3-540-31982-5_14.pdf"
+            },
+            {
+              "landing_page_url": "http://eprints.iisc.ac.in/17030/1/fulltext.pdf",
+              "pdf_url": "http://eprints.iisc.ac.in/17030/1/fulltext.pdf"
+            },
+            {
+              "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.109.7570",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "A novel approach for fault diagnosis using partial observations of actions and atomic propositions",
+          "doi": "https://doi.org/10.1016/j.ifacol.2024.07.027",
+          "year": 2024,
+          "openalex_id": "https://openalex.org/W4400744985",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "http://dx.doi.org/10.1016/j.ifacol.2024.07.027",
+            "any_repository_has_fulltext": false
+          },
+          "locations": [
+            {
+              "landing_page_url": "http://dx.doi.org/10.1016/j.ifacol.2024.07.027",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Fault diagnosis in discrete-event and hybrid systems",
+          "doi": null,
+          "year": 1999,
+          "openalex_id": "https://openalex.org/W2280711615",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://utoronto.scholaris.ca/bitstreams/be010adf-d6dc-4d4d-88d2-f44c6a087566/download",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "http://hdl.handle.net/1807/12867",
+              "pdf_url": "https://utoronto.scholaris.ca/bitstreams/be010adf-d6dc-4d4d-88d2-f44c6a087566/download"
+            },
+            {
+              "landing_page_url": "https://tspace.library.utoronto.ca/bitstream/1807/12867/1/NQ45687.pdf",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://www.collectionscanada.ca/obj/s4/f2/dsk1/tape8/PQDD_0019/NQ45687.pdf",
+              "pdf_url": "http://www.collectionscanada.ca/obj/s4/f2/dsk1/tape8/PQDD_0019/NQ45687.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Fault diagnosis of VLSI designs: cell internal faults and volume diagnosis throughput",
+          "doi": "https://doi.org/10.17077/etd.1q4hkje6",
+          "year": 2012,
+          "openalex_id": "https://openalex.org/W159022226",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://iro.uiowa.edu/view/delivery/01IOWA_INST/12730650340002771/13730805600002771",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.17077/etd.1q4hkje6",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://iro.uiowa.edu/esploro/outputs/doctoral/Fault-diagnosis-of-VLSI-designs/9983777020402771",
+              "pdf_url": "https://iro.uiowa.edu/view/delivery/01IOWA_INST/12730650340002771/13730805600002771"
+            },
+            {
+              "landing_page_url": "https://ir.uiowa.edu/etd/3450",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Data-Driven Process Monitoring and Fault Diagnosis: A Comprehensive Survey",
+          "doi": "https://doi.org/10.3390/pr12020251",
+          "year": 2024,
+          "openalex_id": "https://openalex.org/W4391169697",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "gold",
+            "oa_url": "https://www.mdpi.com/2227-9717/12/2/251/pdf?version=1706088476",
+            "any_repository_has_fulltext": false
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.3390/pr12020251",
+              "pdf_url": "https://www.mdpi.com/2227-9717/12/2/251/pdf?version=1706088476"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "test oracle problem fault injection ground truth validity",
+      "url": "https://api.openalex.org/works?search=test+oracle+problem+fault+injection+ground+truth+validity&per-page=6",
+      "file": "24c3115a36d3.json",
+      "sha256": "8691a9192be2d59d085b66b550b29c97c61fdc4a4d0fe5aeae096116b4a2db77",
+      "results": [
+        {
+          "title": "SoK: oracles from the ground truth to market manipulation",
+          "doi": "https://doi.org/10.1145/3479722.3480994",
+          "year": 2021,
+          "openalex_id": "https://openalex.org/W3166296808",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2106.00667",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1145/3479722.3480994",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://arxiv.org/abs/2106.00667",
+              "pdf_url": "https://arxiv.org/pdf/2106.00667"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2106.00667",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Magma: A Ground-Truth Fuzzing Benchmark",
+          "doi": "https://doi.org/10.1145/3428334",
+          "year": 2020,
+          "openalex_id": "https://openalex.org/W3082737479",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2009.01120",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1145/3428334",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://arxiv.org/abs/2009.01120",
+              "pdf_url": "https://arxiv.org/pdf/2009.01120"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2009.01120",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Artifact of Lessons to Define Testing Oracles for Hybrid Quantum–Classical Software",
+          "doi": "https://doi.org/10.5281/zenodo.21073312",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7166663911",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://doi.org/10.5281/zenodo.21073312",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.5281/zenodo.21073312",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://doi.org/10.5281/zenodo.21078377",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://doi.org/10.5281/zenodo.22941155",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "EAST: Embodied AI Safety Testing via Systematic Fault Injection in Digital Twins",
+          "doi": "https://doi.org/10.48550/arxiv.2610.34358",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7223841044",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2610.34358",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://arxiv.org/abs/2610.34358",
+              "pdf_url": "https://arxiv.org/pdf/2610.34358"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2610.34358",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "No Peer, no Cry: Network Application Fuzzing via Fault Injection",
+          "doi": "https://doi.org/10.1145/3658644.3690274",
+          "year": 2024,
+          "openalex_id": "https://openalex.org/W4402954308",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2409.01059",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1145/3658644.3690274",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://arxiv.org/abs/2409.01059",
+              "pdf_url": "https://arxiv.org/pdf/2409.01059"
+            },
+            {
+              "landing_page_url": "https://figshare.com/articles/conference_contribution/No_Peer_no_Cry_Network_Application_Fuzzing_via_Fault_Injection/28060535",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Assessing Evaluation Metrics for Neural Test Oracle Generation",
+          "doi": "https://doi.org/10.1109/tse.2024.3433463",
+          "year": 2024,
+          "openalex_id": "https://openalex.org/W4400978763",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2310.07856",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1109/tse.2024.3433463",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://arxiv.org/abs/2310.07856",
+              "pdf_url": "https://arxiv.org/pdf/2310.07856"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2310.07856",
+              "pdf_url": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "WebRTC diagnosis uncertainty selective prediction",
+      "url": "https://api.openalex.org/works?search=WebRTC+diagnosis+uncertainty+selective+prediction&per-page=6",
+      "file": "4ad70b8971fe.json",
+      "sha256": "65fd317b24a96bafdd3d52f7e41d046a202895358cdfab2bcab37bc98e1a9f48",
+      "results": [
+        {
+          "title": "Notice of Violation of IEEE Publication Principles: Fuzzy-Model-Based Sliding Mode Control of Nonlinear Descriptor Systems",
+          "doi": "https://doi.org/10.1109/tcyb.2018.2842920",
+          "year": 2018,
+          "openalex_id": "https://openalex.org/W2809349980",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://re.public.polimi.it/bitstream/11311/1103181/2/11311-1103181_Karimi.pdf",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1109/tcyb.2018.2842920",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/29994144",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://hdl.handle.net/11311/1103181",
+              "pdf_url": "https://re.public.polimi.it/bitstream/11311/1103181/2/11311-1103181_Karimi.pdf"
+            }
+          ]
+        },
+        {
+          "title": "FlowWise: Stateful Fast-Slow Model Serving for Streaming Traffic Intelligence",
+          "doi": "https://doi.org/10.1145/3815789.3827947",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W4391631642",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "gold",
+            "oa_url": "https://doi.org/10.1145/3815789.3827947",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1145/3815789.3827947",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://arxiv.org/abs/2402.03694",
+              "pdf_url": "https://arxiv.org/pdf/2402.03694"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2402.03694",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Joint Optimization of Radio and Computational Resources for Multicell Mobile-Edge Computing",
+          "doi": "https://doi.org/10.1109/tsipn.2015.2448520",
+          "year": 2015,
+          "openalex_id": "https://openalex.org/W1904504745",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/1412.8416",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1109/tsipn.2015.2448520",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://arxiv.org/abs/1412.8416",
+              "pdf_url": "https://arxiv.org/pdf/1412.8416"
+            },
+            {
+              "landing_page_url": "http://hdl.handle.net/11573/958474",
+              "pdf_url": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER290-ELE"
+            }
+          ]
+        },
+        {
+          "title": "Securing Hardware Accelerators: A New Challenge for High-Level Synthesis",
+          "doi": "https://doi.org/10.1109/les.2017.2774800",
+          "year": 2017,
+          "openalex_id": "https://openalex.org/W2889495953",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://re.public.polimi.it/bitstream/11311/1069649/1/esl17-securityhls.pdf",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1109/les.2017.2774800",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://hdl.handle.net/11311/1069649",
+              "pdf_url": "https://re.public.polimi.it/bitstream/11311/1069649/1/esl17-securityhls.pdf"
+            },
+            {
+              "landing_page_url": "https://zenodo.org/record/3498372",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "CONTEXT-AWARE HEALTH MONITORING USING FEDERATED LEARNING",
+          "doi": null,
+          "year": 2025,
+          "openalex_id": "https://openalex.org/W7200530856",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://nur.nu.edu.kz/bitstreams/995a2fe5-f9df-430b-a1da-8630476c5a7c/download",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://nur.nu.edu.kz/handle/123456789/8961",
+              "pdf_url": "https://nur.nu.edu.kz/bitstreams/995a2fe5-f9df-430b-a1da-8630476c5a7c/download"
+            }
+          ]
+        },
+        {
+          "title": "PMU placement for power system observability using binary particle swarm optimization",
+          "doi": null,
+          "year": 2008,
+          "openalex_id": "https://openalex.org/W2116040783",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "http://www.ieee.org/portal/site",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "http://www.ieee.org/portal/site",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "https://eprints.qut.edu.au/18175/",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.ieee-000004813073",
+              "pdf_url": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "fault injection experimental validity failed injection ground truth",
+      "url": "https://api.openalex.org/works?search=fault+injection+experimental+validity+failed+injection+ground+truth&per-page=6",
+      "file": "ec948e7d0162.json",
+      "sha256": "edd303383854996c90a16483350c0a58d67293b3c10810bbc35ff3f053edc7f6",
+      "results": [
+        {
+          "title": "MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems",
+          "doi": "https://doi.org/10.48550/arxiv.2602.19843",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7131436133",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2602.19843",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "http://arxiv.org/abs/2602.19843",
+              "pdf_url": "https://arxiv.org/pdf/2602.19843"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2602.19843",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Brinell Fault Injection to Enable Development of a Low-Cost Wheel Bearing Fault Monitoring System for Automobiles",
+          "doi": "https://doi.org/10.36001/phmconf.2021.v13i1.2986",
+          "year": 2021,
+          "openalex_id": "https://openalex.org/W3215518868",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "https://papers.phmsociety.org/index.php/phmconf/article/download/2986/1872",
+            "any_repository_has_fulltext": false
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.36001/phmconf.2021.v13i1.2986",
+              "pdf_url": "https://papers.phmsociety.org/index.php/phmconf/article/download/2986/1872"
+            }
+          ]
+        },
+        {
+          "title": "Fault Injection Analytics: A Novel Approach to Discover Failure Modes in Cloud-Computing Systems",
+          "doi": "https://doi.org/10.1109/tdsc.2020.3025289",
+          "year": 2020,
+          "openalex_id": "https://openalex.org/W3088795029",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2010.00331",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1109/tdsc.2020.3025289",
+              "pdf_url": null
+            },
+            {
+              "landing_page_url": "http://arxiv.org/abs/2010.00331",
+              "pdf_url": "https://arxiv.org/pdf/2010.00331"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2010.00331",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "Alpha: Systematic Fault Injection and Robustness Evaluation for LLM-Driven Embodied Manipulation",
+          "doi": "https://doi.org/10.66977/xsci.2610.0036",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7223409598",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://xsci.com/preprint/doi/10.66977/xsci.2610.0036.pdf",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.66977/xsci.2610.0036",
+              "pdf_url": "https://xsci.com/preprint/doi/10.66977/xsci.2610.0036.pdf"
+            },
+            {
+              "landing_page_url": "https://arxiv.org/abs/2610.30197",
+              "pdf_url": "https://arxiv.org/pdf/2610.30197"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2610.30197",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "EAST: Embodied AI Safety Testing via Systematic Fault Injection in Digital Twins",
+          "doi": "https://doi.org/10.48550/arxiv.2610.34358",
+          "year": 2026,
+          "openalex_id": "https://openalex.org/W7223841044",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "green",
+            "oa_url": "https://arxiv.org/pdf/2610.34358",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://arxiv.org/abs/2610.34358",
+              "pdf_url": "https://arxiv.org/pdf/2610.34358"
+            },
+            {
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2610.34358",
+              "pdf_url": null
+            }
+          ]
+        },
+        {
+          "title": "SAT-based Formal Verification of Fault Injection Countermeasures for Cryptographic Circuits",
+          "doi": "https://doi.org/10.46586/tches.v2024.i4.1-39",
+          "year": 2024,
+          "openalex_id": "https://openalex.org/W4402810769",
+          "oa": {
+            "is_oa": true,
+            "oa_status": "diamond",
+            "oa_url": "https://tches.iacr.org/index.php/TCHES/article/download/11782/11288",
+            "any_repository_has_fulltext": true
+          },
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.46586/tches.v2024.i4.1-39",
+              "pdf_url": "https://tches.iacr.org/index.php/TCHES/article/download/11782/11288"
+            },
+            {
+              "landing_page_url": "http://arxiv.org/abs/2307.00561",
+              "pdf_url": "https://arxiv.org/pdf/2307.00561"
+            },
+            {
+              "landing_page_url": "https://doaj.org/article/359a33f72d8f4c53a3c77f7e0456a75c",
+              "pdf_url": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "retrievals": [
+    {
+      "id": "selective2017",
+      "url": "https://arxiv.org/pdf/1705.08500",
+      "accessed_at_utc": "2026-11-15T18:52:20.056153+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "91899dfcbc41553f571f7a491839733e4d16f81d82e9274278e8f06ffc42022b",
+      "bytes": 614365,
+      "file": "artifacts/local/directions-a-b/selective2017.pdf"
+    },
+    {
+      "id": "selectivenet2019",
+      "url": "https://proceedings.mlr.press/v97/geifman19a/geifman19a.pdf",
+      "accessed_at_utc": "2026-11-15T18:52:20.057097+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "121c044e3fc396f0b274a1bdbbddd1f73f016814ee76a7aed8a6898fb51388f9",
+      "bytes": 677034,
+      "file": "artifacts/local/directions-a-b/selectivenet2019.pdf"
+    },
+    {
+      "id": "learn_then_test",
+      "url": "https://arxiv.org/pdf/2110.01052",
+      "accessed_at_utc": "2026-11-15T18:52:20.057583+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "a43d0f089add075ecb4c74f71c9eb6a648e020edc70139b19360d6e717ddc0e2",
+      "bytes": 2934353,
+      "file": "artifacts/local/directions-a-b/learn_then_test.pdf"
+    },
+    {
+      "id": "magma",
+      "url": "https://arxiv.org/pdf/2009.01120",
+      "accessed_at_utc": "2026-11-15T18:52:20.058339+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "178aa4828704875d142b3665d0372102a94d6cfab5469f2a373da5e463c5fbeb",
+      "bytes": 1964566,
+      "file": "artifacts/local/directions-a-b/magma.pdf"
+    },
+    {
+      "id": "fault_injection_analytics",
+      "url": "https://arxiv.org/pdf/2010.00331",
+      "accessed_at_utc": "2026-11-15T18:52:20.557891+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "0d26b3e613dce7e146e84595119c1d183a3310e63cb3ca0df711633efbb73f87",
+      "bytes": 1254828,
+      "file": "artifacts/local/directions-a-b/fault_injection_analytics.pdf"
+    },
+    {
+      "id": "diagnosability2026",
+      "url": "https://drops.dagstuhl.de/storage/01oasics/oasics-vol148-dx2026/OASIcs.DX.2026.1/OASIcs.DX.2026.1.pdf",
+      "accessed_at_utc": "2026-11-15T18:52:20.634452+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "5cbe06fa28c5dd6d1a5d3142c76be5cefc8f8300e4b6f658b85e79ffbe20732c",
+      "bytes": 859087,
+      "file": "artifacts/local/directions-a-b/diagnosability2026.pdf"
+    },
+    {
+      "id": "ticket_abstention2026",
+      "url": "https://arxiv.org/pdf/2610.31657",
+      "accessed_at_utc": "2026-11-15T18:52:20.647110+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "6e1eb45d419a39c321840c69482bada39fde6d29d8bdf5da9e1481503410461a",
+      "bytes": 606310,
+      "file": "artifacts/local/directions-a-b/ticket_abstention2026.pdf"
+    },
+    {
+      "id": "evidence_gated2026",
+      "url": "https://gsjournals.com/gjarr/sites/default/files/fulltext_pdf/GJARR-2026-0091.pdf",
+      "accessed_at_utc": "2026-11-15T18:52:20.731934+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "7187afcf6ea54a64b7d2f10651ea36f1dc70a09733e717bb0c8d5c10c5d491e7",
+      "bytes": 912884,
+      "file": "artifacts/local/directions-a-b/evidence_gated2026.pdf"
+    },
+    {
+      "id": "oracle_survey_metadata",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/TSE.2014.2372785",
+      "accessed_at_utc": "2026-11-15T18:52:20.859145+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "sha256": "d7c970c3a1198a927d166780ba92dd8ee20566041f1c64f021f2c805a3ccdc0e",
+      "bytes": 26958,
+      "file": "artifacts/local/directions-a-b/oracle_survey_metadata.json",
+      "locations": [
+        {
+          "landing_page_url": "https://doi.org/10.1109/tse.2014.2372785",
+          "pdf_url": "https://ieeexplore.ieee.org/ielx7/32/7106034/06963470.pdf"
+        },
+        {
+          "landing_page_url": "https://discovery.ucl.ac.uk/id/eprint/1471263/",
+          "pdf_url": null
+        },
+        {
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.996.5035",
+          "pdf_url": null
+        }
+      ],
+      "full_text_attempt": {
+        "url": "https://discovery.ucl.ac.uk/id/eprint/1471263/",
+        "status": 403,
+        "full_text_read": false
+      }
+    },
+    {
+      "id": "transport_aware_pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10922-026-10076-z.pdf",
+      "accessed_at_utc": "2026-11-15T18:52:20.883320+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "sha256": "76a2ea2d25a177bc7abe3ea2aabbecb08d5aaf194b7d8183acf3b18c6f7f7087",
+      "bytes": 1861700,
+      "file": "artifacts/local/directions-a-b/transport_aware_pdf.pdf"
+    }
+  ],
+  "redistribution": "URLs, metadata, hashes and original notes only; source PDFs remain ignored"
+}

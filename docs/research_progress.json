@@ -1,10 +1,9 @@
 {
-  "updated_at_utc": "2026-11-15T13:09:03.308244+00:00",
+  "updated_at_utc": "2026-11-15T18:58:37.612426+00:00",
   "execution_order": [
-    "CFP/deadline",
-    "novelty",
-    "independent multi-family oracle",
-    "cross-environment evaluation"
+    "A: diagnostic identifiability and uncertainty",
+    "B: independent-oracle validity",
+    "new protocol and multi-environment main study"
   ],
   "stages": [
     {
@@ -28,23 +27,23 @@
       "stage": 3,
       "status": "three_bounded_live_fault_families_verified_on_CI_controls_retained_causal_validity_still_limited",
       "evidence": "docs/live_frozen_v1_results.md",
-      "trials": 18,
-      "verified": 18,
-      "external_blocker": "Current container has no NET_ADMIN or usable user/network namespaces; isolated instrumented lab required for proposed netem study"
+      "probe_trials": 18,
+      "probe_verified": 18,
+      "live_calls_verified": 19
     },
     {
       "stage": 4,
       "status": "prospective_protocol_and_datasets_sealed_cross_host_kernel_verified_engine_and_OS_userland_gates_open",
       "evidence": "docs/live_frozen_v1_results.json",
-      "new_calls": 30,
+      "new_calls": 19,
       "versions": [
         "156.0.8078.79",
         "159.0.8154.6"
       ],
-      "host_count": 1,
+      "host_count": 2,
       "os_count": 1,
-      "failed_engine_attempt": "Firefox 159 launch failed: Could not find profile folder",
-      "external_blocker": "No second machine/OS or independently verified live fault dataset available in selected runtime"
+      "failed_engine_attempt": "Firefox159 launches but ICE gathering fails; old launch failure was earlier milestone",
+      "external_blocker": "Cloud kernel lacks netem; successful non-Chromium engine and distinct OS userland still missing"
     }
   ],
   "validation": {
@@ -55,7 +54,7 @@
     "source_validation_sessions": 6,
     "source_test_sessions_used_for_training": 0
   },
-  "topic_lock": "NO_GO_until_novelty_and_live_oracle_evidence",
+  "topic_lock": "A_primary_B_supporting_by_user; novelty_and_main_study_claims_not_validated",
   "environment_config_written_this_turn": false,
   "published_this_turn": false,
   "github_delivery": {
@@ -95,5 +94,17 @@
       "model_fitted": false,
       "scope": "prospective feasibility only"
     }
-  }
+  },
+  "current_authoritative_plan": "docs/directions_a_b_plan.md",
+  "current_prior_art": "docs/directions_prior_art.md",
+  "directions": {
+    "A_priority": 1,
+    "B_priority": 2,
+    "A0": "bounded_prior_art_review_and_RQs_completed_novelty_open",
+    "A1": "analysis_config_fixed_before_new_model_execution",
+    "B0": "pending_after_A1",
+    "analysis_config": "configs/analysis/directions_v1.json",
+    "main_study_ready": false
+  },
+  "historical_stages_note": "Stages 1-4 below summarize earlier milestones; live_lab/prospective and directions supersede historical blockers."
 }

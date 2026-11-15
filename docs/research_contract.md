@@ -3,7 +3,13 @@
 This project targets an empirical software engineering contribution for EASE 2027 Main Research
 Track. The attached handoff is a planning input, not evidence of novelty, venue rules, data access,
 causal labels, or acceptance. The WebRTC candidate remains provisional. Conference ranking is a
-user-stated target; no ranking or 2027 CFP/deadline has been independently verified here.
+user-stated target; the official 2027 CFP/deadline is now verified in venue_verification.md.
+The homepage states CORE A; the ranking edition has not been independently checked.
+
+**Current user-directed priority, 16 November Bangkok:** diagnostic identifiability and selective
+prediction (A), followed by independent-oracle validity (B). The authoritative current RQs,
+milestones and claim boundaries are in directions_a_b_plan.md. The table below describes the
+original feasibility contract, not the current implementation status; see research_progress.json.
 
 Intended users are RTC developers and reliability/QA engineers diagnosing degraded calls. The
 engineering task is to distinguish plausible fault conditions and present traceable evidence.

@@ -1,5 +1,10 @@
 # Bước 2 — novelty audit ban đầu, 15/11/2026
 
+**Cập nhật 16/11 Bangkok:** người dùng chọn A (identifiability/uncertainty) ưu tiên1 và B
+(oracle validity) ưu tiên2. [Audit mới](directions_prior_art.md) đã lấy được và đọc methods
+full PDF của Transport-Aware QoE, cùng selective prediction/diagnosability/oracle prior art.
+Mô tả access failure dưới đây là lịch sử lần truy cập đầu; novelty vẫn chưa được xác lập.
+
 **Kết luận: novelty chưa được xác lập. Không chốt paper quanh “multimodal WebRTC RCA”.**
 Phát hiện overlap đủ rõ để bác bỏ việc coi testbed/getStats/fusion là novelty mặc định.
 Đây là audit có giới hạn truy cập, không phải systematic literature review đã hoàn tất.

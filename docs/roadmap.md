@@ -1,3 +1,7 @@
+> **Current schedule (16/11 Bangkok):** [A → B, milestones and dates](directions_a_b_plan.md).
+> The older schedule/blockers below are historical; the current live-call result is 19/19 verified
+> on two host kernels, with engine/userland coverage still incomplete.
+
 # Evidence-driven roadmap
 
 Start date: 2026-11-15 (Asia/Bangkok). These are internal planning dates, **not conference

@@ -1,0 +1,135 @@
+{
+  "version": "directions-analysis-v1",
+  "scope": "Retrospective feasibility on previously inspected data; no fresh confirmatory holdout",
+  "classes": [
+    "compute_contention",
+    "network_loss",
+    "normal",
+    "source_freeze"
+  ],
+  "strata": [
+    "compute_contention",
+    "network_loss",
+    "normal_moving",
+    "normal_static",
+    "source_freeze"
+  ],
+  "seed_roles": {
+    "100": "training",
+    "200": "calibration",
+    "300": "evaluation"
+  },
+  "datasets": [
+    {
+      "path": "data/releases/live-frozen-v1/ci-43723089658",
+      "inventory_sha256": "9b4c7fa04ca1115c1208481c0524dcc098ba422e6afe93687f259a2e51d8552f",
+      "scope": "frozen",
+      "a_role": "source"
+    },
+    {
+      "path": "data/releases/live-frozen-v1/cloud",
+      "inventory_sha256": "b154548d5312815984758e05a9f4d4c2ee4dc254e8ffb2edd81ac3c90be1cbce",
+      "scope": "frozen",
+      "a_role": "target"
+    },
+    {
+      "path": "data/releases/live-pilot/ci-43722157644",
+      "inventory_sha256": "5e15ed6ecad36ddcb4070b6ad14b0ef3a077492c0836a47850908683f45c6c1b",
+      "scope": "debugging",
+      "a_role": null
+    },
+    {
+      "path": "data/releases/live-pilot/cloud-attempt-v1",
+      "inventory_sha256": "d28cc3dde709d9c37ec0accbc85f1594e1dc5590cb2a86d1cc6f3065463f97e9",
+      "scope": "debugging",
+      "a_role": null
+    },
+    {
+      "path": "data/releases/live-pilot/cloud-attempt-v2",
+      "inventory_sha256": "c83973c32e9e46d0a2ccefa02fc6d57c474c6500bd900edec6b8b06458f48613",
+      "scope": "debugging",
+      "a_role": null
+    },
+    {
+      "path": "data/releases/live-pilot/cloud-attempt-v3",
+      "inventory_sha256": "9e3e8fba4a25a05e53e08ddafe5c6af572bb8eb2a668a285736cd662a4ca338e",
+      "scope": "debugging",
+      "a_role": null
+    },
+    {
+      "path": "data/releases/live-pilot/cloud-attempt-v4",
+      "inventory_sha256": "c28121c175c48a2979f30c0ac59d03f54c02ee33aa9c8b4ae7deaae07f6ef258",
+      "scope": "debugging",
+      "a_role": null
+    },
+    {
+      "path": "data/releases/live-pilot/cloud-attempt-v5",
+      "inventory_sha256": "ad6660c48bd8b2528120c68d33908dfbeb088eed2fb5bb0eda43a97563a5750f",
+      "scope": "debugging",
+      "a_role": null
+    },
+    {
+      "path": "data/releases/live-pilot/cloud-attempt-v6",
+      "inventory_sha256": "b602bbcd89c2e9c36283849024357cbd27341cd90c473960bef7f2036f8a2fb0",
+      "scope": "debugging",
+      "a_role": null
+    }
+  ],
+  "current_window_ms": [
+    4000,
+    6000
+  ],
+  "history_window_ms": [
+    1000,
+    3000
+  ],
+  "window_policy": "Fully contained precomputed receiver windows; same absolute intervals for every session; never oracle/event timestamps",
+  "views": [
+    "fps_current",
+    "receiver_current",
+    "receiver_history"
+  ],
+  "models": [
+    "dummy",
+    "logistic_regression",
+    "random_forest"
+  ],
+  "model_settings": {
+    "random_seed": 20261116,
+    "lr_C": 1.0,
+    "lr_max_iter": 2000,
+    "rf_n_estimators": 100,
+    "rf_max_depth": 3,
+    "n_jobs": 1
+  },
+  "thresholds": [
+    0.0,
+    0.5,
+    0.7,
+    0.9,
+    0.95
+  ],
+  "risk_target": 0.1,
+  "familywise_alpha": 0.05,
+  "stratum_risk_rule": "Maximum one-sided Clopper-Pearson upper bound across all five design strata; zero accepted implies bound 1",
+  "threshold_selection": "Largest calibration coverage satisfying criterion; ties: lower threshold; no candidate => abstain all",
+  "certification_assumptions_established": false,
+  "collision_fps_bucket_edges": [
+    1.0,
+    10.0
+  ],
+  "collision_claim": "Empirical ambiguity of this fixed coarse representation only; no population identifiability or Bayes-error claim",
+  "reporting": [
+    "counts",
+    "forced_accuracy",
+    "macro_f1_present_classes",
+    "confusion",
+    "multiclass_brier_sum",
+    "per_class_and_control_coverage",
+    "empirical_risk_coverage_ties_kept_together",
+    "null_risk_when_no_acceptances",
+    "label_provenance",
+    "CPU_wall_RSS"
+  ],
+  "main_study_ready": false
+}

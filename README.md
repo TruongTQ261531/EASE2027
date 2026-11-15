@@ -1,4 +1,9 @@
-# EASE2027 — empirical WebRTC diagnosis feasibility
+# EASE2027 — diagnostic evidence and uncertainty
+
+**Kế hoạch hiện tại (16/11 Bangkok):** [Hướng A → B, RQ và tiến độ](docs/directions_a_b_plan.md),
+[prior-art audit mới](docs/directions_prior_art.md), [trạng thái](docs/research_progress.json).
+19/19 live calls đã được kiểm chứng; novelty/main-study gate còn mở. Các mốc pilot bên dưới
+là lịch sử, không thay thế kế hoạch hiện tại.
 
 Repository nghiên cứu hướng tới EASE 2027 Main Research Track. Hướng WebRTC hiện là **ứng viên
 đang kiểm chứng**. Artifact này triển khai pilot bằng cuộc gọi thật; chưa chứng minh novelty,

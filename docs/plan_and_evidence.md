@@ -1,5 +1,9 @@
 # Kế hoạch trong handoff và kết quả kiểm chứng khác nhau thế nào?
 
+**Quyết định mới 16/11 Bangkok:** người dùng chọn Hướng A làm hướng nghiên cứu chính và B
+bổ trợ. Kế hoạch thực thi/tiến độ nằm ở [directions_a_b_plan.md](directions_a_b_plan.md);
+đây là thu hẹp câu hỏi dựa trên bằng chứng và yêu cầu mới, không phải bảo đảm novelty.
+
 File Markdown ban đầu đã có kế hoạch: chọn ứng viên WebRTC để kiểm tra, dựng testbed, oracle,
 controls, baseline, split và go/no-go gates. Nó đồng thời ghi rõ WebRTC **chưa được chọn cuối cùng**,
 novelty **chưa audit**, và không được biến giả thuyết thành claim. Vì vậy việc đọc prior art để chốt
