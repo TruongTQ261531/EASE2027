@@ -1,0 +1,50 @@
+{
+  "protocol": {
+    "version": "prospective-feasibility-freeze-v1-cloud",
+    "duration_s": 11.0,
+    "on_s": 3.0,
+    "off_s": 7.0,
+    "network_loss_percent": 30.0,
+    "busy_ms": 850,
+    "sample_interval_ms": 250,
+    "seeds": [
+      300
+    ],
+    "engines": [
+      "chromium"
+    ],
+    "schedule_seed": 20271118,
+    "network_backend": "unimpaired",
+    "conditions": [
+      "normal",
+      "compute_contention",
+      "source_freeze"
+    ]
+  },
+  "schedule": [
+    [
+      "chromium",
+      "normal",
+      true,
+      300
+    ],
+    [
+      "chromium",
+      "source_freeze",
+      false,
+      300
+    ],
+    [
+      "chromium",
+      "compute_contention",
+      false,
+      300
+    ],
+    [
+      "chromium",
+      "normal",
+      false,
+      300
+    ]
+  ]
+}

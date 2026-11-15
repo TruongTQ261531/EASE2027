@@ -45,3 +45,13 @@ Completed milestones are committed and pushed under the standing user instructio
 Publication on GitHub does not mean an unverified research gate is completed, or that GitHub alone
 is a long-term archived research artifact. A later anonymized submission package needs its own
 identity review; this named development repository is not an anonymous supplement.
+
+## Live-lab milestone update
+
+Independent measurement is now integrated with real calls for three bounded families in the
+GitHub pilot, with controls and failed Firefox attempts retained. The code and prospective
+feasibility protocol are pushed to main. See live_protocol_v1.md, lab/frozen_plan_v1.json and
+live_cloud_capabilities.json. The cloud prospective cohort has four measured-condition verifications;
+the CI cohort is collected separately before audit/sealing. Do not confuse this feasibility freeze
+with final-study preregistration. Still needed: novelty/RQ decision, stronger precision/design,
+network transfer to a second capable host, a working non-Chromium engine and OS-userland coverage.

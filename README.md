@@ -116,3 +116,12 @@ Kết quả đã hoàn thành được commit/push theo từng milestone (AGENTS
 [bước tiếp theo và bản đồ lưu trữ](docs/next_steps.md). Bộ dữ liệu tổng hợp đã loại định danh mạng
 được lưu ở [data/releases](data/releases/README.md), gồm per-session metrics và cả exploratory
 failures. Bản gốc giữ trong data/local/; PDF bên thứ ba không được đưa vào repo.
+
+## Live-call oracle và protocol feasibility v1
+
+Xem [giải thích kế hoạch và bằng chứng](docs/plan_and_evidence.md),
+[protocol đã cố định](docs/live_protocol_v1.md), và [hướng dẫn lab](lab/README.md).
+Lab tiêm lỗi trong namespace container riêng, với bộ đo OS riêng và kiểm tra source pixels.
+Dữ liệu pilot thành công lẫn thất bại được giữ tại data/releases/live-pilot/; bộ prospective
+được lưu tại data/releases/live-frozen-v1/. Đây là các mốc feasibility, chưa phải kết luận causal
+RCA, novelty hay study đã đủ sức nộp hội nghị. Các giới hạn Firefox và kernel đều được báo cáo.

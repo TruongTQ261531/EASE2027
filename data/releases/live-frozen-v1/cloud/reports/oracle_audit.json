@@ -1,0 +1,79 @@
+{
+  "runs": 4,
+  "completed": 4,
+  "execution_failed": 0,
+  "verified": 4,
+  "verification_failed": 0,
+  "ambiguous": 0,
+  "verification_denominator": 4,
+  "conditions": [
+    {
+      "engine": "chromium",
+      "condition": "compute_contention",
+      "static_control": false,
+      "verification_status": "verified",
+      "runs": 1
+    },
+    {
+      "engine": "chromium",
+      "condition": "normal",
+      "static_control": false,
+      "verification_status": "verified",
+      "runs": 1
+    },
+    {
+      "engine": "chromium",
+      "condition": "normal",
+      "static_control": true,
+      "verification_status": "verified",
+      "runs": 1
+    },
+    {
+      "engine": "chromium",
+      "condition": "source_freeze",
+      "static_control": false,
+      "verification_status": "verified",
+      "runs": 1
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "26a64906-55cd-44c0-ac6d-67f5b40c8258",
+      "host": "codex-cloud-kernel-6.18",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": true
+    },
+    {
+      "session_id": "27d51150-74da-48c0-bfcc-2f0612a79529",
+      "host": "codex-cloud-kernel-6.18",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "compute_contention",
+      "static_control": false
+    },
+    {
+      "session_id": "50391f14-b9e7-4231-91de-11c65ea6705f",
+      "host": "codex-cloud-kernel-6.18",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": false
+    },
+    {
+      "session_id": "8a702d9d-0075-4c2c-bf0d-d808a87ec2b5",
+      "host": "codex-cloud-kernel-6.18",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "source_freeze",
+      "static_control": false
+    }
+  ],
+  "causal_attribution": "unestablished",
+  "scope": "Measured fault conditions on live calls, bounded process/container lab"
+}

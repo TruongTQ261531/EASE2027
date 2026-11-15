@@ -41,3 +41,16 @@ hữu ích, không cấp causal labels hay tuyên bố gate này đã qua.
 
 Lưu ý về lặp: seed chỉ thay đổi drop schedule của UDP probe. Compute và media là các lần lặp
 độc lập của cùng cấu hình, không phải ba stochastic model seeds hay power analysis.
+
+## Live-call integration update
+
+The earlier probe-only state above is historical. A new isolated container harness now runs real
+calls with separate sender/receiver browser processes and a separate OS sensor. The GitHub pilot
+`data/releases/live-pilot/ci-43722157644` contains five verified Chromium calls: kernel-measured
+packet loss, sender-process-tree CPU contention, source screenshot freeze, moving sham and benign
+static control. Five Firefox failures remain in the same denominator. This is evidence of three
+bounded measured fault families on live calls, not independently established causal attribution.
+Cloud's missing qdisc kinds are recorded in live_cloud_capabilities.json; cloud live calls verify
+compute/media and controls, with network measurement explicitly unavailable. Read live_protocol_v1.md
+for the prospective freeze. Pixel observation shares the orchestrator failure domain; do not call
+this a fully external hardware oracle or a complete main-study validity result.

@@ -1,0 +1,42 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.36",
+  "interfaces": [
+    "lo",
+    "eth0"
+  ],
+  "attempts": [
+    {
+      "command": [
+        "tc",
+        "qdisc",
+        "add",
+        "dev",
+        "lo",
+        "root",
+        "handle",
+        "1:",
+        "prio",
+        "bands",
+        "3"
+      ],
+      "exit_code": 2,
+      "stderr": "Error: Specified qdisc kind is unknown."
+    },
+    {
+      "command": [
+        "tc",
+        "qdisc",
+        "add",
+        "dev",
+        "lo",
+        "root",
+        "netem",
+        "loss",
+        "1%"
+      ],
+      "exit_code": 2,
+      "stderr": "Error: Specified qdisc kind is unknown."
+    }
+  ],
+  "status": "unsupported_qdisc"
+}

@@ -1,0 +1,8 @@
+{
+  "verification_status": "failed",
+  "verified_condition": null,
+  "causal_root_cause": "unestablished",
+  "condition": "source_freeze",
+  "static_control": false,
+  "reason": "Execution failed"
+}

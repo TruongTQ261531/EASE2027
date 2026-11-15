@@ -1,0 +1,28 @@
+{
+  "verification_status": "verified",
+  "verified_condition": "source_freeze",
+  "causal_root_cause": "unestablished",
+  "condition": "source_freeze",
+  "static_control": false,
+  "measurements": {
+    "before": {
+      "valid_os_samples": 12,
+      "cpu_core_percent_median": 9.992041282566158,
+      "measured_drop_ratio": null,
+      "source_pixel_change_fraction": 1.0
+    },
+    "during": {
+      "valid_os_samples": 17,
+      "cpu_core_percent_median": 4.995623883442582,
+      "measured_drop_ratio": null,
+      "source_pixel_change_fraction": 0.0
+    },
+    "after": {
+      "valid_os_samples": 18,
+      "cpu_core_percent_median": 9.992282161142978,
+      "measured_drop_ratio": null,
+      "source_pixel_change_fraction": 1.0
+    }
+  },
+  "reason": "Measured condition check, not causal attribution"
+}

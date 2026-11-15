@@ -1,0 +1,25 @@
+{
+  "scope": "live-call measured fault conditions, causal attribution unestablished",
+  "runs": 8,
+  "completed": 0,
+  "verified": 0,
+  "failed": 8,
+  "ambiguous": 0,
+  "engines": [
+    "chromium",
+    "firefox"
+  ],
+  "host_labels": [
+    "codex-cloud-kernel-6.18"
+  ],
+  "run_ids": [
+    "9b89bcb4-654b-4746-bf3c-304ce0947dbf",
+    "9c607435-ea6b-462e-99d8-893e79ce2c1c",
+    "2812f550-0103-4648-9b98-cfa890d89248",
+    "d5e1ab0a-7a02-41c3-81ac-f06cf901999a",
+    "bf28ee46-2cc3-47f0-bc25-9a62027b03bd",
+    "d6cf2b7f-5e84-467f-a736-a113b59e0ba5",
+    "15b3654c-9bef-4fb6-93f4-5f78df010bf1",
+    "ca7a7531-cadc-40d8-8f06-e8be89e1540f"
+  ]
+}

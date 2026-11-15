@@ -63,3 +63,11 @@ pilot hoặc dùng artifact release đã audit. Chưa có public data archive ha
 **Gate còn thiếu:** browser engine khác, máy/OS khác, network/compute fault classes với independent
 oracle trong live calls; held-out intensity/configuration; protocol/power và stronger baselines.
 Đánh giá này không nâng các application-condition labels thành causal root-cause labels.
+
+## Live-call cross-host work after the cross-version pilot
+
+The named container lab now also runs on Codex cloud and GitHub Ubuntu24 runner, with different
+observed host kernels and a common Debian12 userland. The prospective feasibility design is locked
+in lab/frozen_plan_v1.json. This adds cross-host/kernel replication of measurements, not an isolated
+browser-version or OS-userland comparison. Firefox launched but failed ICE gathering in the closed
+lab; its failures are retained. No cross-browser-engine success is claimed. See live_protocol_v1.md.
