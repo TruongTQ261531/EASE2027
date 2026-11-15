@@ -1,0 +1,185 @@
+{
+  "runs": 15,
+  "completed": 15,
+  "execution_failed": 0,
+  "verified": 15,
+  "verification_failed": 0,
+  "ambiguous": 0,
+  "verification_denominator": 15,
+  "conditions": [
+    {
+      "engine": "chromium",
+      "condition": "compute_contention",
+      "static_control": false,
+      "verification_status": "verified",
+      "runs": 3
+    },
+    {
+      "engine": "chromium",
+      "condition": "network_loss",
+      "static_control": false,
+      "verification_status": "verified",
+      "runs": 3
+    },
+    {
+      "engine": "chromium",
+      "condition": "normal",
+      "static_control": false,
+      "verification_status": "verified",
+      "runs": 3
+    },
+    {
+      "engine": "chromium",
+      "condition": "normal",
+      "static_control": true,
+      "verification_status": "verified",
+      "runs": 3
+    },
+    {
+      "engine": "chromium",
+      "condition": "source_freeze",
+      "static_control": false,
+      "verification_status": "verified",
+      "runs": 3
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "00da1481-4f32-4e56-8865-ccf04874e4f8",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 100,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": true
+    },
+    {
+      "session_id": "0d2a5814-ae9e-46f6-a62e-e623f26ef6e6",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 100,
+      "status": "verified",
+      "condition": "compute_contention",
+      "static_control": false
+    },
+    {
+      "session_id": "47c1f701-cff1-4baf-84d7-ab3006de1af7",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": false
+    },
+    {
+      "session_id": "78fd7bec-c95b-4b97-b986-a326f2a2d2e2",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": true
+    },
+    {
+      "session_id": "901d1641-78a9-4be7-8dd2-7fa62d9fbed6",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 100,
+      "status": "verified",
+      "condition": "network_loss",
+      "static_control": false
+    },
+    {
+      "session_id": "a0f271d0-61d1-4d2f-acac-4a5dd263ee17",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "source_freeze",
+      "static_control": false
+    },
+    {
+      "session_id": "ca977b98-7a7a-4032-a4d5-a39dae7a0c47",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "network_loss",
+      "static_control": false
+    },
+    {
+      "session_id": "cb9686b3-9148-48d7-93c2-613f977d9521",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 100,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": false
+    },
+    {
+      "session_id": "df82ff8e-7ca3-4d02-872b-bfa2aa173ab3",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 200,
+      "status": "verified",
+      "condition": "network_loss",
+      "static_control": false
+    },
+    {
+      "session_id": "e922094a-a4e5-49ab-af6a-1b95709bad23",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 200,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": false
+    },
+    {
+      "session_id": "f440ba1a-f48a-45f8-a328-ff52967fe2f8",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 200,
+      "status": "verified",
+      "condition": "source_freeze",
+      "static_control": false
+    },
+    {
+      "session_id": "f51454c4-6850-490a-a5a3-0bb51fba7ec8",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 200,
+      "status": "verified",
+      "condition": "compute_contention",
+      "static_control": false
+    },
+    {
+      "session_id": "f87a8df8-21a9-41ee-8da8-d782b661a621",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 200,
+      "status": "verified",
+      "condition": "normal",
+      "static_control": true
+    },
+    {
+      "session_id": "f8eac9ad-178a-46b7-adea-365157bff53c",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 100,
+      "status": "verified",
+      "condition": "source_freeze",
+      "static_control": false
+    },
+    {
+      "session_id": "fd5692c5-041c-48d0-acac-61f2a263db13",
+      "host": "github-ubuntu24-43723089658",
+      "engine": "chromium",
+      "seed": 300,
+      "status": "verified",
+      "condition": "compute_contention",
+      "static_control": false
+    }
+  ],
+  "causal_attribution": "unestablished",
+  "scope": "Measured fault conditions on live calls, bounded process/container lab"
+}

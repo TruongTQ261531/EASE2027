@@ -1,0 +1,28 @@
+{
+  "verification_status": "verified",
+  "verified_condition": "network_loss",
+  "causal_root_cause": "unestablished",
+  "condition": "network_loss",
+  "static_control": false,
+  "measurements": {
+    "before": {
+      "valid_os_samples": 12,
+      "cpu_core_percent_median": 9.993738723735177,
+      "measured_drop_ratio": 0.0,
+      "source_pixel_change_fraction": 1.0
+    },
+    "during": {
+      "valid_os_samples": 17,
+      "cpu_core_percent_median": 9.99391155916781,
+      "measured_drop_ratio": 0.265625,
+      "source_pixel_change_fraction": 1.0
+    },
+    "after": {
+      "valid_os_samples": 18,
+      "cpu_core_percent_median": 9.99382731258655,
+      "measured_drop_ratio": 0.0,
+      "source_pixel_change_fraction": 1.0
+    }
+  },
+  "reason": "Measured condition check, not causal attribution"
+}

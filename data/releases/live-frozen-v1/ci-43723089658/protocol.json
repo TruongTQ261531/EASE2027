@@ -1,0 +1,119 @@
+{
+  "protocol": {
+    "version": "prospective-feasibility-freeze-v1-ci",
+    "duration_s": 11.0,
+    "on_s": 3.0,
+    "off_s": 7.0,
+    "network_loss_percent": 30.0,
+    "busy_ms": 850,
+    "sample_interval_ms": 250,
+    "seeds": [
+      100,
+      200,
+      300
+    ],
+    "engines": [
+      "chromium"
+    ],
+    "schedule_seed": 20271117,
+    "network_backend": "netem",
+    "conditions": [
+      "normal",
+      "network_loss",
+      "compute_contention",
+      "source_freeze"
+    ]
+  },
+  "schedule": [
+    [
+      "chromium",
+      "network_loss",
+      false,
+      200
+    ],
+    [
+      "chromium",
+      "normal",
+      false,
+      100
+    ],
+    [
+      "chromium",
+      "normal",
+      true,
+      200
+    ],
+    [
+      "chromium",
+      "normal",
+      false,
+      200
+    ],
+    [
+      "chromium",
+      "normal",
+      true,
+      100
+    ],
+    [
+      "chromium",
+      "compute_contention",
+      false,
+      100
+    ],
+    [
+      "chromium",
+      "network_loss",
+      false,
+      100
+    ],
+    [
+      "chromium",
+      "compute_contention",
+      false,
+      200
+    ],
+    [
+      "chromium",
+      "network_loss",
+      false,
+      300
+    ],
+    [
+      "chromium",
+      "source_freeze",
+      false,
+      100
+    ],
+    [
+      "chromium",
+      "source_freeze",
+      false,
+      200
+    ],
+    [
+      "chromium",
+      "normal",
+      true,
+      300
+    ],
+    [
+      "chromium",
+      "source_freeze",
+      false,
+      300
+    ],
+    [
+      "chromium",
+      "compute_contention",
+      false,
+      300
+    ],
+    [
+      "chromium",
+      "normal",
+      false,
+      300
+    ]
+  ]
+}
