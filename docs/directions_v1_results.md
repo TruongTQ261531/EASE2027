@@ -79,3 +79,6 @@ severity và checks không chọn theo request type. Novelty, valid reference v�
 Tái lập: chạy lại từ output mới cho JSON diagnostic giống từng byte. Validation: 76 tests
 local passed, 3 browser tests skipped local; [GitHub CI trên code 7fe02c2](https://github.com/TruongTQ261531/EASE2027/actions/runs/43750287058)
 đã thành công với browser tests bật. Collector freeze vẫn hợp lệ.
+
+Fresh tracked checkout 807d888 cũng tái lập mọi giá trị khoa học/input hashes; chỉ metadata
+`provenance.code_commit` khác 7fe02c2 do commits tài liệu. Xem [verification record](directions_verification.json).

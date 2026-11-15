@@ -1,0 +1,55 @@
+{
+  "verified_at_utc": "2026-11-15T19:15:11.093650+00:00",
+  "local_pytest": {
+    "passed": 76,
+    "skipped_browser": 3,
+    "command": ".venv/bin/pytest -q"
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": "passed",
+  "collector_freeze_check": "passed",
+  "collector_lock_sha256": "969cc5ee790edb4752cde7ed7e772f17778595cfdda19a9995b9ecb2a3d7fbab",
+  "analysis_lock_sha256": "51c2a7228449942c2079efe47ab8ae8670341777dca480a21c33b65c37510789",
+  "replays": {
+    "same_analysis_commit_diagnostic_json": "byte_identical",
+    "oracle_json": "byte_identical",
+    "fresh_tracked_checkout_commit": "807d8884d67d250f683b96bb34f00cffbe2a7db9",
+    "fresh_tracked_checkout_analysis": "all scientific values and analysis/input hashes identical; only provenance.code_commit changes with documentation commits",
+    "all_9_dataset_input_inventories_and_derived_artifact_hashes": "verified"
+  },
+  "github_workflows_observed": [
+    {
+      "id": 43751202085,
+      "head_sha": "807d8884d67d250f683b96bb34f00cffbe2a7db9",
+      "name": "research-artifact",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43751202085"
+    },
+    {
+      "id": 43750551654,
+      "head_sha": "76b3f62fcda0654421b736462dd995274cc5fb23",
+      "name": "research-artifact",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43750551654"
+    },
+    {
+      "id": 43750287058,
+      "head_sha": "7fe02c273994638caa2d4cda620532e1f4bf0cc8",
+      "name": "research-artifact",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43750287058"
+    },
+    {
+      "id": 43749778375,
+      "head_sha": "68ed47887e0104fcc7a7403b438f924b04deb37b",
+      "name": "research-artifact",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43749778375"
+    }
+  ],
+  "note": "CI workflow enables browser integration tests; local skipped count is explicitly retained. No new collector runs or environment publication in this milestone."
+}

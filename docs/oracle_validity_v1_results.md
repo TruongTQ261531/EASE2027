@@ -55,3 +55,5 @@ uv run --frozen python scripts/oracle_validity_audit.py --output /tmp/ease-oracl
 
 [Kết quả từng attempt](../data/analyses/directions-v1/oracle_validity_results.json),
 [A1](directions_v1_results.md), [kế hoạch/tiến độ](directions_a_b_plan.md).
+
+Oracle JSON tái lập giống từng byte từ tracked checkout 807d888; xem [verification record](directions_verification.json).

@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-15T19:08:24.644521+00:00",
+  "updated_at_utc": "2026-11-15T19:15:11.093650+00:00",
   "execution_order": [
     "A: diagnostic identifiability and uncertainty",
     "B: independent-oracle validity",
@@ -19,9 +19,10 @@
     {
       "stage": 2,
       "status": "preliminary_audit_novelty_not_established",
-      "evidence": "docs/novelty_audit.md",
-      "full_pdf_selected_sections_read": 2,
-      "limitations": "Several direct works remain abstract/metadata only due publisher errors; not systematic search completion"
+      "evidence": "docs/directions_prior_art.md",
+      "limitations": "Targeted review of selected methods sections, not complete literature coverage or artifact reproduction; novelty open",
+      "full_pdf_selected_sections_read_prior_round": 2,
+      "full_pdf_selected_sections_read_this_round": 9
     },
     {
       "stage": 3,
@@ -60,11 +61,11 @@
     "analysis_ci": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43750287058",
     "pytest_skipped": 3,
     "note": "Counts are local pytest; CI is separately recorded as successful with browser tests enabled.",
-    "oracle_audit_replay": "JSON byte-identical on repeat"
+    "oracle_audit_replay": "JSON byte-identical on repeat",
+    "tracked_snapshot_reproduction": "docs/directions_verification.json"
   },
   "topic_lock": "A_primary_B_supporting_by_user; novelty_and_main_study_claims_not_validated",
   "environment_config_written_this_turn": false,
-  "published_this_turn": false,
   "github_delivery": {
     "policy": "Commit and push completed milestones; user authorized 2026-11-15",
     "dataset": "data/releases/2026-11-15/",
@@ -120,5 +121,6 @@
     "next": "A2/B1 version2 matched controls, blind measured-state checks and fresh feasibility data",
     "A1_results_commit": "76b3f62fcda0654421b736462dd995274cc5fb23"
   },
-  "historical_stages_note": "Stages 1-4 below summarize earlier milestones; live_lab/prospective and directions supersede historical blockers."
+  "historical_stages_note": "Stages 1-4 below summarize earlier milestones; live_lab/prospective and directions supersede historical blockers.",
+  "environment_published_this_turn": false
 }
