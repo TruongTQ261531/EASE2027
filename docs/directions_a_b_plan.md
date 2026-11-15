@@ -40,7 +40,7 @@ dùng khi chưa có nghiên cứu người dùng. Xem [prior art](directions_pri
 | Mốc | Đầu ra | Tiêu chí xong | Trạng thái khi lập kế hoạch |
 |---|---|---|---|
 | A0 | RQ, matrix prior art, claim boundaries | Đọc methods nguồn gần; ghi phần chưa đọc, điểm trùng và quyết định | Hoàn thành rà soát có giới hạn; novelty gate còn mở |
-| A1 | Analysis v1 trên dữ liệu cũ | Khóa input/config; train seed100, chọn ngưỡng seed200; không tune seed300; tái lập được | Tiếp theo |
+| A1 | Analysis v1 trên dữ liệu cũ | Khóa input/config; train seed100, chọn ngưỡng seed200; không tune seed300; tái lập được | Hoàn thành retrospective v1; xem directions_v1_results.md |
 | A2 | Protocol v2 và pilot đối chứng khó | Benign pause có cùng onset/duration; nhiều severity; missing observations; oracle đo trước/sau; chi phí thực đo | Chưa chạy |
 | A3 | Main-study freeze | Novelty đủ rõ; labels/QC; cỡ mẫu/precision và ngân sách; splits mới trước khi thu test | Chưa đạt |
 | A4 | Thí nghiệm và kết luận | Baselines, ablations, controls, uncertainty, failures; host/engine/userland khác có bằng chứng | Chưa chạy |

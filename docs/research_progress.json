@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-15T18:58:37.612426+00:00",
+  "updated_at_utc": "2026-11-15T19:05:52.319870+00:00",
   "execution_order": [
     "A: diagnostic identifiability and uncertainty",
     "B: independent-oracle validity",
@@ -101,10 +101,12 @@
     "A_priority": 1,
     "B_priority": 2,
     "A0": "bounded_prior_art_review_and_RQs_completed_novelty_open",
-    "A1": "analysis_config_fixed_before_new_model_execution",
-    "B0": "pending_after_A1",
+    "A1": "completed_retrospective_CPU_analysis_19_calls_no_certified_risk_policy",
+    "B0": "next",
     "analysis_config": "configs/analysis/directions_v1.json",
-    "main_study_ready": false
+    "main_study_ready": false,
+    "results": "docs/directions_v1_results.md",
+    "analysis_code_commit": "7fe02c273994638caa2d4cda620532e1f4bf0cc8"
   },
   "historical_stages_note": "Stages 1-4 below summarize earlier milestones; live_lab/prospective and directions supersede historical blockers."
 }

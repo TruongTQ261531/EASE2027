@@ -1,0 +1,8 @@
+{
+  "wall_seconds_analysis_after_imports": 0.5624667079973733,
+  "process_peak_rss_mib_including_imports_linux": 118.3984375,
+  "GPU_used": false,
+  "model_fit_count": 9,
+  "model_threads": 1,
+  "scope": "Analysis process only, not browser collection or machine total"
+}
