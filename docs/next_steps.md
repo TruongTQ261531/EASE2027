@@ -1,69 +1,28 @@
-> **Current plan (16/11 Bangkok):** [A → B, milestones and dates](directions_a_b_plan.md).
-> The older schedule/blockers below are historical; the current live-call result is 19/19 verified
-> on two host kernels, with engine/userland coverage still incomplete.
+# Việc tiếp theo — 16/11/2026 Bangkok
 
-# Next project work — updated 2026-11-15
+Đã hoàn thành A0 (audit có giới hạn), A1 (phân tích hồi cứu) và B0 (audit nguồn nhãn).
+Xem [kế hoạch A→B](directions_a_b_plan.md), [A1](directions_v1_results.md),
+[B0](oracle_validity_v1_results.md). Không có main-study/novelty claim được thông qua.
 
-## Current decision
+1. **A2: thiết kế và pilot protocol v2.** Thêm intentional pause có cùng onset/duration/recovery
+   với freeze, nhiều mức severity và quan sát thiếu. Cố định window/observation budget, content
+   và randomized blocks trước khi chạy. Data mới, version mới; v1 vẫn giữ nguyên.
+2. **B1 hỗ trợ A2:** evaluator đọc measurements để kiểm tra loss/high CPU/source motion cho
+   mọi nhóm, không nhận requested type. Join request sau; tách measured state khỏi intention
+   và causal attribution. No-op/delayed/partial và sensor outage cần được thử trên cuộc gọi thật.
+   Nhiều trạng thái đồng thời hoặc thiếu bằng chứng phải trả multiple/unknown.
+3. **Đóng novelty gate trước 22/11:** đọc phần còn thiếu của WebRTC-QoE, Wi-Fi QoE, Machination,
+   oracle survey; citation chase Domino và software diagnostic uncertainty; so sánh task/oracle/
+   splits/artifact. Đóng góp phải hơn generic “RCA+abstention” đã có prior art. Nếu chỉ có easy
+   FPS counterexamples, thu hẹp claim; không tuyên bố fundamental non-identifiability.
+4. **Portability feasibility trước 29/11:** sửa Firefox ICE, chạy engine khác thật, distinct OS
+   userland, host thứ hai có netem. Giữ failures. Chưa có máy/môi trường phù hợp thì báo chính xác
+   thiếu coverage; local Linux/Docker có thể giúp, GPU không phải yêu cầu hiện tại.
+5. **Freeze main protocol trước 06/12 nếu gates đạt:** precision/resource budget sau pilot v2,
+   fresh train/calibration/test seeds và held-out configs; primary risk/coverage, controls,
+   class-wise abstention, strong baselines, paired-label analyses. Không dùng19 phiên cũ làm
+   confirmatory holdout mới. Không đồng nhất minimum sample bound với power calculation.
 
-CFP verified; full paper 22 January 2027 AoE. Topic lock remains **NO-GO** until the novelty and
-live-call oracle gates have defensible evidence. Technical probes and cross-version pilot are
-completed feasibility results, not a finished main-track study.
-
-## Ordered priorities
-
-1. **Close the direct-prior-work audit (internal target 22 November).** Read full methods,
-   labels, splits and artifacts for transport-aware QoE, WebRTC-QoE, Wi-Fi QoE and Machination;
-   compare directly to Domino. Update a claim/oracle/evaluation overlap matrix. Deliver one
-   bounded SE research question with evidence of differentiation, or an explicit pivot decision.
-2. **Integrate independent measurement into live WebRTC calls (target 29 November).** Prepare
-   an isolated Linux lab with scoped network administration and independent packet/process/media
-   sensors. Collect >=3 fault families plus sham/normal controls; preserve failed and ambiguous
-   interventions. Probe results alone cannot label browser faults. Current cloud cannot create
-   the required network namespaces or apply scoped netem.
-3. **Freeze a defensible study protocol and dataset (target 6 December).** Include symptom-equivalent
-   cases, benign adaptation/static content, severity holdouts, training-only preprocessing,
-   session/environment/configuration splits, strong baselines and a precision/resource plan.
-4. **Expand external validation.** Use a second machine/OS and browser engine. Chromium 156/159
-   results on one host are already available; retain Firefox launch failure. No retuning on
-   evaluation cohorts already inspected.
-5. **Main runs, failure analysis, manuscript and anonymized artifact.** Follow the shortened
-   roadmap only if the gates pass; otherwise pivot or publish an honest technical report.
-
-## Where completed work is stored
-
-| Material | Repository path |
-|---|---|
-| Entry point and reproduction | README.md |
-| Stage status | docs/research_progress.json |
-| CFP/deadline and evidence | docs/venue_verification.md / .json |
-| Novelty findings and sources | docs/novelty_audit.md, literature_matrix.csv, research_source_manifest.json |
-| Independent probe report | docs/oracle_independence.md, oracle_probe_results.json |
-| Cross-version report | docs/cross_environment.md, transfer_results.json |
-| Code, configs, schemas, tests, CI | src/, configs/, schemas/, tests/, .github/ |
-| Sanitized synthetic observations and full per-session results | data/releases/2026-11-15/ |
-| Immutable originals on the current machine | data/local/ (ignored, never pushed directly) |
-| Third-party source copies for local reading | artifacts/local/ (ignored); URLs/hashes documented |
-
-Completed milestones are committed and pushed under the standing user instruction in AGENTS.md.
-Publication on GitHub does not mean an unverified research gate is completed, or that GitHub alone
-is a long-term archived research artifact. A later anonymized submission package needs its own
-identity review; this named development repository is not an anonymous supplement.
-
-## Live-lab milestone update
-
-Independent measurement is now integrated with real calls for three bounded families in the
-GitHub pilot, with controls and failed Firefox attempts retained. The code and prospective
-feasibility protocol are pushed to main. See live_protocol_v1.md, lab/frozen_plan_v1.json and
-live_cloud_capabilities.json. The cloud prospective cohort has four measured-condition verifications;
-the CI cohort is collected separately before audit/sealing. Do not confuse this feasibility freeze
-with final-study preregistration. Still needed: novelty/RQ decision, stronger precision/design,
-network transfer to a second capable host, a working non-Chromium engine and OS-userland coverage.
-
-## Prospective-v1 collection completed
-
-19/19 calls completed and verified, sealed on CI and cloud; see live_frozen_v1_results.md.
-Keep seed300/target host untouched by model tuning. Next: independently review the evidence and
-resolve novelty/RQ, then specify adequate sample size/precision for a new main-study protocol;
-repair Firefox ICE on a suitable environment and add a second netem-capable host/distinct OS
-userland. Do not silently expand or retune the frozen-v1 protocol.
+Main runs 07–20/12, replication 21–27/12, manuscript 28/12–12/01 là **mốc nội bộ có điều kiện**.
+Official CFP: abstract 15/01/2027 AoE, full 22/01/2027 AoE. Không đánh đổi bằng chứng để giữ lịch.
+Tất cả milestone đã xong tiếp tục commit/push; bài chưa được nộp, môi trường không được publish lại.

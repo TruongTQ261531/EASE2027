@@ -7,7 +7,7 @@ CFP đã xác minh: abstract 15/01/2027 AoE; full paper 22/01/2027 AoE.
 
 ## Câu hỏi nghiên cứu có thể kiểm tra
 
-**A1 — Giới hạn bằng chứng:** Trong testbed WebRTC có điều kiện được đo riêng, những cặp
+**RQ-A1 — Giới hạn bằng chứng:** Trong testbed WebRTC có điều kiện được đo riêng, những cặp
 điều kiện nào gây nhầm lẫn khi chỉ quan sát phía nhận? Thêm lịch sử trước sự kiện, telemetry
 và biến đổi hình ảnh phía nhận giúp phân biệt đến đâu, với chi phí gì?
 
@@ -18,14 +18,14 @@ suy (iii) từ (i)/(ii), không dùng test không có ý nghĩa thống kê đ�
 Benign static hiện giữ tĩnh suốt cuộc gọi; source freeze có chuyển động trước/sau. Lịch sử
 có thể phân biệt hai thiết kế hiện tại, nên đây chưa phải cặp tương đương đầy đủ.
 
-**A2 — Quyết định có từ chối:** Với rủi ro sai được định nghĩa trước, một bộ phân loại dùng
+**RQ-A2 — Quyết định có từ chối:** Với rủi ro sai được định nghĩa trước, một bộ phân loại dùng
 CPU có thể trả lời bao nhiêu phiên và từ chối bao nhiêu phiên? Rủi ro, coverage, bỏ sót lỗi,
 false alarm trên controls và chi phí quan sát thay đổi thế nào khi đổi môi trường/cường độ?
 Confidence của model không tự là xác suất đúng; coverage của prediction set không đồng
 nghĩa kiểm soát lỗi trong các dự đoán singleton. Không chuyển bảo đảm cùng phân phối sang
 host/browser mới nếu chưa kiểm chứng giả thiết.
 
-**B1 — Độ hợp lệ của nhãn:** Việc dùng yêu cầu tiêm lỗi thay cho điều kiện đo được làm thay
+**RQ-B1 — Độ hợp lệ của nhãn:** Việc dùng yêu cầu tiêm lỗi thay cho điều kiện đo được làm thay
 đổi mẫu đủ điều kiện, nhãn và kết luận đánh giá như thế nào? Tách thí nghiệm paired scoring
 (giữ nguyên prediction, đổi chính sách nhãn) khỏi paired retraining (đổi nhãn train, giữ split,
 model và đánh giá bằng reference độc lập). Không coi injection thất bại là nhãn normal.
@@ -44,7 +44,7 @@ dùng khi chưa có nghiên cứu người dùng. Xem [prior art](directions_pri
 | A2 | Protocol v2 và pilot đối chứng khó | Benign pause có cùng onset/duration; nhiều severity; missing observations; oracle đo trước/sau; chi phí thực đo | Chưa chạy |
 | A3 | Main-study freeze | Novelty đủ rõ; labels/QC; cỡ mẫu/precision và ngân sách; splits mới trước khi thu test | Chưa đạt |
 | A4 | Thí nghiệm và kết luận | Baselines, ablations, controls, uncertainty, failures; host/engine/userland khác có bằng chứng | Chưa chạy |
-| B0 | Audit nhãn hiện có | Đếm toàn bộ attempts, verified, unknown; chỉ rõ request-conditioned verifier | Sau A1 |
+| B0 | Audit nhãn hiện có | Đếm toàn bộ attempts, verified, unknown; chỉ rõ request-conditioned verifier | Hoàn thành 77 attempts; xem oracle_validity_v1_results.md |
 | B1 | Pilot kiểm tra độ hợp lệ | Lệnh no-op/delayed/partial và sensor failure trong lab; independent checks mọi nhóm; ambiguous/multiple vẫn giữ | Chưa chạy |
 | B2 | Paired label-policy study | Định lượng bias trên reference đã đánh giá độ tin cậy; không lấy label agreement tự tham chiếu làm ground truth | Chưa chạy |
 

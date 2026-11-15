@@ -1,0 +1,10 @@
+{
+  "scope": "Derived retrospective analysis artifact integrity; not truth certification",
+  "files_sha256": {
+    "README.md": "55bbaa35f8122a98f89234a19584e439c8601eb046bcfcf287bdfe51042b4be1",
+    "diagnostic_results.json": "62a21209b3e506d63d4ef99f1c6c2a4549ab2344eb3885ceb47333c834adc18d",
+    "oracle_validity_results.json": "a4c7122a28290e5a92dd951af60eafc430c250b41f633160ca9e52947edacffa",
+    "runtime.json": "e44c89e45f8bc96c5b5f0708abd5b4da08a7ec53e86fabded9eed6ef6b7b5555",
+    "summary.csv": "b3ca26c4e36f652758b1630bde35ed0b15065cf22b66b0a42143c3ad5834a888"
+  }
+}

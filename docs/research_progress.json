@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-15T19:05:52.319870+00:00",
+  "updated_at_utc": "2026-11-15T19:08:24.644521+00:00",
   "execution_order": [
     "A: diagnostic identifiability and uncertainty",
     "B: independent-oracle validity",
@@ -47,12 +47,20 @@
     }
   ],
   "validation": {
-    "pytest_passed": 64,
-    "browser_tests_included": 3,
+    "pytest_passed": 76,
+    "browser_tests_included": 0,
     "ruff": "passed",
     "frozen_source_train_sessions": 18,
     "source_validation_sessions": 6,
-    "source_test_sessions_used_for_training": 0
+    "source_test_sessions_used_for_training": 0,
+    "pytest_local_passed": 76,
+    "pytest_local_skipped_browser": 3,
+    "pytest_ci_browser_enabled": "success",
+    "analysis_replay": "diagnostic JSON byte-identical on repeat",
+    "analysis_ci": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43750287058",
+    "pytest_skipped": 3,
+    "note": "Counts are local pytest; CI is separately recorded as successful with browser tests enabled.",
+    "oracle_audit_replay": "JSON byte-identical on repeat"
   },
   "topic_lock": "A_primary_B_supporting_by_user; novelty_and_main_study_claims_not_validated",
   "environment_config_written_this_turn": false,
@@ -61,7 +69,8 @@
     "policy": "Commit and push completed milestones; user authorized 2026-11-15",
     "dataset": "data/releases/2026-11-15/",
     "source_data": "data/local/ (originals retained, ignored)",
-    "export_validation": "49 tests passed; normalized features and re-evaluated results match originals"
+    "export_validation": "49 tests passed; normalized features and re-evaluated results match originals",
+    "analysis": "data/analyses/directions-v1/"
   },
   "live_lab": {
     "pilot_ci_run": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43722157644",
@@ -102,11 +111,14 @@
     "B_priority": 2,
     "A0": "bounded_prior_art_review_and_RQs_completed_novelty_open",
     "A1": "completed_retrospective_CPU_analysis_19_calls_no_certified_risk_policy",
-    "B0": "next",
+    "B0": "completed_77_attempts_32_verified_45_failed_no_independent_accuracy_or_bias_estimate",
     "analysis_config": "configs/analysis/directions_v1.json",
     "main_study_ready": false,
     "results": "docs/directions_v1_results.md",
-    "analysis_code_commit": "7fe02c273994638caa2d4cda620532e1f4bf0cc8"
+    "analysis_code_commit": "7fe02c273994638caa2d4cda620532e1f4bf0cc8",
+    "B0_results": "docs/oracle_validity_v1_results.md",
+    "next": "A2/B1 version2 matched controls, blind measured-state checks and fresh feasibility data",
+    "A1_results_commit": "76b3f62fcda0654421b736462dd995274cc5fb23"
   },
   "historical_stages_note": "Stages 1-4 below summarize earlier milestones; live_lab/prospective and directions supersede historical blockers."
 }

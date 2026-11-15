@@ -1,0 +1,2336 @@
+{
+  "scope": "Label provenance audit only; not a measured false-positive/negative or calibration-bias experiment",
+  "attempts": 77,
+  "verification_counts": {
+    "failed": 45,
+    "verified": 32
+  },
+  "unsupported_request_labels": 45,
+  "verified_condition_disagreements": 0,
+  "oracle_accuracy_estimate": null,
+  "label_policy_metric_bias_estimate": null,
+  "why_agreement_is_not_accuracy": "verify_live selects the check using the requested condition and copies that condition on pass; it cannot discover an alternative class",
+  "missing_label_policy": "Unknown/failed never become normal or a confirmed false positive",
+  "reference_limit": "Independent measurement paths, request-conditioned verification, shared orchestrator for source pixels; causal truth unestablished",
+  "pooling_limit": "77 debugging/frozen attempts are an accounting total, not an i.i.d. sample or an injection-failure rate estimate",
+  "needed_for_B1": [
+    "Blind measurement checks for all supported conditions, join request only afterward",
+    "No-op/delayed/partial interventions, missing sensors, real calls, matched controls",
+    "Assess reference reliability/ambiguity before reporting policy bias",
+    "Fixed-prediction paired scoring and paired retraining reported separately"
+  ],
+  "cohorts": [
+    {
+      "dataset": "data/releases/live-frozen-v1/ci-43723089658",
+      "scope": "frozen",
+      "audit": {
+        "runs": 15,
+        "completed": 15,
+        "execution_failed": 0,
+        "verified": 15,
+        "verification_failed": 0,
+        "ambiguous": 0,
+        "verification_denominator": 15,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 3
+          },
+          {
+            "engine": "chromium",
+            "condition": "network_loss",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 3
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 3
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "verified",
+            "runs": 3
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 3
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "00da1481-4f32-4e56-8865-ccf04874e4f8",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 100,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "0d2a5814-ae9e-46f6-a62e-e623f26ef6e6",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 100,
+            "status": "verified",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "47c1f701-cff1-4baf-84d7-ab3006de1af7",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "78fd7bec-c95b-4b97-b986-a326f2a2d2e2",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "901d1641-78a9-4be7-8dd2-7fa62d9fbed6",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 100,
+            "status": "verified",
+            "condition": "network_loss",
+            "static_control": false
+          },
+          {
+            "session_id": "a0f271d0-61d1-4d2f-acac-4a5dd263ee17",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "ca977b98-7a7a-4032-a4d5-a39dae7a0c47",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "network_loss",
+            "static_control": false
+          },
+          {
+            "session_id": "cb9686b3-9148-48d7-93c2-613f977d9521",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 100,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "df82ff8e-7ca3-4d02-872b-bfa2aa173ab3",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 200,
+            "status": "verified",
+            "condition": "network_loss",
+            "static_control": false
+          },
+          {
+            "session_id": "e922094a-a4e5-49ab-af6a-1b95709bad23",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 200,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "f440ba1a-f48a-45f8-a328-ff52967fe2f8",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 200,
+            "status": "verified",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "f51454c4-6850-490a-a5a3-0bb51fba7ec8",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 200,
+            "status": "verified",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "f87a8df8-21a9-41ee-8da8-d782b661a621",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 200,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "f8eac9ad-178a-46b7-adea-365157bff53c",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 100,
+            "status": "verified",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "fd5692c5-041c-48d0-acac-61f2a263db13",
+            "host": "github-ubuntu24-43723089658",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "compute_contention",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 15,
+      "eligible": 15,
+      "unsupported_request_labels": 0,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "00da1481-4f32-4e56-8865-ccf04874e4f8",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "0d2a5814-ae9e-46f6-a62e-e623f26ef6e6",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "compute_contention",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "47c1f701-cff1-4baf-84d7-ab3006de1af7",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "78fd7bec-c95b-4b97-b986-a326f2a2d2e2",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "901d1641-78a9-4be7-8dd2-7fa62d9fbed6",
+          "request_condition": "network_loss",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "network_loss",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "a0f271d0-61d1-4d2f-acac-4a5dd263ee17",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "source_freeze",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "ca977b98-7a7a-4032-a4d5-a39dae7a0c47",
+          "request_condition": "network_loss",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "network_loss",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "cb9686b3-9148-48d7-93c2-613f977d9521",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "df82ff8e-7ca3-4d02-872b-bfa2aa173ab3",
+          "request_condition": "network_loss",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "network_loss",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "e922094a-a4e5-49ab-af6a-1b95709bad23",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "f440ba1a-f48a-45f8-a328-ff52967fe2f8",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "source_freeze",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "f51454c4-6850-490a-a5a3-0bb51fba7ec8",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "compute_contention",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "f87a8df8-21a9-41ee-8da8-d782b661a621",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "f8eac9ad-178a-46b7-adea-365157bff53c",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "source_freeze",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "fd5692c5-041c-48d0-acac-61f2a263db13",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "compute_contention",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-frozen-v1/cloud",
+      "scope": "frozen",
+      "audit": {
+        "runs": 4,
+        "completed": 4,
+        "execution_failed": 0,
+        "verified": 4,
+        "verification_failed": 0,
+        "ambiguous": 0,
+        "verification_denominator": 4,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "26a64906-55cd-44c0-ac6d-67f5b40c8258",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "27d51150-74da-48c0-bfcc-2f0612a79529",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "50391f14-b9e7-4231-91de-11c65ea6705f",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "8a702d9d-0075-4c2c-bf0d-d808a87ec2b5",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 300,
+            "status": "verified",
+            "condition": "source_freeze",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 4,
+      "eligible": 4,
+      "unsupported_request_labels": 0,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "26a64906-55cd-44c0-ac6d-67f5b40c8258",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "27d51150-74da-48c0-bfcc-2f0612a79529",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "compute_contention",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "50391f14-b9e7-4231-91de-11c65ea6705f",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "8a702d9d-0075-4c2c-bf0d-d808a87ec2b5",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "source_freeze",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-pilot/ci-43722157644",
+      "scope": "debugging",
+      "audit": {
+        "runs": 10,
+        "completed": 5,
+        "execution_failed": 5,
+        "verified": 5,
+        "verification_failed": 5,
+        "ambiguous": 0,
+        "verification_denominator": 10,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "network_loss",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "network_loss",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "10f621e8-283f-46c2-a5a0-aa7c9fedcb75",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "network_loss",
+            "static_control": false
+          },
+          {
+            "session_id": "15d0953c-3e6e-4fc3-abb0-e802779c5e8c",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "193877f4-868b-4a21-9942-3b914ca187d9",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "2077af29-e13d-4814-92f7-b579c7f017f0",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "24a03e7a-f3b8-4537-b0d7-65874cf3309f",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "network_loss",
+            "static_control": false
+          },
+          {
+            "session_id": "3cd5177a-6810-405c-86c8-86aaa94ecdc3",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "3fbea0a6-f65a-4bdc-9386-45b6053756ae",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "6daeb13b-ef7c-4975-b597-684fd8270a35",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "9a158c65-2d6e-4a36-a0e0-bf6546abdf4b",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "ad7e4b2c-56e3-458b-8fdf-54732ca8816c",
+            "host": "github-ubuntu24-43722157644",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "source_freeze",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 10,
+      "eligible": 5,
+      "unsupported_request_labels": 5,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "10f621e8-283f-46c2-a5a0-aa7c9fedcb75",
+          "request_condition": "network_loss",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "network_loss",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "15d0953c-3e6e-4fc3-abb0-e802779c5e8c",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "193877f4-868b-4a21-9942-3b914ca187d9",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "2077af29-e13d-4814-92f7-b579c7f017f0",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "24a03e7a-f3b8-4537-b0d7-65874cf3309f",
+          "request_condition": "network_loss",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "3cd5177a-6810-405c-86c8-86aaa94ecdc3",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "compute_contention",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "3fbea0a6-f65a-4bdc-9386-45b6053756ae",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "6daeb13b-ef7c-4975-b597-684fd8270a35",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "9a158c65-2d6e-4a36-a0e0-bf6546abdf4b",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "ad7e4b2c-56e3-458b-8fdf-54732ca8816c",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "source_freeze",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-pilot/cloud-attempt-v1",
+      "scope": "debugging",
+      "audit": {
+        "runs": 8,
+        "completed": 0,
+        "execution_failed": 8,
+        "verified": 0,
+        "verification_failed": 8,
+        "ambiguous": 0,
+        "verification_denominator": 8,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "15622719-4150-45fd-9036-c3e57a789ceb",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "22108f42-dbd6-4ab3-8091-33d6f6fec341",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "3404714a-45f9-4128-93ae-ae8cd30d86f2",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "6636e075-05b2-4e3e-b691-d51bf96418d3",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "9e9d4749-2ceb-4a67-b374-9a0d3afcdfff",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "9eb8a135-3353-4e96-b1c1-60114ab86f4b",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "acdaebe1-ed98-4c31-9248-e5963385af08",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "c868eb3a-7f66-445a-ba1c-2d45904a7b9d",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 8,
+      "eligible": 0,
+      "unsupported_request_labels": 8,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "15622719-4150-45fd-9036-c3e57a789ceb",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "22108f42-dbd6-4ab3-8091-33d6f6fec341",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "3404714a-45f9-4128-93ae-ae8cd30d86f2",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "6636e075-05b2-4e3e-b691-d51bf96418d3",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "9e9d4749-2ceb-4a67-b374-9a0d3afcdfff",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "9eb8a135-3353-4e96-b1c1-60114ab86f4b",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "acdaebe1-ed98-4c31-9248-e5963385af08",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "c868eb3a-7f66-445a-ba1c-2d45904a7b9d",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-pilot/cloud-attempt-v2",
+      "scope": "debugging",
+      "audit": {
+        "runs": 8,
+        "completed": 0,
+        "execution_failed": 8,
+        "verified": 0,
+        "verification_failed": 8,
+        "ambiguous": 0,
+        "verification_denominator": 8,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "3434c53e-8c0d-4c34-bac4-cafccb6cd1e4",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "4848313f-70ae-41ca-a387-94935de48804",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "48f015bd-86cf-4adb-889f-9793ae5f9ffc",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "8534c98b-b8b5-4150-be0b-3745ad92d332",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "95bd19b5-c64b-4547-aabd-55208b9a5f91",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "dc377357-1085-406d-9dbe-ceee99435f2e",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "e598d4fd-e860-4a98-b7ab-2ba21ae28d95",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "ee6d5511-6960-4463-86e6-913789c07172",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 8,
+      "eligible": 0,
+      "unsupported_request_labels": 8,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "3434c53e-8c0d-4c34-bac4-cafccb6cd1e4",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "4848313f-70ae-41ca-a387-94935de48804",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "48f015bd-86cf-4adb-889f-9793ae5f9ffc",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "8534c98b-b8b5-4150-be0b-3745ad92d332",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "95bd19b5-c64b-4547-aabd-55208b9a5f91",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "dc377357-1085-406d-9dbe-ceee99435f2e",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "e598d4fd-e860-4a98-b7ab-2ba21ae28d95",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "ee6d5511-6960-4463-86e6-913789c07172",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-pilot/cloud-attempt-v3",
+      "scope": "debugging",
+      "audit": {
+        "runs": 8,
+        "completed": 0,
+        "execution_failed": 8,
+        "verified": 0,
+        "verification_failed": 8,
+        "ambiguous": 0,
+        "verification_denominator": 8,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "1c2fbe8d-3046-415b-9fe2-b80dd95202e5",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "21798de5-c7ca-4084-8552-48286126ccc2",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "26ddfd8b-7b9a-4a57-9faf-e25a67bf7ff5",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "360fb624-66ff-482e-89d7-999b3426ceac",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "ae789872-2517-47b1-ad53-0bebf123c4e7",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "c0162f3d-cc9d-41d7-8c05-51ebc47fde11",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "d05dd646-61e3-4075-8b6c-a1c266585985",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "f4d4cdc2-63f2-42d6-a9e8-574d7103a2be",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 8,
+      "eligible": 0,
+      "unsupported_request_labels": 8,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "1c2fbe8d-3046-415b-9fe2-b80dd95202e5",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "21798de5-c7ca-4084-8552-48286126ccc2",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "26ddfd8b-7b9a-4a57-9faf-e25a67bf7ff5",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "360fb624-66ff-482e-89d7-999b3426ceac",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "ae789872-2517-47b1-ad53-0bebf123c4e7",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "c0162f3d-cc9d-41d7-8c05-51ebc47fde11",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "d05dd646-61e3-4075-8b6c-a1c266585985",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "f4d4cdc2-63f2-42d6-a9e8-574d7103a2be",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-pilot/cloud-attempt-v4",
+      "scope": "debugging",
+      "audit": {
+        "runs": 8,
+        "completed": 0,
+        "execution_failed": 8,
+        "verified": 0,
+        "verification_failed": 8,
+        "ambiguous": 0,
+        "verification_denominator": 8,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "15b3654c-9bef-4fb6-93f4-5f78df010bf1",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "2812f550-0103-4648-9b98-cfa890d89248",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "9b89bcb4-654b-4746-bf3c-304ce0947dbf",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "9c607435-ea6b-462e-99d8-893e79ce2c1c",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "bf28ee46-2cc3-47f0-bc25-9a62027b03bd",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "ca7a7531-cadc-40d8-8f06-e8be89e1540f",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "d5e1ab0a-7a02-41c3-81ac-f06cf901999a",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "d6cf2b7f-5e84-467f-a736-a113b59e0ba5",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 8,
+      "eligible": 0,
+      "unsupported_request_labels": 8,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "15b3654c-9bef-4fb6-93f4-5f78df010bf1",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "2812f550-0103-4648-9b98-cfa890d89248",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "9b89bcb4-654b-4746-bf3c-304ce0947dbf",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "9c607435-ea6b-462e-99d8-893e79ce2c1c",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "bf28ee46-2cc3-47f0-bc25-9a62027b03bd",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "ca7a7531-cadc-40d8-8f06-e8be89e1540f",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "d5e1ab0a-7a02-41c3-81ac-f06cf901999a",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "d6cf2b7f-5e84-467f-a736-a113b59e0ba5",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-pilot/cloud-attempt-v5",
+      "scope": "debugging",
+      "audit": {
+        "runs": 8,
+        "completed": 4,
+        "execution_failed": 4,
+        "verified": 4,
+        "verification_failed": 4,
+        "ambiguous": 0,
+        "verification_denominator": 8,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "0a301a11-1c45-4217-af4d-3e8e1c7b0e53",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "1e726b3b-5638-4e04-b8c5-ff7243f677aa",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "5e9de1d2-948d-4a1d-b223-48c5779c3129",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "6610d0da-d039-4e53-9ffd-22c7d263bf83",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "794d145f-6995-42cf-94e8-0ee33b3ee7dd",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "a71cd00c-edcd-45f0-804e-1efa9065bb29",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "dd0b91c1-f147-4bbb-acb0-63f8e1fed56b",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "dfff4ee7-f550-4a90-aada-bcaac24dc183",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "compute_contention",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 8,
+      "eligible": 4,
+      "unsupported_request_labels": 4,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "0a301a11-1c45-4217-af4d-3e8e1c7b0e53",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "1e726b3b-5638-4e04-b8c5-ff7243f677aa",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "source_freeze",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "5e9de1d2-948d-4a1d-b223-48c5779c3129",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "6610d0da-d039-4e53-9ffd-22c7d263bf83",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "794d145f-6995-42cf-94e8-0ee33b3ee7dd",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "a71cd00c-edcd-45f0-804e-1efa9065bb29",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "dd0b91c1-f147-4bbb-acb0-63f8e1fed56b",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "dfff4ee7-f550-4a90-aada-bcaac24dc183",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "compute_contention",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    },
+    {
+      "dataset": "data/releases/live-pilot/cloud-attempt-v6",
+      "scope": "debugging",
+      "audit": {
+        "runs": 8,
+        "completed": 4,
+        "execution_failed": 4,
+        "verified": 4,
+        "verification_failed": 4,
+        "ambiguous": 0,
+        "verification_denominator": 8,
+        "conditions": [
+          {
+            "engine": "chromium",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "chromium",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "verified",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "compute_contention",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "normal",
+            "static_control": true,
+            "verification_status": "failed",
+            "runs": 1
+          },
+          {
+            "engine": "firefox",
+            "condition": "source_freeze",
+            "static_control": false,
+            "verification_status": "failed",
+            "runs": 1
+          }
+        ],
+        "sessions": [
+          {
+            "session_id": "19d53be0-6c68-4aa7-b1c8-8990a62c2342",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "55215a77-bd22-49ec-b994-22f219160828",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "source_freeze",
+            "static_control": false
+          },
+          {
+            "session_id": "8ea66770-720a-46c5-bafb-547c1626b220",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "c5630678-c377-4be0-81d0-7555c5b7c6d9",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "ce8f43b6-ca25-4734-9286-72b9eea2c221",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "compute_contention",
+            "static_control": false
+          },
+          {
+            "session_id": "dc673f6f-084a-467a-90b1-8b01d480b2c7",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "normal",
+            "static_control": false
+          },
+          {
+            "session_id": "f3fdb843-5363-4b01-af66-e7a496a12412",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "firefox",
+            "seed": 42,
+            "status": "failed",
+            "condition": "normal",
+            "static_control": true
+          },
+          {
+            "session_id": "fee03148-b7bf-4606-bb99-43f6ce4b0ae2",
+            "host": "codex-cloud-kernel-6.18",
+            "engine": "chromium",
+            "seed": 42,
+            "status": "verified",
+            "condition": "source_freeze",
+            "static_control": false
+          }
+        ],
+        "causal_attribution": "unestablished",
+        "scope": "Measured fault conditions on live calls, bounded process/container lab"
+      },
+      "attempts": 8,
+      "eligible": 4,
+      "unsupported_request_labels": 4,
+      "verified_condition_disagreements": 0,
+      "rows": [
+        {
+          "session_id": "19d53be0-6c68-4aa7-b1c8-8990a62c2342",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "compute_contention",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "55215a77-bd22-49ec-b994-22f219160828",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "8ea66770-720a-46c5-bafb-547c1626b220",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "c5630678-c377-4be0-81d0-7555c5b7c6d9",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "ce8f43b6-ca25-4734-9286-72b9eea2c221",
+          "request_condition": "compute_contention",
+          "static_control": false,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "dc673f6f-084a-467a-90b1-8b01d480b2c7",
+          "request_condition": "normal",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "normal",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "f3fdb843-5363-4b01-af66-e7a496a12412",
+          "request_condition": "normal",
+          "static_control": true,
+          "execution_status": "failed",
+          "verification_status": "failed",
+          "reference_condition": null,
+          "eligible_for_supervised_scoring": false,
+          "unsupported_if_request_always_used_as_label": true,
+          "request_disagrees_with_verified_condition": null,
+          "causal_attribution": "unestablished"
+        },
+        {
+          "session_id": "fee03148-b7bf-4606-bb99-43f6ce4b0ae2",
+          "request_condition": "source_freeze",
+          "static_control": false,
+          "execution_status": "completed",
+          "verification_status": "verified",
+          "reference_condition": "source_freeze",
+          "eligible_for_supervised_scoring": true,
+          "unsupported_if_request_always_used_as_label": false,
+          "request_disagrees_with_verified_condition": false,
+          "causal_attribution": "unestablished"
+        }
+      ]
+    }
+  ],
+  "analysis_lock_sha256": "51c2a7228449942c2079efe47ab8ae8670341777dca480a21c33b65c37510789"
+}
