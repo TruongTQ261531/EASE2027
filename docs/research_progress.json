@@ -1,0 +1,67 @@
+{
+  "updated_at_utc": "2026-11-15T13:09:03.308244+00:00",
+  "execution_order": [
+    "CFP/deadline",
+    "novelty",
+    "independent multi-family oracle",
+    "cross-environment evaluation"
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "status": "verified_currently_published_CFP",
+      "evidence": "docs/venue_verification.json",
+      "unknown": [
+        "camera-ready/rebuttal dates",
+        "independent CORE edition",
+        "EasyChair exact second cutoff"
+      ]
+    },
+    {
+      "stage": 2,
+      "status": "preliminary_audit_novelty_not_established",
+      "evidence": "docs/novelty_audit.md",
+      "full_pdf_selected_sections_read": 2,
+      "limitations": "Several direct works remain abstract/metadata only due publisher errors; not systematic search completion"
+    },
+    {
+      "stage": 3,
+      "status": "independent_measurement_probes_passed_live_call_oracle_gate_not_met",
+      "evidence": "docs/oracle_probe_results.json",
+      "trials": 18,
+      "verified": 18,
+      "external_blocker": "Current container has no NET_ADMIN or usable user/network namespaces; isolated instrumented lab required for proposed netem study"
+    },
+    {
+      "stage": 4,
+      "status": "cross_version_feasibility_executed_multi_machine_gate_not_met",
+      "evidence": "docs/transfer_results.json",
+      "new_calls": 30,
+      "versions": [
+        "156.0.8078.79",
+        "159.0.8154.6"
+      ],
+      "host_count": 1,
+      "os_count": 1,
+      "failed_engine_attempt": "Firefox 159 launch failed: Could not find profile folder",
+      "external_blocker": "No second machine/OS or independently verified live fault dataset available in selected runtime"
+    }
+  ],
+  "validation": {
+    "pytest_passed": 49,
+    "browser_tests_included": 3,
+    "ruff": "passed",
+    "frozen_source_train_sessions": 18,
+    "source_validation_sessions": 6,
+    "source_test_sessions_used_for_training": 0
+  },
+  "topic_lock": "NO_GO_until_novelty_and_live_oracle_evidence",
+  "environment_config_written_this_turn": false,
+  "published_this_turn": false,
+  "github_delivery": {
+    "policy": "Commit and push completed milestones; user authorized 2026-11-15",
+    "dataset": "data/releases/2026-11-15/",
+    "source_data": "data/local/ (originals retained, ignored)",
+    "export_validation": "49 tests passed; normalized features and re-evaluated results match originals"
+  }
+}

@@ -1,0 +1,47 @@
+# Next project work — updated 2026-11-15
+
+## Current decision
+
+CFP verified; full paper 22 January 2027 AoE. Topic lock remains **NO-GO** until the novelty and
+live-call oracle gates have defensible evidence. Technical probes and cross-version pilot are
+completed feasibility results, not a finished main-track study.
+
+## Ordered priorities
+
+1. **Close the direct-prior-work audit (internal target 22 November).** Read full methods,
+   labels, splits and artifacts for transport-aware QoE, WebRTC-QoE, Wi-Fi QoE and Machination;
+   compare directly to Domino. Update a claim/oracle/evaluation overlap matrix. Deliver one
+   bounded SE research question with evidence of differentiation, or an explicit pivot decision.
+2. **Integrate independent measurement into live WebRTC calls (target 29 November).** Prepare
+   an isolated Linux lab with scoped network administration and independent packet/process/media
+   sensors. Collect >=3 fault families plus sham/normal controls; preserve failed and ambiguous
+   interventions. Probe results alone cannot label browser faults. Current cloud cannot create
+   the required network namespaces or apply scoped netem.
+3. **Freeze a defensible study protocol and dataset (target 6 December).** Include symptom-equivalent
+   cases, benign adaptation/static content, severity holdouts, training-only preprocessing,
+   session/environment/configuration splits, strong baselines and a precision/resource plan.
+4. **Expand external validation.** Use a second machine/OS and browser engine. Chromium 156/159
+   results on one host are already available; retain Firefox launch failure. No retuning on
+   evaluation cohorts already inspected.
+5. **Main runs, failure analysis, manuscript and anonymized artifact.** Follow the shortened
+   roadmap only if the gates pass; otherwise pivot or publish an honest technical report.
+
+## Where completed work is stored
+
+| Material | Repository path |
+|---|---|
+| Entry point and reproduction | README.md |
+| Stage status | docs/research_progress.json |
+| CFP/deadline and evidence | docs/venue_verification.md / .json |
+| Novelty findings and sources | docs/novelty_audit.md, literature_matrix.csv, research_source_manifest.json |
+| Independent probe report | docs/oracle_independence.md, oracle_probe_results.json |
+| Cross-version report | docs/cross_environment.md, transfer_results.json |
+| Code, configs, schemas, tests, CI | src/, configs/, schemas/, tests/, .github/ |
+| Sanitized synthetic observations and full per-session results | data/releases/2026-11-15/ |
+| Immutable originals on the current machine | data/local/ (ignored, never pushed directly) |
+| Third-party source copies for local reading | artifacts/local/ (ignored); URLs/hashes documented |
+
+Completed milestones are committed and pushed under the standing user instruction in AGENTS.md.
+Publication on GitHub does not mean an unverified research gate is completed, or that GitHub alone
+is a long-term archived research artifact. A later anonymized submission package needs its own
+identity review; this named development repository is not an anonymous supplement.

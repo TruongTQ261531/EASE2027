@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "run_id": "aa121ffe-916c-4090-a621-69c25098215e",
+  "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+  "environment_id": "b45f24c1d0769393",
+  "started_at_utc": "2026-11-15T13:05:32.494065+00:00",
+  "config": {
+    "name": "connection_close",
+    "intervention": "connection_close",
+    "seed": 1043,
+    "duration_s": 6.0,
+    "intervention_start_s": 2.0,
+    "intervention_end_s": 4.0,
+    "sample_interval_ms": 250,
+    "width": 320,
+    "height": 180,
+    "fps": 20
+  },
+  "browser_version": "159.0.8154.6",
+  "browser_executable": "/workspace/.cache/ms-playwright/chromium-1255/chrome-linux64/chrome",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python_version": "3.12.14",
+  "cpu_count": 5,
+  "git_commit": "d6be2fcf85fe461566f781b49f7b1e7a269d18a8",
+  "git_dirty": true,
+  "source_tree_sha256": "97bff0cbde9ee075726041ae8297c0efdbeef4247ba95d379b55d05c8cfaf0d6",
+  "dependency_lock_sha256": "edd5ecdd0ad321c31ca9123d5b6b675aeb9628aa6bc44ca262bb1fead4772021",
+  "media_source_sha256": "cea052e28f1e661ae3c7598e6df33bf68d897dc3880468e5e976b0c771d3640b",
+  "media_source": "synthetic_canvas_v1",
+  "network_profile": "local_turn_tcp_loopback",
+  "turn_binary_sha256": "6de6c80134271abd2c51cbadac1e2bb973ac89b5491b0a2ae480148d66a37162",
+  "clock": "Python perf_counter midpoint around sequential sender/receiver getStats calls; collection_span_ms bounds sampling skew. Browser timestamp fields stay raw.",
+  "codecs": [
+    {
+      "id": "CIT01_96",
+      "timestamp": 1794747936144.485,
+      "type": "codec",
+      "clockRate": 90000,
+      "mimeType": "video/VP8",
+      "payloadType": 96,
+      "transportId": "T01"
+    }
+  ],
+  "sample_count": 24,
+  "collection_duration_s": 8.025628814000129,
+  "process_cpu_s": 0.09999999999999964,
+  "process_peak_rss_bytes": 42455040,
+  "execution_status": "completed",
+  "failure_reason": null,
+  "files": {
+    "raw/aa121ffe-916c-4090-a621-69c25098215e/stats.jsonl": "3f8cac4f2f56cd5c81b0a513f528b2086202e92b2e967b6baadb6bfdd5247bdd",
+    "raw/aa121ffe-916c-4090-a621-69c25098215e/observations.jsonl": "a6cf5d4771f9092eb2579884a66ec58e27b639e73246bd5fee13e69a3d508cb7",
+    "oracle/aa121ffe-916c-4090-a621-69c25098215e/source.jsonl": "a45f2b60a6b949f8e1558d7205ce41d4d5c0fec95bfddfdbe6c635d1049de8fc",
+    "oracle/aa121ffe-916c-4090-a621-69c25098215e.json": "0fac5a3c677f6c3e39157fd9b0bec719497a20f89e65c776384ae76ba1f761b8"
+  }
+}

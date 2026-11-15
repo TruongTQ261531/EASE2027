@@ -1,0 +1,667 @@
+{
+  "scope": "Cross-Chromium-version feasibility, ONE host/OS; application conditions only",
+  "training_dataset_sha256": "8fc7d4376765209b3870c7edecb649b58e4ca89b777b34ce30439e6c8c217607",
+  "source_train_sessions": 18,
+  "source_validation_sessions": 6,
+  "source_test_sessions_used_for_training_or_tuning": 0,
+  "source_versions": [
+    "156.0.8078.79"
+  ],
+  "evaluation_versions": {
+    "fresh_same_version": [
+      "156.0.8078.79"
+    ],
+    "fresh_other_version": [
+      "159.0.8154.6"
+    ]
+  },
+  "rule_thresholds_source_validation_only": [
+    0.1,
+    16.0
+  ],
+  "cohorts": {
+    "fresh_same_version": {
+      "audit": {
+        "runs": 15,
+        "completed": 15,
+        "failed": 0,
+        "verified": 15,
+        "ambiguous": 0,
+        "failed_verification": 0,
+        "sample_count": 360,
+        "conditions": {
+          "capture_pause": 5,
+          "normal": 5,
+          "connection_close": 5
+        },
+        "max_collection_span_ms": 45.04688099996201,
+        "environments": 1,
+        "verified_rate": 1.0,
+        "scope": "Application-condition feasibility; causal attribution unestablished"
+      },
+      "environment_ids": [
+        "64040c1252dfe117"
+      ],
+      "dataset_sha256": "834c006ceb737a80b6e112ea10fcf7b82b8e081c1faee367532e29401f7827af"
+    },
+    "fresh_other_version": {
+      "audit": {
+        "runs": 15,
+        "completed": 15,
+        "failed": 0,
+        "verified": 15,
+        "ambiguous": 0,
+        "failed_verification": 0,
+        "sample_count": 360,
+        "conditions": {
+          "normal": 5,
+          "connection_close": 5,
+          "capture_pause": 5
+        },
+        "max_collection_span_ms": 34.33002700000998,
+        "environments": 1,
+        "verified_rate": 1.0,
+        "scope": "Application-condition feasibility; causal attribution unestablished"
+      },
+      "environment_ids": [
+        "b45f24c1d0769393"
+      ],
+      "dataset_sha256": "82ee85532aed57c83f59f7e109f6f60a8dd6071f6bfc220a31c7f0d049ebd6c1"
+    }
+  },
+  "class_order": [
+    "capture_pause",
+    "connection_close",
+    "normal"
+  ],
+  "limitations": [
+    "No tuning on target labels or source test sessions",
+    "Small exploratory cohorts, not independent-machine replication",
+    "Pre-existing easy source tasks and shared testbed oracle remain limited",
+    "No network/compute fault diagnosis or causal-generalization claim"
+  ],
+  "metrics_sha256": "6b21cec85cfb44ea10873d916e9666ec530eeef215ecd7428888605651c93d92",
+  "results": [
+    {
+      "cohort": "fresh_same_version",
+      "model": "rules",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 0.9326599326599326,
+      "balanced_accuracy": 0.9333333333333332,
+      "session_bootstrap_95_interval": [
+        0.7434827264239029,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          1,
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "rules",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "dummy",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "dummy",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.5681818181818182,
+      "balanced_accuracy": 0.6,
+      "session_bootstrap_95_interval": [
+        0.35185185185185186,
+        0.7670860389610389
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.9326599326599326,
+      "balanced_accuracy": 0.9333333333333332,
+      "session_bootstrap_95_interval": [
+        0.7479166666666667,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "random_forest",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.7333333333333334,
+      "balanced_accuracy": 0.7333333333333334,
+      "session_bootstrap_95_interval": [
+        0.5052777777777778,
+        0.9259259259259259
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "random_forest",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.6336996336996337,
+      "balanced_accuracy": 0.6666666666666666,
+      "session_bootstrap_95_interval": [
+        0.4444444444444444,
+        0.8553872053872051
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ]
+    }
+  ],
+  "source_and_target_distribution_confound": "System Chromium vs Chrome for Testing: version and distribution differ on one OS/host. No isolated version-effect claim."
+}

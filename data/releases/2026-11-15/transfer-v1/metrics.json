@@ -1,0 +1,2205 @@
+{
+  "scope": "Cross-Chromium-version feasibility, ONE host/OS; application conditions only",
+  "training_dataset_sha256": "8fc7d4376765209b3870c7edecb649b58e4ca89b777b34ce30439e6c8c217607",
+  "source_train_sessions": 18,
+  "source_validation_sessions": 6,
+  "source_test_sessions_used_for_training_or_tuning": 0,
+  "source_versions": [
+    "156.0.8078.79"
+  ],
+  "evaluation_versions": {
+    "fresh_same_version": [
+      "156.0.8078.79"
+    ],
+    "fresh_other_version": [
+      "159.0.8154.6"
+    ]
+  },
+  "rule_thresholds_source_validation_only": [
+    0.1,
+    16.0
+  ],
+  "cohorts": {
+    "fresh_same_version": {
+      "audit": {
+        "runs": 15,
+        "completed": 15,
+        "failed": 0,
+        "verified": 15,
+        "ambiguous": 0,
+        "failed_verification": 0,
+        "sample_count": 360,
+        "conditions": {
+          "capture_pause": 5,
+          "normal": 5,
+          "connection_close": 5
+        },
+        "max_collection_span_ms": 45.04688099996201,
+        "environments": 1,
+        "verified_rate": 1.0,
+        "scope": "Application-condition feasibility; causal attribution unestablished"
+      },
+      "environment_ids": [
+        "64040c1252dfe117"
+      ],
+      "dataset_sha256": "834c006ceb737a80b6e112ea10fcf7b82b8e081c1faee367532e29401f7827af"
+    },
+    "fresh_other_version": {
+      "audit": {
+        "runs": 15,
+        "completed": 15,
+        "failed": 0,
+        "verified": 15,
+        "ambiguous": 0,
+        "failed_verification": 0,
+        "sample_count": 360,
+        "conditions": {
+          "normal": 5,
+          "connection_close": 5,
+          "capture_pause": 5
+        },
+        "max_collection_span_ms": 34.33002700000998,
+        "environments": 1,
+        "verified_rate": 1.0,
+        "scope": "Application-condition feasibility; causal attribution unestablished"
+      },
+      "environment_ids": [
+        "b45f24c1d0769393"
+      ],
+      "dataset_sha256": "82ee85532aed57c83f59f7e109f6f60a8dd6071f6bfc220a31c7f0d049ebd6c1"
+    }
+  },
+  "results": [
+    {
+      "cohort": "fresh_same_version",
+      "model": "rules",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 0.9326599326599326,
+      "balanced_accuracy": 0.9333333333333332,
+      "session_bootstrap_95_interval": [
+        0.7434827264239029,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          1,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "rules",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "dummy",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "dummy",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.5681818181818182,
+      "balanced_accuracy": 0.6,
+      "session_bootstrap_95_interval": [
+        0.35185185185185186,
+        0.7670860389610389
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.9326599326599326,
+      "balanced_accuracy": 0.9333333333333332,
+      "session_bootstrap_95_interval": [
+        0.7479166666666667,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "random_forest",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.7333333333333334,
+      "balanced_accuracy": 0.7333333333333334,
+      "session_bootstrap_95_interval": [
+        0.5052777777777778,
+        0.9259259259259259
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "random_forest",
+      "feature_set": "telemetry",
+      "sessions": 15,
+      "macro_f1": 0.6336996336996337,
+      "balanced_accuracy": 0.6666666666666666,
+      "session_bootstrap_95_interval": [
+        0.4444444444444444,
+        0.8553872053872051
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "dummy",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "session_bootstrap_95_interval": [
+        0.0784313725490196,
+        0.25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_same_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "06a0204a-f9d9-4357-8d1d-e419f2d86296",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "1f2a53be-e60b-42b9-b78d-54d3575df44d",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "219a0335-2af6-496f-82d8-58b6934e6e7c",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "31998e60-4e35-4d8a-855a-9aceef49f439",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "32c31ec3-6ed3-45bd-b283-676f03a5e1c0",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3ce97349-2ba9-42d5-888a-b47278cbb664",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "46b835a8-e77d-4b78-b173-55bc0d6c5f19",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "728195de-d03f-47d0-b3af-202e35c6ae3c",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "77491286-4516-4938-a110-ed97e267b2bc",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "86662a81-1b78-41d1-87d2-aea6b962d92a",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "b14d8e83-035b-4bad-8664-947d8f271762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "b7103502-824f-4a92-a939-0c0290f9008d",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "c7ece9d7-bf16-491c-9258-7acfda985af2",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "cab3d188-1747-4743-9b80-07491e87298e",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "ee06b4f6-5e74-4401-b764-07068d5dbed0",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        }
+      ]
+    },
+    {
+      "cohort": "fresh_other_version",
+      "model": "random_forest",
+      "feature_set": "telemetry_logs_video",
+      "sessions": 15,
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "session_bootstrap_95_interval": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "predictions": [
+        {
+          "session_id": "01b02368-bed1-4bb5-82f7-919993f7335b",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "11a6407d-bbf3-4ccb-a4a3-658aca8b7799",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "1afe2269-fc2c-4cb4-a9e5-f40cb728317a",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "31bb89f4-5d66-4e49-9a29-fea845679624",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "3987908c-a040-471c-b24c-f7c1cac7eaf3",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "39879710-2f12-4cc8-8a9b-219ee7dc4008",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "3e99fbd3-5459-4006-83b6-a6830a7d99d8",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "4862c48e-0cd8-4e9d-8326-b6691ec31779",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "58c63724-dadb-42e7-a119-af79224f6704",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        },
+        {
+          "session_id": "737585dd-a4c3-43b9-a6ea-37a6f39d3dfa",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "92b4759d-043c-424f-ae9b-10f2d899414b",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "ac0ca61e-3a36-49f5-9878-ffd30a951ff8",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "c2417bd0-ea87-4c69-b199-4a8170f46925",
+          "condition": "connection_close",
+          "prediction": "connection_close"
+        },
+        {
+          "session_id": "e4480de4-40f2-4e01-a599-05a10f396762",
+          "condition": "normal",
+          "prediction": "normal"
+        },
+        {
+          "session_id": "f44f97df-a0b6-4ead-a206-c9962b4a0812",
+          "condition": "capture_pause",
+          "prediction": "capture_pause"
+        }
+      ]
+    }
+  ],
+  "class_order": [
+    "capture_pause",
+    "connection_close",
+    "normal"
+  ],
+  "limitations": [
+    "No tuning on target labels or source test sessions",
+    "Small exploratory cohorts, not independent-machine replication",
+    "Pre-existing easy source tasks and shared testbed oracle remain limited",
+    "No network/compute fault diagnosis or causal-generalization claim"
+  ]
+}

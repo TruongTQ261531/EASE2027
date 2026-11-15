@@ -1,0 +1,11 @@
+schema_version: '1.0'
+seed: 2027
+runs_per_condition: 10
+scenario_files:
+  - configs/scenarios/normal.yaml
+  - configs/scenarios/capture_pause.yaml
+  - configs/scenarios/connection_close.yaml
+window_ms: 1000
+bootstrap_repetitions: 500
+target: verified_application_condition
+scope: feasibility_only_single_browser_single_host_synthetic_video

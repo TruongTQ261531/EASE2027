@@ -1,0 +1,26 @@
+{
+  "decoded_frame_hashes": [
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994",
+    "c4e407cdb2c73cc39c8020a498c72994"
+  ],
+  "fixture_sha256": "e6850319efa71a980a4b7958a6d4600b902d0fe4c6c7780981acb3b187271d2b",
+  "measurement_layer": "separate FFmpeg decode of generated file; not live camera failure"
+}

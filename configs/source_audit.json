@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {"id": "ease2027_candidate_home", "url": "https://conf.researchr.org/home/ease-2027", "purpose": "Candidate official venue page; not yet verified"},
+    {"id": "ease2027_candidate_cfp", "url": "https://conf.researchr.org/track/ease-2027/ease-2027-papers", "purpose": "Candidate CFP route; not yet verified"},
+    {"id": "w3c_stats_published", "url": "https://www.w3.org/TR/webrtc-stats/", "purpose": "Published technical standard"},
+    {"id": "w3c_stats_source", "url": "https://raw.githubusercontent.com/w3c/webrtc-stats/f46a60a69aea3de9265a433f0adef7aa66a2108c/webrtc-stats.html", "purpose": "Pinned primary specification source"},
+    {"id": "rcaeval_readme", "url": "https://raw.githubusercontent.com/phamquiluan/RCAEval/90b63a46ac1e969f1fa9015318b51e455c62f8c4/README.md", "purpose": "Primary code repository and citation leads; not independent result validation"},
+    {"id": "rcaeval_license", "url": "https://raw.githubusercontent.com/phamquiluan/RCAEval/90b63a46ac1e969f1fa9015318b51e455c62f8c4/LICENSE", "purpose": "Top-level code license; embedded methods have separate licenses"},
+    {"id": "rcaeval_sample", "url": "https://github.com/phamquiluan/baro/releases/download/0.0.4/simple_data.csv", "purpose": "Sample metric data referenced by RCAEval utility; label/provenance audit still needed"},
+    {"id": "rcaeval_cases", "url": "https://huggingface.co/datasets/phamquiluan/RCAEval/resolve/main/cases.parquet", "purpose": "Case index and root-cause label access check"},
+    {"id": "swebench_readme", "url": "https://raw.githubusercontent.com/SWE-bench/SWE-bench/02e7a74ffd0b707aab73d203fe87bdc7c76afc8e/README.md", "purpose": "Primary repository and workflow inspection"},
+    {"id": "swebench_license", "url": "https://raw.githubusercontent.com/SWE-bench/SWE-bench/02e7a74ffd0b707aab73d203fe87bdc7c76afc8e/LICENSE", "purpose": "Code license only; per-project data rights still need audit"},
+    {"id": "swebench_data_card", "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite/raw/main/README.md", "purpose": "Dataset schema/license/access check"}
+  ]
+}

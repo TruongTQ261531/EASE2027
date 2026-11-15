@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated research observations and outputs must not enter source control.
+data/local/
+artifacts/local/
+*.egg-info/
+
+# Research evaluation cohorts named target are curated data, not build outputs.
+!/data/releases/**/target/
+!/data/releases/**/target/**

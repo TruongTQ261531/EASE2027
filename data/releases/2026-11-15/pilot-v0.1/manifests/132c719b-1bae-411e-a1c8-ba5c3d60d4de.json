@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "run_id": "132c719b-1bae-411e-a1c8-ba5c3d60d4de",
+  "session_id": "f7986cb1-e815-48e4-ac15-7177b7d9b187",
+  "environment_id": "64040c1252dfe117",
+  "started_at_utc": "2026-11-15T11:58:47.138641+00:00",
+  "config": {
+    "name": "connection_close",
+    "intervention": "connection_close",
+    "seed": 43,
+    "duration_s": 6.0,
+    "intervention_start_s": 2.0,
+    "intervention_end_s": 4.0,
+    "sample_interval_ms": 250,
+    "width": 320,
+    "height": 180,
+    "fps": 20
+  },
+  "browser_version": "156.0.8078.79",
+  "browser_executable": "/usr/bin/chromium",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python_version": "3.12.14",
+  "cpu_count": 5,
+  "git_commit": "d6be2fcf85fe461566f781b49f7b1e7a269d18a8",
+  "git_dirty": true,
+  "source_tree_sha256": "d36028e034d8971a25563da87d7d1502fcbb55e6b3bd6f99459af4d787499d34",
+  "dependency_lock_sha256": "edd5ecdd0ad321c31ca9123d5b6b675aeb9628aa6bc44ca262bb1fead4772021",
+  "media_source_sha256": "cea052e28f1e661ae3c7598e6df33bf68d897dc3880468e5e976b0c771d3640b",
+  "media_source": "synthetic_canvas_v1",
+  "network_profile": "local_turn_tcp_loopback",
+  "turn_binary_sha256": "6de6c80134271abd2c51cbadac1e2bb973ac89b5491b0a2ae480148d66a37162",
+  "clock": "Python perf_counter midpoint around sequential sender/receiver getStats calls; collection_span_ms bounds sampling skew. Browser timestamp fields stay raw.",
+  "codecs": [
+    {
+      "id": "CIT01_96",
+      "timestamp": 1794743930587.908,
+      "type": "codec",
+      "clockRate": 90000,
+      "mimeType": "video/VP8",
+      "payloadType": 96,
+      "transportId": "T01"
+    }
+  ],
+  "sample_count": 24,
+  "collection_duration_s": 8.28409686699979,
+  "process_cpu_s": 0.09000000000000075,
+  "process_peak_rss_bytes": 158035968,
+  "execution_status": "completed",
+  "failure_reason": null,
+  "files": {
+    "raw/132c719b-1bae-411e-a1c8-ba5c3d60d4de/stats.jsonl": "ba40c20b971c300152cadae7db9bcd1e3861e5b5ffa8815c0c0e0c4ac91d64f0",
+    "raw/132c719b-1bae-411e-a1c8-ba5c3d60d4de/observations.jsonl": "9559d6dae1e0ab789748f180656cdcff1b10dc99b7e862f42d9e6bcac26cd0cd",
+    "oracle/132c719b-1bae-411e-a1c8-ba5c3d60d4de/source.jsonl": "bb6f515678ce0f1db0624e6e5640c60ce9accab41d0502de418d371f447e5776",
+    "oracle/132c719b-1bae-411e-a1c8-ba5c3d60d4de.json": "2a6c31d1a74ade653ae89ac8e03a8ba7a460d0940934b34ddc91f2e85b413e20"
+  }
+}

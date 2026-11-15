@@ -1,0 +1,209 @@
+{
+  "scope": "Independent measurement paths on isolated probes, NOT WebRTC fault labels",
+  "source_sha256": "262bfb18cac677ec194ac7346ced28ac58f09937a55934c495a9a82bd7f63be8",
+  "trials": 18,
+  "verified": 18,
+  "failed": 0,
+  "ambiguous": 0,
+  "results": [
+    {
+      "family": "network",
+      "requested_effect": false,
+      "seed": 42,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "4aff092a384d246de55f93abbb994bf38cdcc8e45ac42564ae19cf028933c1c4",
+      "measurement_path": "42-network-sham/measurement.json",
+      "measurement_sha256": "05d207048975a2f1ce96a9e1529cd55f8d66bc2dc4a1c01f80eea7d4c3b4784c",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "network",
+      "requested_effect": true,
+      "seed": 42,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "d77aa3afb7000fa55824683b9a773d715e726d704de451239430134959670737",
+      "measurement_path": "42-network-intervention/measurement.json",
+      "measurement_sha256": "54f7ad47753e75c494e3567b5bb65006d27b111ca34d6fe682525c60825d32bf",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "compute",
+      "requested_effect": false,
+      "seed": 42,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "c99b43ce7c75ddd005086010e766f63ec695d0a2445e0d27b2a757a9c1743b04",
+      "measurement_path": "42-compute-sham/measurement.json",
+      "measurement_sha256": "4282de0d3e600fe9c0e22cf8a5969a095511327e5ed69a3ebe07f52b99a79f92",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "compute",
+      "requested_effect": true,
+      "seed": 42,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "029d805f711129e6ed08884294121526a14881b33f07fe7f50139f6b50158772",
+      "measurement_path": "42-compute-intervention/measurement.json",
+      "measurement_sha256": "608fa0c24b2d7681d61cd46931e40823cdcd17ad06a519cb65a3a6e2d899f78f",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "media",
+      "requested_effect": false,
+      "seed": 42,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "a1386a1ce0e784fe91bf6d47c6dc657afb524a6271b87bdc3d243e54a706269d",
+      "measurement_path": "42-media-sham/measurement.json",
+      "measurement_sha256": "94ceac3593dbb0304573310d2ac099a10cd1d504d7643e4dc4618ce81e1edfe6",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "media",
+      "requested_effect": true,
+      "seed": 42,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "ea95d8e351935446605455a2b5a7198e53b1a1b1a118bd6d9a0a902ce02b7642",
+      "measurement_path": "42-media-intervention/measurement.json",
+      "measurement_sha256": "254bdedc17b0e3af935297b4b362b07370afbf1a29578317633b12a7ffea45f4",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "network",
+      "requested_effect": false,
+      "seed": 43,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "e63a1b5b1ece439397e4c6d21f605bfec8fac5710f21bac50413cfcb2074b26e",
+      "measurement_path": "43-network-sham/measurement.json",
+      "measurement_sha256": "68781deea0d360039b988d3e32ccc7c757a7fd48c9324115879facfd2c346429",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "network",
+      "requested_effect": true,
+      "seed": 43,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "a01879116e096142dec3215404459d7894c5c1e79d5113de1fa06be81166625a",
+      "measurement_path": "43-network-intervention/measurement.json",
+      "measurement_sha256": "5c213c4da95990cec718064ad042d0cb8e3fa8b7c32494da3a59f685778c4569",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "compute",
+      "requested_effect": false,
+      "seed": 43,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "41b5b520fb6eea163de881dc1ef4dc7ffd8cfd507fc5af95601bb168a1e1290f",
+      "measurement_path": "43-compute-sham/measurement.json",
+      "measurement_sha256": "7403d585fd34fd6c85def83aae927dd28e08c8c4f3b84d838508d50b27898cda",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "compute",
+      "requested_effect": true,
+      "seed": 43,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "609139c84f5fd89021c8c5ffb90655f6eb1aee68d73abeaaf0e0f2822f433288",
+      "measurement_path": "43-compute-intervention/measurement.json",
+      "measurement_sha256": "698d064f444ae152eb6a96c4d43e8198f809ab664132fbfd33d0c88e3bd397fa",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "media",
+      "requested_effect": false,
+      "seed": 43,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "52d02c7a1d68b26bbbd365554c1f176d2335145525f7abab23406c9e335b3bc5",
+      "measurement_path": "43-media-sham/measurement.json",
+      "measurement_sha256": "49528e374c198b9803513b0c0c5b3c0e48b0fdb738aefc450e8e3d60daae7a3f",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "media",
+      "requested_effect": true,
+      "seed": 43,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "a8cbba04e8cf8463297af2d35c8dbd94e1612809cfd4afdde6d583c88ff5009c",
+      "measurement_path": "43-media-intervention/measurement.json",
+      "measurement_sha256": "3791f8d7222a23af0f5b6e9db4d55a1ac03a11ff5d79b656d47188bdde32ceb0",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "network",
+      "requested_effect": false,
+      "seed": 44,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "4f9bf878cb7b6c3b1c691ffd47d59cca96754a611e7aad3271eadba35574ccfc",
+      "measurement_path": "44-network-sham/measurement.json",
+      "measurement_sha256": "bc40543332636e15242820e246a2f98acb0cd4725a449ee3138920a11c727f29",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "network",
+      "requested_effect": true,
+      "seed": 44,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "fd33f529def812b73ad43efdbb2d1fb677536adfb3ce80ba8ed383da4d67eede",
+      "measurement_path": "44-network-intervention/measurement.json",
+      "measurement_sha256": "12112a24311890c95068ac3e8a20debf9f55eb19e8614001b8db971eed6f891f",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "compute",
+      "requested_effect": false,
+      "seed": 44,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "4f247bcc65682f69f952865387401e2a4850f92b523c80c63612b6b83e980f46",
+      "measurement_path": "44-compute-sham/measurement.json",
+      "measurement_sha256": "286d4b24a25bde129cb39f9e329207b168b5f093a2caeaf1e97ec2d8fbfcd88c",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "compute",
+      "requested_effect": true,
+      "seed": 44,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "5206a6397d16e0bd2fe839674ecce58022bfd4c3e9a3605f0edcc0e9f3bb7cb1",
+      "measurement_path": "44-compute-intervention/measurement.json",
+      "measurement_sha256": "3b54a2f3f516cf73c7f0a3e088eccc0e616331382016115b325fa09f424bb2a0",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "media",
+      "requested_effect": false,
+      "seed": 44,
+      "status": "verified",
+      "measured_effect": false,
+      "request_sha256": "a30605f65ea661bc60dcc389cefcc6e38f72ca2858cf3d618d4702557156b69a",
+      "measurement_path": "44-media-sham/measurement.json",
+      "measurement_sha256": "cceea02b6909bdbb9c530fad20ba1049118515e3e7d2abf08151952547671738",
+      "causal_root_cause": "unestablished"
+    },
+    {
+      "family": "media",
+      "requested_effect": true,
+      "seed": 44,
+      "status": "verified",
+      "measured_effect": true,
+      "request_sha256": "5bf2d7e4bcf3ea4e4f8d60fd0f1f9a1fa2554574cbd516e504482b8059d3a620",
+      "measurement_path": "44-media-intervention/measurement.json",
+      "measurement_sha256": "0b0ffbd169efd458db2c127779764462a4e6adf4cac5bdbdfab5efd4705dd8d7",
+      "causal_root_cause": "unestablished"
+    }
+  ],
+  "limitation": "No integration with browser interventions or degradation attribution; network loss is only within a local UDP relay; CPU load is not saturation; frozen file is not a failed camera. Thresholds are feasibility heuristics."
+}

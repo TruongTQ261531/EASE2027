@@ -1,0 +1,1621 @@
+{
+  "scope": "FEASIBILITY ONLY: synthetic application conditions, one host/browser; not RCA accuracy",
+  "target": "verified_application_condition",
+  "seed": 2027,
+  "dataset_sha256": "823fdcdce1b9bacb901deacf8879f50b7487639de1ed7e2192a28a48991ee6ae",
+  "class_order": [
+    "capture_pause",
+    "connection_close",
+    "normal"
+  ],
+  "audit": {
+    "runs": 30,
+    "completed": 30,
+    "failed": 0,
+    "verified": 30,
+    "ambiguous": 0,
+    "failed_verification": 0,
+    "sample_count": 720,
+    "conditions": {
+      "connection_close": 10,
+      "capture_pause": 10,
+      "normal": 10
+    },
+    "max_collection_span_ms": 102.48854399992524,
+    "environments": 1,
+    "verified_rate": 1.0,
+    "scope": "Application-condition feasibility; causal attribution unestablished"
+  },
+  "unit_of_analysis": "One aggregate per independent browser-call session, all recording windows",
+  "split_counts": {
+    "train": 18,
+    "validation": 6,
+    "test": 6
+  },
+  "excluded_windows_by_status": {},
+  "failed_runs": 0,
+  "bootstrap_repetitions": 500,
+  "uncertainty_limit": "Tiny pilot; session bootstrap is not cross-environment uncertainty or power analysis",
+  "model_selection": "Predefined models/ablations; only rule thresholds tuned on validation",
+  "results": [
+    {
+      "model": "rules",
+      "feature_set": "telemetry_logs",
+      "settings": {
+        "closed_threshold": 0.1,
+        "fps_threshold": 16.0,
+        "probabilities": "hard decisions; not calibrated"
+      },
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 0.0,
+      "ece_5_bins": 0.0,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 1.0,
+          "risk": 0.0
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "model": "dummy",
+      "feature_set": "telemetry",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.0,
+        0.26666666666666666
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.16666666666666666,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.16666666666666666,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 1.3333333333333333,
+      "ece_5_bins": 0.6666666666666667,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "model": "logistic_regression",
+      "feature_set": "telemetry",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 0.2947579412700661,
+      "ece_5_bins": 0.3571512149364821,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 0.8333333333333334,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.3333333333333333,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.16666666666666666,
+          "risk": 0.0
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.943360570463337,
+            0.0200150344490923,
+            0.036624395087570885
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.8692311840364021,
+            0.051330951536420526,
+            0.07943786442717737
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.02600954851774292,
+            0.5147043592052978,
+            0.4592860922769592
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.009464597273055023,
+            0.5201839843872559,
+            0.4703514183396891
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.040170562729314574,
+            0.4450098652524635,
+            0.5148195720182219
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.15018808535556405,
+            0.3550188743738431,
+            0.4947930402705928
+          ]
+        }
+      ]
+    },
+    {
+      "model": "random_forest",
+      "feature_set": "telemetry",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 0.6666666666666666,
+      "balanced_accuracy": 0.6666666666666666,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.27047619047619065,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1-score": 0.5,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1-score": 0.5,
+          "support": 2.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 0.43093249074074075,
+      "ece_5_bins": 0.3338055555555556,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.33333333333333337
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.33333333333333337
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 0.3333333333333333,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.0,
+          "risk": null
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.86,
+            0.05,
+            0.09
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.73,
+            0.1,
+            0.17
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "normal",
+          "probabilities": [
+            0.0,
+            0.32549999999999996,
+            0.6745
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.01,
+            0.5783333333333334,
+            0.4116666666666666
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.05,
+            0.6316666666666667,
+            0.31833333333333336
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.01,
+            0.395,
+            0.595
+          ]
+        }
+      ]
+    },
+    {
+      "model": "dummy",
+      "feature_set": "telemetry_logs",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio",
+          "connected_fraction",
+          "closed_fraction"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.0,
+        0.26666666666666666
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.16666666666666666,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.16666666666666666,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 1.3333333333333333,
+      "ece_5_bins": 0.6666666666666667,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio",
+          "connected_fraction",
+          "closed_fraction"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 0.02337585912627027,
+      "ece_5_bins": 0.10412911175277759,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.6666666666666666,
+          "risk": 0.0
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.945103081107523,
+            0.010591091363962728,
+            0.044305827528514384
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.8786001916800307,
+            0.019676249315792586,
+            0.10172355900417673
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.011375723422491126,
+            0.9434977107335462,
+            0.04512656584396281
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.005094914888130699,
+            0.9292743853642622,
+            0.06563069974760709
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.05060903233465431,
+            0.04837066514522627,
+            0.9010203025201193
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.1667932311433679,
+            0.055477110778778656,
+            0.7777296580778535
+          ]
+        }
+      ]
+    },
+    {
+      "model": "random_forest",
+      "feature_set": "telemetry_logs",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio",
+          "connected_fraction",
+          "closed_fraction"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 0.04803333333333334,
+      "ece_5_bins": 0.16,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.16666666666666666,
+          "risk": 0.0
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.91,
+            0.0,
+            0.09
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.81,
+            0.02,
+            0.17
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.0,
+            0.89,
+            0.11
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.0,
+            0.86,
+            0.14
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.12,
+            0.13,
+            0.75
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.07,
+            0.11,
+            0.82
+          ]
+        }
+      ]
+    },
+    {
+      "model": "dummy",
+      "feature_set": "telemetry_logs_video",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio",
+          "connected_fraction",
+          "closed_fraction",
+          "video_change_fraction"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.0,
+        0.26666666666666666
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.16666666666666666,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.16666666666666666,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 1.3333333333333333,
+      "ece_5_bins": 0.6666666666666667,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 1.0,
+          "risk": 0.6666666666666667
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "capture_pause",
+          "probabilities": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs_video",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio",
+          "connected_fraction",
+          "closed_fraction",
+          "video_change_fraction"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 0.011322843369394068,
+      "ece_5_bins": 0.07384659239804348,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.8333333333333334,
+          "risk": 0.0
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.9510316910876098,
+            0.01396397929498498,
+            0.035004329617405155
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.9030842252821155,
+            0.025123575888892757,
+            0.07179219882899165
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.014976423499180828,
+            0.9590808046405676,
+            0.025942771860251495
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.007397202423180663,
+            0.9579709128601418,
+            0.034631884716677455
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.039799289386735937,
+            0.027155303138478956,
+            0.933045407474785
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.11837705859286254,
+            0.028915537140618043,
+            0.8527074042665194
+          ]
+        }
+      ]
+    },
+    {
+      "model": "random_forest",
+      "feature_set": "telemetry_logs_video",
+      "settings": {
+        "columns": [
+          "receive_kbps",
+          "decoded_fps",
+          "jitter_ms",
+          "rtt_ms",
+          "packet_loss_ratio",
+          "dropped_frame_ratio",
+          "connected_fraction",
+          "closed_fraction",
+          "video_change_fraction"
+        ],
+        "seed": 2027
+      },
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "per_class": {
+        "capture_pause": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "connection_close": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        }
+      },
+      "multiclass_brier_sum": 0.02936666666666667,
+      "ece_5_bins": 0.11500000000000007,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "coverage": 1.0,
+          "risk": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "coverage": 0.5,
+          "risk": 0.0
+        }
+      ],
+      "predictions": [
+        {
+          "session_id": "31554392-986b-4f5c-9935-d18138bb7ffe",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.94,
+            0.0,
+            0.06
+          ]
+        },
+        {
+          "session_id": "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+          "observed_condition": "capture_pause",
+          "prediction": "capture_pause",
+          "probabilities": [
+            0.84,
+            0.02,
+            0.14
+          ]
+        },
+        {
+          "session_id": "355134b2-587f-4f0a-92fa-7eac36286b81",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.01,
+            0.96,
+            0.03
+          ]
+        },
+        {
+          "session_id": "c942442f-8941-4515-b067-6fa15d7d1959",
+          "observed_condition": "connection_close",
+          "prediction": "connection_close",
+          "probabilities": [
+            0.01,
+            0.96,
+            0.03
+          ]
+        },
+        {
+          "session_id": "94db3503-fb19-412b-9497-f17ea2401f4d",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.14,
+            0.08,
+            0.78
+          ]
+        },
+        {
+          "session_id": "5e672836-fd75-4bbe-97ff-d6b1361d5036",
+          "observed_condition": "normal",
+          "prediction": "normal",
+          "probabilities": [
+            0.1,
+            0.07,
+            0.83
+          ]
+        }
+      ]
+    }
+  ]
+}

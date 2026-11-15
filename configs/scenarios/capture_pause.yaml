@@ -1,0 +1,7 @@
+name: capture_pause
+intervention: capture_pause
+seed: 42
+duration_s: 6
+intervention_start_s: 2
+intervention_end_s: 4
+sample_interval_ms: 250

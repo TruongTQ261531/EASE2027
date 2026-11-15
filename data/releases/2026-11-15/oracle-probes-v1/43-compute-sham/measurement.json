@@ -1,0 +1,7 @@
+{
+  "pid": 1894,
+  "process_create_time": 1794747554.08,
+  "cpu_core_percent": 0.0,
+  "rss_bytes": 6455296,
+  "measurement_layer": "OS process CPU accounting; one worker, not browser overload"
+}

@@ -1,0 +1,158 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "session_id": {
+      "title": "Session Id",
+      "type": "string"
+    },
+    "requested_condition": {
+      "enum": [
+        "normal",
+        "capture_pause",
+        "connection_close"
+      ],
+      "title": "Requested Condition",
+      "type": "string"
+    },
+    "verification_status": {
+      "enum": [
+        "verified",
+        "failed",
+        "ambiguous"
+      ],
+      "title": "Verification Status",
+      "type": "string"
+    },
+    "verified_condition": {
+      "anyOf": [
+        {
+          "enum": [
+            "normal",
+            "capture_pause",
+            "connection_close"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Verified Condition"
+    },
+    "observed_degradation": {
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "title": "Observed Degradation",
+      "type": "string"
+    },
+    "causal_root_cause": {
+      "const": "unestablished",
+      "default": "unestablished",
+      "title": "Causal Root Cause",
+      "type": "string"
+    },
+    "label_confidence": {
+      "enum": [
+        "medium",
+        "low"
+      ],
+      "title": "Label Confidence",
+      "type": "string"
+    },
+    "requested_start_ms": {
+      "title": "Requested Start Ms",
+      "type": "number"
+    },
+    "requested_end_ms": {
+      "title": "Requested End Ms",
+      "type": "number"
+    },
+    "actual_start_ms": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Actual Start Ms"
+    },
+    "actual_end_ms": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Actual End Ms"
+    },
+    "measurements": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "integer"
+          },
+          {
+            "type": "string"
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Measurements",
+      "type": "object"
+    },
+    "evidence_paths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Paths",
+      "type": "array"
+    },
+    "limitation": {
+      "title": "Limitation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "session_id",
+    "requested_condition",
+    "verification_status",
+    "verified_condition",
+    "observed_degradation",
+    "label_confidence",
+    "requested_start_ms",
+    "requested_end_ms",
+    "actual_start_ms",
+    "actual_end_ms",
+    "measurements",
+    "evidence_paths",
+    "limitation"
+  ],
+  "title": "OracleEvent",
+  "type": "object"
+}

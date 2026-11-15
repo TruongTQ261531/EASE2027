@@ -1,0 +1,319 @@
+{
+  "scope": "FEASIBILITY ONLY: synthetic application conditions, one host/browser; not RCA accuracy",
+  "dataset_directory": "data/local/pilot-v0.1",
+  "raw_data_archived": false,
+  "raw_data_location": "Current workspace only; recreate with scripts/reproduce_pilot.sh",
+  "metrics_sha256": "3cfda1ab3330a513c9d5643a9c569573d1b1ca3cc546c3787d9b1fcf7d96b780",
+  "dataset_sha256": "8fc7d4376765209b3870c7edecb649b58e4ca89b777b34ce30439e6c8c217607",
+  "source_tree_sha256": [
+    "d36028e034d8971a25563da87d7d1502fcbb55e6b3bd6f99459af4d787499d34"
+  ],
+  "browser_versions": [
+    "156.0.8078.79"
+  ],
+  "git_heads": [
+    "d6be2fcf85fe461566f781b49f7b1e7a269d18a8"
+  ],
+  "git_dirty_during_collection": true,
+  "dependency_lock_sha256": [
+    "edd5ecdd0ad321c31ca9123d5b6b675aeb9628aa6bc44ca262bb1fead4772021"
+  ],
+  "audit": {
+    "runs": 30,
+    "completed": 30,
+    "failed": 0,
+    "verified": 30,
+    "ambiguous": 0,
+    "failed_verification": 0,
+    "sample_count": 720,
+    "conditions": {
+      "connection_close": 10,
+      "capture_pause": 10,
+      "normal": 10
+    },
+    "max_collection_span_ms": 102.48854399992524,
+    "environments": 1,
+    "verified_rate": 1.0,
+    "scope": "Application-condition feasibility; causal attribution unestablished"
+  },
+  "feature_windows": 180,
+  "split_counts": {
+    "train": 18,
+    "validation": 6,
+    "test": 6
+  },
+  "collection_wall_seconds_sum": 248.56100404699896,
+  "results": [
+    {
+      "model": "rules",
+      "feature_set": "telemetry_logs",
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "dummy",
+      "feature_set": "telemetry",
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.0,
+        0.26666666666666666
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "model": "logistic_regression",
+      "feature_set": "telemetry",
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "random_forest",
+      "feature_set": "telemetry",
+      "macro_f1": 0.6666666666666666,
+      "balanced_accuracy": 0.6666666666666666,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.27047619047619065,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "model": "dummy",
+      "feature_set": "telemetry_logs",
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.0,
+        0.26666666666666666
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs",
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "random_forest",
+      "feature_set": "telemetry_logs",
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "dummy",
+      "feature_set": "telemetry_logs_video",
+      "macro_f1": 0.16666666666666666,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.0,
+        0.26666666666666666
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "model": "logistic_regression",
+      "feature_set": "telemetry_logs_video",
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "random_forest",
+      "feature_set": "telemetry_logs_video",
+      "macro_f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1_session_bootstrap_95_interval": [
+        0.6666666666666666,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    }
+  ],
+  "limitation": "Easy synthetic application conditions; one host/browser; only six test sessions. No inference about novelty, causal root cause, modality value or external validity."
+}

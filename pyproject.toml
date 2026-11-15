@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ease-rtc"
+version = "0.1.0"
+description = "Reproducible feasibility pilot for empirical WebRTC fault diagnosis"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2,<3",
+  "scikit-learn>=1.6,<2",
+  "playwright>=1.51,<2",
+  "pydantic>=2.10,<3",
+  "PyYAML>=6,<7",
+  "psutil>=6,<8",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "jsonschema>=4.23,<5"]
+
+[project.scripts]
+ease-rtc = "ease_rtc.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ease_rtc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["browser: actual Chromium WebRTC integration test"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

@@ -1,0 +1,249 @@
+{
+  "sent": 60,
+  "unique_received": 60,
+  "receiver_observations": [
+    {
+      "sequence": 0,
+      "clock": 654.676335823
+    },
+    {
+      "sequence": 1,
+      "clock": 654.681466938
+    },
+    {
+      "sequence": 2,
+      "clock": 654.686574349
+    },
+    {
+      "sequence": 3,
+      "clock": 654.691680518
+    },
+    {
+      "sequence": 4,
+      "clock": 654.696834617
+    },
+    {
+      "sequence": 5,
+      "clock": 654.701872025
+    },
+    {
+      "sequence": 6,
+      "clock": 654.706967247
+    },
+    {
+      "sequence": 7,
+      "clock": 654.712061148
+    },
+    {
+      "sequence": 8,
+      "clock": 654.717164182
+    },
+    {
+      "sequence": 9,
+      "clock": 654.722267687
+    },
+    {
+      "sequence": 10,
+      "clock": 654.727369916
+    },
+    {
+      "sequence": 11,
+      "clock": 654.73248002
+    },
+    {
+      "sequence": 12,
+      "clock": 654.737577186
+    },
+    {
+      "sequence": 13,
+      "clock": 654.742682583
+    },
+    {
+      "sequence": 14,
+      "clock": 654.747781561
+    },
+    {
+      "sequence": 15,
+      "clock": 654.752883894
+    },
+    {
+      "sequence": 16,
+      "clock": 654.758062885
+    },
+    {
+      "sequence": 17,
+      "clock": 654.763228031
+    },
+    {
+      "sequence": 18,
+      "clock": 654.768322122
+    },
+    {
+      "sequence": 19,
+      "clock": 654.7734344
+    },
+    {
+      "sequence": 20,
+      "clock": 654.77855531
+    },
+    {
+      "sequence": 21,
+      "clock": 654.783660808
+    },
+    {
+      "sequence": 22,
+      "clock": 654.788777993
+    },
+    {
+      "sequence": 23,
+      "clock": 654.793900476
+    },
+    {
+      "sequence": 24,
+      "clock": 654.798998873
+    },
+    {
+      "sequence": 25,
+      "clock": 654.804140775
+    },
+    {
+      "sequence": 26,
+      "clock": 654.809191611
+    },
+    {
+      "sequence": 27,
+      "clock": 654.814279904
+    },
+    {
+      "sequence": 28,
+      "clock": 654.819726304
+    },
+    {
+      "sequence": 29,
+      "clock": 654.824665011
+    },
+    {
+      "sequence": 30,
+      "clock": 654.829749553
+    },
+    {
+      "sequence": 31,
+      "clock": 654.834845717
+    },
+    {
+      "sequence": 32,
+      "clock": 654.839935301
+    },
+    {
+      "sequence": 33,
+      "clock": 654.845037665
+    },
+    {
+      "sequence": 34,
+      "clock": 654.850132421
+    },
+    {
+      "sequence": 35,
+      "clock": 654.85523806
+    },
+    {
+      "sequence": 36,
+      "clock": 654.860335365
+    },
+    {
+      "sequence": 37,
+      "clock": 654.865487742
+    },
+    {
+      "sequence": 38,
+      "clock": 654.870542916
+    },
+    {
+      "sequence": 39,
+      "clock": 654.875673646
+    },
+    {
+      "sequence": 40,
+      "clock": 654.880748849
+    },
+    {
+      "sequence": 41,
+      "clock": 654.885854947
+    },
+    {
+      "sequence": 42,
+      "clock": 654.89097752
+    },
+    {
+      "sequence": 43,
+      "clock": 654.896081546
+    },
+    {
+      "sequence": 44,
+      "clock": 654.901182457
+    },
+    {
+      "sequence": 45,
+      "clock": 654.906297158
+    },
+    {
+      "sequence": 46,
+      "clock": 654.911433131
+    },
+    {
+      "sequence": 47,
+      "clock": 654.916536365
+    },
+    {
+      "sequence": 48,
+      "clock": 654.921652534
+    },
+    {
+      "sequence": 49,
+      "clock": 654.926731733
+    },
+    {
+      "sequence": 50,
+      "clock": 654.93185046
+    },
+    {
+      "sequence": 51,
+      "clock": 654.937011926
+    },
+    {
+      "sequence": 52,
+      "clock": 654.942055437
+    },
+    {
+      "sequence": 53,
+      "clock": 654.947175637
+    },
+    {
+      "sequence": 54,
+      "clock": 654.9522514
+    },
+    {
+      "sequence": 55,
+      "clock": 654.957338892
+    },
+    {
+      "sequence": 56,
+      "clock": 654.962460243
+    },
+    {
+      "sequence": 57,
+      "clock": 654.967576992
+    },
+    {
+      "sequence": 58,
+      "clock": 654.972661439
+    },
+    {
+      "sequence": 59,
+      "clock": 654.977773862
+    }
+  ],
+  "duration_s": 0.7023352090000117,
+  "injector_errors": [],
+  "measurement_layer": "loopback UDP probe; not browser RTP or path packet loss"
+}

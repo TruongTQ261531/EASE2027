@@ -1,0 +1,42 @@
+{
+  "seed": 2027,
+  "dataset_sha256": "823fdcdce1b9bacb901deacf8879f50b7487639de1ed7e2192a28a48991ee6ae",
+  "partitions": {
+    "train": [
+      "4971805d-003f-4962-8813-f8cfd0ba721d",
+      "1cd392b1-2a39-4bb0-977d-4f3a096cada7",
+      "d815858e-e011-4413-b7d0-4e617014c27f",
+      "2eabae99-c7c6-4bc5-b00a-87e39cf13ee3",
+      "e7aa34a3-8add-4b70-9044-6814fc80a1d5",
+      "d1a0c042-fd17-4193-9e86-30b8f4ce023f",
+      "5f22928c-90d7-4b87-ac88-1b84af058469",
+      "59528e75-f786-456b-b282-84afe0052fa2",
+      "1dbe1457-0cbd-4fd0-a8d9-fb3868504d78",
+      "329bb918-3261-47aa-9619-3bc6c3a98c99",
+      "63bcb1ad-8d3b-4ee1-9e25-aaaff8fe3015",
+      "f7986cb1-e815-48e4-ac15-7177b7d9b187",
+      "6f4aede1-53e6-49e5-a6ad-fe478b825d0c",
+      "dfe43ed8-27c7-4d90-850a-7bdb82d17348",
+      "f0d87640-7741-467c-aae8-d34160199446",
+      "a6caa8f9-1946-4f18-a225-2578060ce0f6",
+      "62e0c7a8-da82-46ca-979d-64d97573a3ea",
+      "31129e3c-31cc-42ae-a895-73f8042dab62"
+    ],
+    "validation": [
+      "fa4bb51b-0dad-485c-8209-cf1fd54aa5bc",
+      "c0af6222-6c82-4098-a8e2-45f388cb6a49",
+      "ab1665ea-c305-4a51-9a12-186bd751d1cf",
+      "e311b0d7-103f-42d6-a4c9-8bb22f3f80e8",
+      "443266f8-2dc8-4910-a636-e63ce096d571",
+      "b6a6a19f-9d76-4cf5-935e-bda69a63aafc"
+    ],
+    "test": [
+      "31554392-986b-4f5c-9935-d18138bb7ffe",
+      "cbbcd505-5b9c-46ee-80fe-5b5a8242bcd6",
+      "355134b2-587f-4f0a-92fa-7eac36286b81",
+      "c942442f-8941-4515-b067-6fa15d7d1959",
+      "94db3503-fb19-412b-9497-f17ea2401f4d",
+      "5e672836-fd75-4bbe-97ff-d6b1361d5036"
+    ]
+  }
+}

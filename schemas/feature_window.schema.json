@@ -1,0 +1,172 @@
+{
+  "$defs": {
+    "Features": {
+      "additionalProperties": false,
+      "properties": {
+        "receive_kbps": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Receive Kbps"
+        },
+        "decoded_fps": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Decoded Fps"
+        },
+        "jitter_ms": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Jitter Ms"
+        },
+        "rtt_ms": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rtt Ms"
+        },
+        "packet_loss_ratio": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Packet Loss Ratio"
+        },
+        "dropped_frame_ratio": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dropped Frame Ratio"
+        },
+        "connected_fraction": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Connected Fraction"
+        },
+        "closed_fraction": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Closed Fraction"
+        },
+        "video_change_fraction": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Video Change Fraction"
+        }
+      },
+      "title": "Features",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "session_id": {
+      "title": "Session Id",
+      "type": "string"
+    },
+    "window_start_ms": {
+      "minimum": 0,
+      "title": "Window Start Ms",
+      "type": "number"
+    },
+    "window_end_ms": {
+      "exclusiveMinimum": 0,
+      "title": "Window End Ms",
+      "type": "number"
+    },
+    "features": {
+      "$ref": "#/$defs/Features"
+    }
+  },
+  "required": [
+    "run_id",
+    "session_id",
+    "window_start_ms",
+    "window_end_ms",
+    "features"
+  ],
+  "title": "FeatureWindow",
+  "type": "object"
+}

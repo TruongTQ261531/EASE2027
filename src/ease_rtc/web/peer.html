@@ -1,0 +1,90 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>EASE RTC synthetic peer</title>
+<canvas id="source" width="320" height="180"></canvas>
+<video id="received" autoplay muted playsinline></video>
+<script>
+// Two browser contexts exchange SDP in Python. TURN/TCP is restricted to loopback.
+let pc, stream, timer, paused = false, role, sequence = 0;
+const source = document.querySelector('#source');
+const received = document.querySelector('#received');
+const probe = document.createElement('canvas');
+probe.width = 8; probe.height = 8;
+const probeContext = probe.getContext('2d', {willReadFrequently: true});
+function fingerprint(element) {
+  if (element === received && received.readyState < 2) return null;
+  probeContext.drawImage(element, 0, 0, 8, 8);
+  const pixels = probeContext.getImageData(0, 0, 8, 8).data;
+  let value = 2166136261;
+  for (const pixel of pixels) value = Math.imul(value ^ pixel, 16777619);
+  return (value >>> 0).toString(16);
+}
+window.initialize = async options => {
+  role = options.role;
+  pc = new RTCPeerConnection(options.rtcConfiguration);
+  pc.ontrack = event => { received.srcObject = event.streams[0]; };
+  if (role === 'sender') {
+    source.width = options.width; source.height = options.height;
+    const ctx = source.getContext('2d');
+    function draw() {
+      if (paused) return;
+      sequence += 1;
+      const phase = sequence + options.seed;
+      ctx.fillStyle = `hsl(${(phase * 7) % 360}, 80%, 40%)`;
+      ctx.fillRect(0, 0, source.width, source.height);
+      ctx.fillStyle = 'white';
+      ctx.fillRect((phase * 9) % source.width, 20, 50, 90);
+      ctx.fillStyle = 'black';
+      ctx.font = '24px monospace';
+      ctx.fillText(String(sequence), 15, 150);
+    }
+    draw();
+    timer = setInterval(draw, 1000 / options.fps);
+    stream = source.captureStream(options.fps);
+    for (const track of stream.getTracks()) pc.addTrack(track, stream);
+  }
+};
+async function gather() {
+  if (pc.iceGatheringState === 'complete') return;
+  await new Promise((resolve, reject) => {
+    const timeout = setTimeout(() => reject(new Error('ICE gathering timeout')), 10000);
+    pc.addEventListener('icegatheringstatechange', () => {
+      if (pc.iceGatheringState === 'complete') { clearTimeout(timeout); resolve(); }
+    });
+  });
+}
+window.offer = async () => {
+  await pc.setLocalDescription(await pc.createOffer());
+  await gather();
+  return pc.localDescription.toJSON();
+};
+window.answer = async offer => {
+  await pc.setRemoteDescription(offer);
+  await pc.setLocalDescription(await pc.createAnswer());
+  await gather();
+  return pc.localDescription.toJSON();
+};
+window.accept = answer => pc.setRemoteDescription(answer);
+window.isReady = () => pc.connectionState === 'connected' &&
+  (role === 'sender' || received.readyState >= 2);
+window.observe = async () => ({
+  browser_clock_ms: performance.now(),
+  stats: Array.from((await pc.getStats()).values()),
+  connection_state: pc.connectionState,
+  ice_connection_state: pc.iceConnectionState,
+  receiver_fingerprint: role === 'receiver' ? fingerprint(received) : null,
+  // Source observation is routed exclusively to oracle evidence, never model features.
+  source_fingerprint: role === 'sender' ? fingerprint(source) : null
+});
+window.intervene = kind => {
+  if (kind === 'capture_pause') paused = true;
+  else if (kind === 'connection_close') pc.close();
+  else if (kind !== 'normal') throw new Error(`Unsupported intervention: ${kind}`);
+};
+window.recover = () => { paused = false; };
+window.shutdown = () => {
+  clearInterval(timer);
+  if (stream) stream.getTracks().forEach(track => track.stop());
+  if (pc) pc.close();
+};
+</script>

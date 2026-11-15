@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "run_id": "8d760335-9228-4b20-a6a0-974b2b1d0896",
+  "session_id": "443266f8-2dc8-4910-a636-e63ce096d571",
+  "environment_id": "64040c1252dfe117",
+  "started_at_utc": "2026-11-15T11:58:29.977302+00:00",
+  "config": {
+    "name": "normal",
+    "intervention": "normal",
+    "seed": 49,
+    "duration_s": 6.0,
+    "intervention_start_s": 2.0,
+    "intervention_end_s": 4.0,
+    "sample_interval_ms": 250,
+    "width": 320,
+    "height": 180,
+    "fps": 20
+  },
+  "browser_version": "156.0.8078.79",
+  "browser_executable": "/usr/bin/chromium",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python_version": "3.12.14",
+  "cpu_count": 5,
+  "git_commit": "d6be2fcf85fe461566f781b49f7b1e7a269d18a8",
+  "git_dirty": true,
+  "source_tree_sha256": "d36028e034d8971a25563da87d7d1502fcbb55e6b3bd6f99459af4d787499d34",
+  "dependency_lock_sha256": "edd5ecdd0ad321c31ca9123d5b6b675aeb9628aa6bc44ca262bb1fead4772021",
+  "media_source_sha256": "cea052e28f1e661ae3c7598e6df33bf68d897dc3880468e5e976b0c771d3640b",
+  "media_source": "synthetic_canvas_v1",
+  "network_profile": "local_turn_tcp_loopback",
+  "turn_binary_sha256": "6de6c80134271abd2c51cbadac1e2bb973ac89b5491b0a2ae480148d66a37162",
+  "clock": "Python perf_counter midpoint around sequential sender/receiver getStats calls; collection_span_ms bounds sampling skew. Browser timestamp fields stay raw.",
+  "codecs": [
+    {
+      "id": "CIT01_96",
+      "timestamp": 1794743917695.245,
+      "type": "codec",
+      "clockRate": 90000,
+      "mimeType": "video/VP8",
+      "payloadType": 96,
+      "transportId": "T01"
+    }
+  ],
+  "sample_count": 24,
+  "collection_duration_s": 8.558054664999872,
+  "process_cpu_s": 0.16000000000000014,
+  "process_peak_rss_bytes": 158015488,
+  "execution_status": "completed",
+  "failure_reason": null,
+  "files": {
+    "raw/8d760335-9228-4b20-a6a0-974b2b1d0896/stats.jsonl": "9bc570266a6945169d4e642e69c6f91e92c5d78bbf2813c07fffa8c5481b8d01",
+    "raw/8d760335-9228-4b20-a6a0-974b2b1d0896/observations.jsonl": "885fcb5cadc092e1f51f49117099a9eecd3d6cacb58b2cef39e3bb51ae332cd0",
+    "oracle/8d760335-9228-4b20-a6a0-974b2b1d0896/source.jsonl": "27fa07f09665436c1e536e543771b78ba66bc1c5588164f17900a1e8e8bf9a3d",
+    "oracle/8d760335-9228-4b20-a6a0-974b2b1d0896.json": "00d1ac82e5b68af4e027ad8a6a37c211affc8a6b1b2369852132334257227a0b"
+  }
+}

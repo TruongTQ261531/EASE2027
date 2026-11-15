@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "run_id": "9729cba0-78c2-490f-bdbc-9971ba011c85",
+  "session_id": "31129e3c-31cc-42ae-a895-73f8042dab62",
+  "requested_condition": "normal",
+  "verification_status": "verified",
+  "verified_condition": "normal",
+  "observed_degradation": "no",
+  "causal_root_cause": "unestablished",
+  "label_confidence": "medium",
+  "requested_start_ms": 2000.0,
+  "requested_end_ms": 4000.0,
+  "actual_start_ms": 2003.0487860001358,
+  "actual_end_ms": 4002.812997000092,
+  "measurements": {
+    "source_before_change_fraction": 1.0,
+    "source_during_change_fraction": 1.0,
+    "source_after_change_fraction": 1.0,
+    "receiver_during_change_fraction": 1.0,
+    "receiver_closed_fraction": 0.0,
+    "during_observations": 7
+  },
+  "evidence_paths": [
+    "oracle/9729cba0-78c2-490f-bdbc-9971ba011c85/source.jsonl",
+    "raw/9729cba0-78c2-490f-bdbc-9971ba011c85/observations.jsonl"
+  ],
+  "limitation": "Application-condition check from a separate observation path in the same testbed. Not external instrumentation or independent causal attribution. Receiver pc.close is an explicit closure, not ICE/network failure. No-fault is a sham protocol label."
+}

@@ -1,0 +1,16 @@
+{
+  "runs": 1,
+  "completed": 0,
+  "failed": 1,
+  "verified": 0,
+  "ambiguous": 0,
+  "failed_verification": 1,
+  "sample_count": 0,
+  "conditions": {
+    "normal": 1
+  },
+  "max_collection_span_ms": 0.0,
+  "environments": 1,
+  "verified_rate": 0.0,
+  "scope": "Application-condition feasibility; causal attribution unestablished"
+}

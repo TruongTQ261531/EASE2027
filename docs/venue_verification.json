@@ -1,0 +1,96 @@
+{
+  "stage": 1,
+  "target": "EASE 2027 Research Papers",
+  "status": "verified_cfp_current_at_access",
+  "checked_at_utc": "2026-11-15T12:52:58.428766+00:00",
+  "official_site_verified": true,
+  "network": {
+    "mode": "unrestricted",
+    "state": "enforced"
+  },
+  "conference": {
+    "dates": [
+      "2027-06-15",
+      "2027-06-18"
+    ],
+    "location": "Hanoi, Vietnam"
+  },
+  "dates": {
+    "abstract": {
+      "source": "15 January 2027, AoE",
+      "end_of_date_bangkok": "2027-01-16T18:59:59+07:00"
+    },
+    "full_paper": {
+      "source": "22 January 2027, AoE",
+      "end_of_date_bangkok": "2027-01-23T18:59:59+07:00"
+    },
+    "notification": {
+      "source": "12 March 2027, AoE"
+    },
+    "camera_ready": null,
+    "rebuttal": null,
+    "source_timezone": "AoE (UTC-12h)"
+  },
+  "deadline_conversion_note": "Bangkok timestamps assume end of the published AoE calendar date; CFP specifies dates, not an explicit seconds cutoff. Do not submit at this inferred last second.",
+  "requirements": {
+    "scope": [
+      "empirical software engineering",
+      "software operations",
+      "software quality",
+      "AI for SE",
+      "infrastructure and techniques for empirical studies",
+      "benchmarking",
+      "negative findings welcome"
+    ],
+    "main_text_pages": 10,
+    "additional_reference_only_pages": 2,
+    "template": "\\documentclass[sigconf,review,anonymous]{acmart}",
+    "anonymization": "double-anonymous including supplements; prior work in third person",
+    "open_science": "must comply with SIGSOFT Open Science Policy; policy detail not yet audited",
+    "artifact": "no separate mandatory artifact-track submission stated in this CFP",
+    "submission_url": "https://easychair.org/conferences/?conf=ease2027",
+    "attendance": "at least one author must register and present",
+    "apc": "ACM ICPS open access; APC may be required",
+    "ai_use": "ACM authorship policy referenced"
+  },
+  "review_criteria": [
+    "soundness",
+    "significance",
+    "novelty",
+    "verifiability and transparency",
+    "presentation"
+  ],
+  "ranking": "Official homepage states CORE A; ranking database edition not independently audited",
+  "sources": [
+    {
+      "url": "https://conf.researchr.org/home/ease-2027",
+      "http_status": 200,
+      "sha256": "c10b1f9fdf172d047525c44305e78b48a22824a81b0e8ba489c7bb3c80d1b8ab",
+      "capture": "artifacts/local/research-audit/home.html"
+    },
+    {
+      "url": "https://conf.researchr.org/track/ease-2027/ease-2027-papers",
+      "http_status": 200,
+      "sha256": "4af1f63b92d922796b9c48616c4a4b52e1d5b883fd3bd6b58703a1293b2dac36",
+      "capture": "artifacts/local/research-audit/track.html"
+    }
+  ],
+  "unknown": [
+    "camera-ready date",
+    "rebuttal dates",
+    "precise EasyChair cutoff time",
+    "policy details linked or named by CFP",
+    "independent ranking edition"
+  ],
+  "schedule": {
+    "start": "2026-11-15",
+    "days_to_full_paper_AoE_calendar": 68,
+    "old_24_week_plan_feasible": false
+  },
+  "next_stage": "novelty audit",
+  "policy_source": {
+    "url": "https://github.com/acmsigsoft/open-science-policies/blob/master/sigsoft-open-science-policies.md",
+    "status": "general_blueprint_read_not_2027_specific_adaptation",
+    "data_availability": "Section after Conclusion in blueprint; preserve exceptions and anonymization rules"
+  }
+}

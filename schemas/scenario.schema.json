@@ -1,0 +1,76 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "intervention": {
+      "enum": [
+        "normal",
+        "capture_pause",
+        "connection_close"
+      ],
+      "title": "Intervention",
+      "type": "string"
+    },
+    "seed": {
+      "default": 42,
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "duration_s": {
+      "default": 6.0,
+      "minimum": 3,
+      "title": "Duration S",
+      "type": "number"
+    },
+    "intervention_start_s": {
+      "default": 2.0,
+      "exclusiveMinimum": 0,
+      "title": "Intervention Start S",
+      "type": "number"
+    },
+    "intervention_end_s": {
+      "default": 4.0,
+      "exclusiveMinimum": 0,
+      "title": "Intervention End S",
+      "type": "number"
+    },
+    "sample_interval_ms": {
+      "default": 250,
+      "maximum": 1000,
+      "minimum": 100,
+      "title": "Sample Interval Ms",
+      "type": "integer"
+    },
+    "width": {
+      "default": 320,
+      "maximum": 1920,
+      "minimum": 64,
+      "title": "Width",
+      "type": "integer"
+    },
+    "height": {
+      "default": 180,
+      "maximum": 1080,
+      "minimum": 64,
+      "title": "Height",
+      "type": "integer"
+    },
+    "fps": {
+      "default": 20,
+      "maximum": 60,
+      "minimum": 5,
+      "title": "Fps",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "name",
+    "intervention"
+  ],
+  "title": "Scenario",
+  "type": "object"
+}

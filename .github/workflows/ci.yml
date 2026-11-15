@@ -1,0 +1,22 @@
+name: research-artifact
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.13.6'
+      - run: uv python install 3.12
+      - run: uv sync --frozen
+      - run: sudo apt-get update && sudo apt-get install -y coturn
+      - run: uv run --frozen playwright install --with-deps chromium
+      - run: uv run --frozen ruff check .
+      - run: uv run --frozen ruff format --check .
+      - run: uv run --frozen pytest -q
+        env:
+          EASE_RUN_BROWSER: '1'

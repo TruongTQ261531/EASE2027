@@ -1,0 +1,18 @@
+{
+  "runs": 15,
+  "completed": 15,
+  "failed": 0,
+  "verified": 15,
+  "ambiguous": 0,
+  "failed_verification": 0,
+  "sample_count": 360,
+  "conditions": {
+    "normal": 5,
+    "connection_close": 5,
+    "capture_pause": 5
+  },
+  "max_collection_span_ms": 34.33002700000998,
+  "environments": 1,
+  "verified_rate": 1.0,
+  "scope": "Application-condition feasibility; causal attribution unestablished"
+}

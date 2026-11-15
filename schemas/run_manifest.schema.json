@@ -1,0 +1,271 @@
+{
+  "$defs": {
+    "Scenario": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "intervention": {
+          "enum": [
+            "normal",
+            "capture_pause",
+            "connection_close"
+          ],
+          "title": "Intervention",
+          "type": "string"
+        },
+        "seed": {
+          "default": 42,
+          "minimum": 0,
+          "title": "Seed",
+          "type": "integer"
+        },
+        "duration_s": {
+          "default": 6.0,
+          "minimum": 3,
+          "title": "Duration S",
+          "type": "number"
+        },
+        "intervention_start_s": {
+          "default": 2.0,
+          "exclusiveMinimum": 0,
+          "title": "Intervention Start S",
+          "type": "number"
+        },
+        "intervention_end_s": {
+          "default": 4.0,
+          "exclusiveMinimum": 0,
+          "title": "Intervention End S",
+          "type": "number"
+        },
+        "sample_interval_ms": {
+          "default": 250,
+          "maximum": 1000,
+          "minimum": 100,
+          "title": "Sample Interval Ms",
+          "type": "integer"
+        },
+        "width": {
+          "default": 320,
+          "maximum": 1920,
+          "minimum": 64,
+          "title": "Width",
+          "type": "integer"
+        },
+        "height": {
+          "default": 180,
+          "maximum": 1080,
+          "minimum": 64,
+          "title": "Height",
+          "type": "integer"
+        },
+        "fps": {
+          "default": 20,
+          "maximum": 60,
+          "minimum": 5,
+          "title": "Fps",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "intervention"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "session_id": {
+      "title": "Session Id",
+      "type": "string"
+    },
+    "environment_id": {
+      "title": "Environment Id",
+      "type": "string"
+    },
+    "started_at_utc": {
+      "title": "Started At Utc",
+      "type": "string"
+    },
+    "config": {
+      "$ref": "#/$defs/Scenario"
+    },
+    "browser_version": {
+      "title": "Browser Version",
+      "type": "string"
+    },
+    "browser_executable": {
+      "title": "Browser Executable",
+      "type": "string"
+    },
+    "platform": {
+      "title": "Platform",
+      "type": "string"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "cpu_count": {
+      "title": "Cpu Count",
+      "type": "integer"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "title": "Git Dirty",
+      "type": "boolean"
+    },
+    "source_tree_sha256": {
+      "title": "Source Tree Sha256",
+      "type": "string"
+    },
+    "dependency_lock_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Dependency Lock Sha256"
+    },
+    "media_source_sha256": {
+      "title": "Media Source Sha256",
+      "type": "string"
+    },
+    "media_source": {
+      "const": "synthetic_canvas_v1",
+      "default": "synthetic_canvas_v1",
+      "title": "Media Source",
+      "type": "string"
+    },
+    "network_profile": {
+      "default": "local_turn_tcp_loopback",
+      "enum": [
+        "local_turn_tcp_loopback",
+        "local_host_candidates_no_stun"
+      ],
+      "title": "Network Profile",
+      "type": "string"
+    },
+    "turn_binary_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Turn Binary Sha256"
+    },
+    "clock": {
+      "title": "Clock",
+      "type": "string"
+    },
+    "codecs": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Codecs",
+      "type": "array"
+    },
+    "sample_count": {
+      "title": "Sample Count",
+      "type": "integer"
+    },
+    "collection_duration_s": {
+      "title": "Collection Duration S",
+      "type": "number"
+    },
+    "process_cpu_s": {
+      "title": "Process Cpu S",
+      "type": "number"
+    },
+    "process_peak_rss_bytes": {
+      "title": "Process Peak Rss Bytes",
+      "type": "integer"
+    },
+    "execution_status": {
+      "enum": [
+        "completed",
+        "failed"
+      ],
+      "title": "Execution Status",
+      "type": "string"
+    },
+    "failure_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Failure Reason"
+    },
+    "files": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Files",
+      "type": "object"
+    }
+  },
+  "required": [
+    "run_id",
+    "session_id",
+    "environment_id",
+    "started_at_utc",
+    "config",
+    "browser_version",
+    "browser_executable",
+    "platform",
+    "python_version",
+    "cpu_count",
+    "git_commit",
+    "git_dirty",
+    "source_tree_sha256",
+    "dependency_lock_sha256",
+    "media_source_sha256",
+    "clock",
+    "codecs",
+    "sample_count",
+    "collection_duration_s",
+    "process_cpu_s",
+    "process_peak_rss_bytes",
+    "execution_status",
+    "failure_reason",
+    "files"
+  ],
+  "title": "RunManifest",
+  "type": "object"
+}
