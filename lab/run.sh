@@ -5,6 +5,9 @@ export UV_CACHE_DIR="${UV_CACHE_DIR:-/tmp/ease-uv-cache}"
 protocol="${1:?Usage: bash lab/run.sh protocol.json NEW_OUTPUT_DIR HOST_LABEL}"
 output="${2:?Missing output directory}"
 host_label="${3:?Use an explicit observed host/runner label}"
+if [[ "$(basename "$protocol")" == live_frozen_* ]]; then
+  uv run --frozen python lab/freeze_plan.py
+fi
 if [[ -e "$output" ]]; then
   echo 'Use an output directory that does not already exist.' >&2
   exit 1

@@ -1,0 +1,28 @@
+{
+  "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+  "files_sha256": {
+    "configs/experiments/live_frozen_ci_v1.json": "fc99f2b93fcaac6ec17b56bf2cd844440be529e793213ec911abb256185871d9",
+    "configs/experiments/live_frozen_cloud_v1.json": "cc07c53995167beab21bc6008baa3f52700b3f8edf5c06cdb1f4fc10848b9acd",
+    "lab/Dockerfile": "6022cd146b251ef8e7af5a14f5a4187a9a49ac01cd4365293ae3151e311c0819",
+    "lab/build.sh": "c10d0f56b94b616635014b7b569b669a805280aae66bfb4be58d959d2e4d7dbd",
+    "lab/run.sh": "75ae4d540e918ac5548b8317370c92c011a1a174fad5df985b0b2c49536af7fb",
+    "lab/freeze_plan.py": "712746e3a85372cf3da7295746a951aff02c671b7a8c816dac1c4468cc1e030e",
+    "uv.lock": "edd5ecdd0ad321c31ca9123d5b6b675aeb9628aa6bc44ca262bb1fead4772021"
+  },
+  "frozen_at_utc": "2026-11-15T14:10:35.341030+00:00",
+  "scope": "Prospective feasibility collection, NOT final-study preregistration",
+  "roles": {
+    "ci_chromium_seed_100": "training",
+    "ci_chromium_seed_200": "validation",
+    "ci_chromium_seed_300": "held_out_same_host",
+    "cloud_chromium_seed_300": "held_out_other_host_common_conditions"
+  },
+  "rules": [
+    "No training/tuning on seed300 or target host",
+    "Retain failed and ambiguous sessions in audit denominator",
+    "Only independently verified conditions eligible for classification",
+    "No network transfer claim for cloud without netem",
+    "Firefox is a failed feasibility case, not an achieved holdout",
+    "Changes require a new protocol and dataset version"
+  ]
+}

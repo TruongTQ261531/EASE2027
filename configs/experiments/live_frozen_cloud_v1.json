@@ -1,0 +1,14 @@
+{
+  "version": "prospective-feasibility-freeze-v1-cloud",
+  "duration_s": 11,
+  "on_s": 3,
+  "off_s": 7,
+  "network_loss_percent": 30,
+  "busy_ms": 850,
+  "sample_interval_ms": 250,
+  "seeds": [300],
+  "engines": ["chromium"],
+  "schedule_seed": 20271118,
+  "network_backend": "unimpaired",
+  "conditions": ["normal", "compute_contention", "source_freeze"]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "prospective-feasibility-freeze-v1-ci",
+  "duration_s": 11,
+  "on_s": 3,
+  "off_s": 7,
+  "network_loss_percent": 30,
+  "busy_ms": 850,
+  "sample_interval_ms": 250,
+  "seeds": [100, 200, 300],
+  "engines": ["chromium"],
+  "schedule_seed": 20271117,
+  "network_backend": "netem",
+  "conditions": ["normal", "network_loss", "compute_contention", "source_freeze"]
+}

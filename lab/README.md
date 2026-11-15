@@ -65,3 +65,11 @@ GitHub pilot evidence is sanitized, uploaded as an Actions artifact and committe
 development repository, not an anonymized paper supplement. Kernel/image/browser/host labels and
 source hashes distinguish environments. A CI run is only claimed successful after its outcome
 and dataset audit are inspected.
+
+## Frozen feasibility collection
+
+See `docs/live_protocol_v1.md` and the machine-readable `lab/frozen_plan_v1.json`. This freeze is
+prospective for source seeds 100/200/300; debugging seed42 is not reused as held-out evidence.
+Firefox ICE remains a documented failure, not achieved portability. The CI frozen cohort uses
+Chromium and netem; cloud uses Chromium and explicitly excludes network faults unsupported by
+its kernel. Different host kernels are observed; both containers retain Debian12 userland.

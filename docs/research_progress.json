@@ -48,7 +48,7 @@
     }
   ],
   "validation": {
-    "pytest_passed": 49,
+    "pytest_passed": 64,
     "browser_tests_included": 3,
     "ruff": "passed",
     "frozen_source_train_sessions": 18,
@@ -63,5 +63,24 @@
     "dataset": "data/releases/2026-11-15/",
     "source_data": "data/local/ (originals retained, ignored)",
     "export_validation": "49 tests passed; normalized features and re-evaluated results match originals"
+  },
+  "live_lab": {
+    "pilot_ci_run": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43722157644",
+    "pilot_ci_attempts": 10,
+    "pilot_ci_completed_verified": 5,
+    "pilot_ci_firefox_failed": 5,
+    "measured_fault_families": [
+      "network_loss",
+      "compute_contention",
+      "source_freeze"
+    ],
+    "cloud_tcp_pilot_attempts": 8,
+    "cloud_tcp_pilot_completed_verified": 4,
+    "causal_attribution": "unestablished",
+    "protocol_lock": "lab/frozen_plan_v1.json",
+    "freeze_scope": "prospective feasibility; not final-study preregistration",
+    "prospective_calls_requested": 19,
+    "cross_browser_engine_gate": "not_met_Firefox_ICE_failure",
+    "cross_OS_userland_gate": "not_met_same_Debian12_container"
   }
 }
