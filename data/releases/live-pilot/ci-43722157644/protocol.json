@@ -1,0 +1,88 @@
+{
+  "protocol": {
+    "version": "live-feasibility-pilot-v1",
+    "duration_s": 11.0,
+    "on_s": 3.0,
+    "off_s": 7.0,
+    "network_loss_percent": 30.0,
+    "busy_ms": 850,
+    "sample_interval_ms": 250,
+    "seeds": [
+      42
+    ],
+    "engines": [
+      "chromium",
+      "firefox"
+    ],
+    "schedule_seed": 20271116,
+    "network_backend": "netem",
+    "conditions": [
+      "normal",
+      "network_loss",
+      "compute_contention",
+      "source_freeze"
+    ]
+  },
+  "schedule": [
+    [
+      "firefox",
+      "compute_contention",
+      false,
+      42
+    ],
+    [
+      "firefox",
+      "normal",
+      false,
+      42
+    ],
+    [
+      "chromium",
+      "compute_contention",
+      false,
+      42
+    ],
+    [
+      "chromium",
+      "normal",
+      true,
+      42
+    ],
+    [
+      "firefox",
+      "source_freeze",
+      false,
+      42
+    ],
+    [
+      "firefox",
+      "network_loss",
+      false,
+      42
+    ],
+    [
+      "firefox",
+      "normal",
+      true,
+      42
+    ],
+    [
+      "chromium",
+      "network_loss",
+      false,
+      42
+    ],
+    [
+      "chromium",
+      "source_freeze",
+      false,
+      42
+    ],
+    [
+      "chromium",
+      "normal",
+      false,
+      42
+    ]
+  ]
+}

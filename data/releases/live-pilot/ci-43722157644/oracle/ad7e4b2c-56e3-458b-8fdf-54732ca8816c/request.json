@@ -1,0 +1,39 @@
+{
+  "condition": "source_freeze",
+  "static_control": false,
+  "seed": 42,
+  "protocol": {
+    "version": "live-feasibility-pilot-v1",
+    "duration_s": 11.0,
+    "on_s": 3.0,
+    "off_s": 7.0,
+    "network_loss_percent": 30.0,
+    "busy_ms": 850,
+    "sample_interval_ms": 250,
+    "seeds": [
+      42
+    ],
+    "engines": [
+      "chromium",
+      "firefox"
+    ],
+    "schedule_seed": 20271116,
+    "network_backend": "netem",
+    "conditions": [
+      "normal",
+      "network_loss",
+      "compute_contention",
+      "source_freeze"
+    ]
+  },
+  "events": [
+    {
+      "command": "source_freeze",
+      "actual_ms": 3001.8028409999997
+    },
+    {
+      "command": "recover",
+      "actual_ms": 7003.7180039999785
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "live-call measured fault conditions, causal attribution unestablished",
+  "runs": 10,
+  "completed": 5,
+  "verified": 5,
+  "failed": 5,
+  "ambiguous": 0,
+  "engines": [
+    "chromium",
+    "firefox"
+  ],
+  "host_labels": [
+    "github-ubuntu24-43722157644"
+  ],
+  "run_ids": [
+    "15d0953c-3e6e-4fc3-abb0-e802779c5e8c",
+    "3fbea0a6-f65a-4bdc-9386-45b6053756ae",
+    "3cd5177a-6810-405c-86c8-86aaa94ecdc3",
+    "2077af29-e13d-4814-92f7-b579c7f017f0",
+    "193877f4-868b-4a21-9942-3b914ca187d9",
+    "24a03e7a-f3b8-4537-b0d7-65874cf3309f",
+    "6daeb13b-ef7c-4975-b597-684fd8270a35",
+    "10f621e8-283f-46c2-a5a0-aa7c9fedcb75",
+    "ad7e4b2c-56e3-458b-8fdf-54732ca8816c",
+    "9a158c65-2d6e-4a36-a0e0-bf6546abdf4b"
+  ]
+}
