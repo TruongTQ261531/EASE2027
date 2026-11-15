@@ -125,3 +125,7 @@ Lab tiêm lỗi trong namespace container riêng, với bộ đo OS riêng và k
 Dữ liệu pilot thành công lẫn thất bại được giữ tại data/releases/live-pilot/; bộ prospective
 được lưu tại data/releases/live-frozen-v1/. Đây là các mốc feasibility, chưa phải kết luận causal
 RCA, novelty hay study đã đủ sức nộp hội nghị. Các giới hạn Firefox và kernel đều được báo cáo.
+
+Mốc prospective v1 đã hoàn tất: **19/19 live calls** vượt audit trên hai host/kernel; protocol và
+dataset khóa checksum. Xem [kết quả và giới hạn](docs/live_frozen_v1_results.md). CI live-lab đã
+chạy thành công; Firefox/OS-userland coverage và final-study gate vẫn chưa đạt.

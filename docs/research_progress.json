@@ -26,16 +26,16 @@
     },
     {
       "stage": 3,
-      "status": "independent_measurement_probes_passed_live_call_oracle_gate_not_met",
-      "evidence": "docs/oracle_probe_results.json",
+      "status": "three_bounded_live_fault_families_verified_on_CI_controls_retained_causal_validity_still_limited",
+      "evidence": "docs/live_frozen_v1_results.md",
       "trials": 18,
       "verified": 18,
       "external_blocker": "Current container has no NET_ADMIN or usable user/network namespaces; isolated instrumented lab required for proposed netem study"
     },
     {
       "stage": 4,
-      "status": "cross_version_feasibility_executed_multi_machine_gate_not_met",
-      "evidence": "docs/transfer_results.json",
+      "status": "prospective_protocol_and_datasets_sealed_cross_host_kernel_verified_engine_and_OS_userland_gates_open",
+      "evidence": "docs/live_frozen_v1_results.json",
       "new_calls": 30,
       "versions": [
         "156.0.8078.79",
@@ -81,6 +81,19 @@
     "freeze_scope": "prospective feasibility; not final-study preregistration",
     "prospective_calls_requested": 19,
     "cross_browser_engine_gate": "not_met_Firefox_ICE_failure",
-    "cross_OS_userland_gate": "not_met_same_Debian12_container"
+    "cross_OS_userland_gate": "not_met_same_Debian12_container",
+    "prospective": {
+      "requested": 19,
+      "completed": 19,
+      "verified": 19,
+      "failed": 0,
+      "ambiguous": 0,
+      "report": "docs/live_frozen_v1_results.md",
+      "ci_run": "https://github.com/TruongTQ261531/EASE2027/actions/runs/43723089658",
+      "ci_conclusion": "success",
+      "source_digest": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "model_fitted": false,
+      "scope": "prospective feasibility only"
+    }
   }
 }

@@ -55,3 +55,11 @@ live_cloud_capabilities.json. The cloud prospective cohort has four measured-con
 the CI cohort is collected separately before audit/sealing. Do not confuse this feasibility freeze
 with final-study preregistration. Still needed: novelty/RQ decision, stronger precision/design,
 network transfer to a second capable host, a working non-Chromium engine and OS-userland coverage.
+
+## Prospective-v1 collection completed
+
+19/19 calls completed and verified, sealed on CI and cloud; see live_frozen_v1_results.md.
+Keep seed300/target host untouched by model tuning. Next: independently review the evidence and
+resolve novelty/RQ, then specify adequate sample size/precision for a new main-study protocol;
+repair Firefox ICE on a suitable environment and add a second netem-capable host/distinct OS
+userland. Do not silently expand or retune the frozen-v1 protocol.

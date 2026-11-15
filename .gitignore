@@ -227,3 +227,5 @@ artifacts/local/
 # Research evaluation cohorts named target are curated data, not build outputs.
 !/data/releases/**/target/
 !/data/releases/**/target/**
+# Sensor stderr is part of the sealed evidence inventory (including empty log files).
+!/data/releases/**/sensor.log

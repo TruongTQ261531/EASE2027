@@ -1,0 +1,1287 @@
+{
+  "scope": "Prospective feasibility: measured fault conditions, not diagnosis efficacy",
+  "protocol_lock_sha256": "969cc5ee790edb4752cde7ed7e772f17778595cfdda19a9995b9ecb2a3d7fbab",
+  "requested_runs": 19,
+  "observed_runs": 19,
+  "ci_audit": {
+    "runs": 15,
+    "completed": 15,
+    "execution_failed": 0,
+    "verified": 15,
+    "verification_failed": 0,
+    "ambiguous": 0,
+    "verification_denominator": 15,
+    "conditions": [
+      {
+        "engine": "chromium",
+        "condition": "compute_contention",
+        "static_control": false,
+        "verification_status": "verified",
+        "runs": 3
+      },
+      {
+        "engine": "chromium",
+        "condition": "network_loss",
+        "static_control": false,
+        "verification_status": "verified",
+        "runs": 3
+      },
+      {
+        "engine": "chromium",
+        "condition": "normal",
+        "static_control": false,
+        "verification_status": "verified",
+        "runs": 3
+      },
+      {
+        "engine": "chromium",
+        "condition": "normal",
+        "static_control": true,
+        "verification_status": "verified",
+        "runs": 3
+      },
+      {
+        "engine": "chromium",
+        "condition": "source_freeze",
+        "static_control": false,
+        "verification_status": "verified",
+        "runs": 3
+      }
+    ],
+    "sessions": [
+      {
+        "session_id": "00da1481-4f32-4e56-8865-ccf04874e4f8",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 100,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": true
+      },
+      {
+        "session_id": "0d2a5814-ae9e-46f6-a62e-e623f26ef6e6",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 100,
+        "status": "verified",
+        "condition": "compute_contention",
+        "static_control": false
+      },
+      {
+        "session_id": "47c1f701-cff1-4baf-84d7-ab3006de1af7",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": false
+      },
+      {
+        "session_id": "78fd7bec-c95b-4b97-b986-a326f2a2d2e2",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": true
+      },
+      {
+        "session_id": "901d1641-78a9-4be7-8dd2-7fa62d9fbed6",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 100,
+        "status": "verified",
+        "condition": "network_loss",
+        "static_control": false
+      },
+      {
+        "session_id": "a0f271d0-61d1-4d2f-acac-4a5dd263ee17",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "source_freeze",
+        "static_control": false
+      },
+      {
+        "session_id": "ca977b98-7a7a-4032-a4d5-a39dae7a0c47",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "network_loss",
+        "static_control": false
+      },
+      {
+        "session_id": "cb9686b3-9148-48d7-93c2-613f977d9521",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 100,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": false
+      },
+      {
+        "session_id": "df82ff8e-7ca3-4d02-872b-bfa2aa173ab3",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 200,
+        "status": "verified",
+        "condition": "network_loss",
+        "static_control": false
+      },
+      {
+        "session_id": "e922094a-a4e5-49ab-af6a-1b95709bad23",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 200,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": false
+      },
+      {
+        "session_id": "f440ba1a-f48a-45f8-a328-ff52967fe2f8",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 200,
+        "status": "verified",
+        "condition": "source_freeze",
+        "static_control": false
+      },
+      {
+        "session_id": "f51454c4-6850-490a-a5a3-0bb51fba7ec8",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 200,
+        "status": "verified",
+        "condition": "compute_contention",
+        "static_control": false
+      },
+      {
+        "session_id": "f87a8df8-21a9-41ee-8da8-d782b661a621",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 200,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": true
+      },
+      {
+        "session_id": "f8eac9ad-178a-46b7-adea-365157bff53c",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 100,
+        "status": "verified",
+        "condition": "source_freeze",
+        "static_control": false
+      },
+      {
+        "session_id": "fd5692c5-041c-48d0-acac-61f2a263db13",
+        "host": "github-ubuntu24-43723089658",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "compute_contention",
+        "static_control": false
+      }
+    ],
+    "causal_attribution": "unestablished",
+    "scope": "Measured fault conditions on live calls, bounded process/container lab"
+  },
+  "cloud_audit": {
+    "runs": 4,
+    "completed": 4,
+    "execution_failed": 0,
+    "verified": 4,
+    "verification_failed": 0,
+    "ambiguous": 0,
+    "verification_denominator": 4,
+    "conditions": [
+      {
+        "engine": "chromium",
+        "condition": "compute_contention",
+        "static_control": false,
+        "verification_status": "verified",
+        "runs": 1
+      },
+      {
+        "engine": "chromium",
+        "condition": "normal",
+        "static_control": false,
+        "verification_status": "verified",
+        "runs": 1
+      },
+      {
+        "engine": "chromium",
+        "condition": "normal",
+        "static_control": true,
+        "verification_status": "verified",
+        "runs": 1
+      },
+      {
+        "engine": "chromium",
+        "condition": "source_freeze",
+        "static_control": false,
+        "verification_status": "verified",
+        "runs": 1
+      }
+    ],
+    "sessions": [
+      {
+        "session_id": "26a64906-55cd-44c0-ac6d-67f5b40c8258",
+        "host": "codex-cloud-kernel-6.18",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": true
+      },
+      {
+        "session_id": "27d51150-74da-48c0-bfcc-2f0612a79529",
+        "host": "codex-cloud-kernel-6.18",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "compute_contention",
+        "static_control": false
+      },
+      {
+        "session_id": "50391f14-b9e7-4231-91de-11c65ea6705f",
+        "host": "codex-cloud-kernel-6.18",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "normal",
+        "static_control": false
+      },
+      {
+        "session_id": "8a702d9d-0075-4c2c-bf0d-d808a87ec2b5",
+        "host": "codex-cloud-kernel-6.18",
+        "engine": "chromium",
+        "seed": 300,
+        "status": "verified",
+        "condition": "source_freeze",
+        "static_control": false
+      }
+    ],
+    "causal_attribution": "unestablished",
+    "scope": "Measured fault conditions on live calls, bounded process/container lab"
+  },
+  "runs": [
+    {
+      "session_id": "00da1481-4f32-4e56-8865-ccf04874e4f8",
+      "role": "training",
+      "condition": "normal",
+      "static_control": true,
+      "seed": 100,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 4.996345478711175,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.996884142922666,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 4.996780861886522,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "8225bd49e396a584e2f3d2a36f3e7cdeae30d65a6aeb0f616bd054a288110f6a"
+    },
+    {
+      "session_id": "0d2a5814-ae9e-46f6-a62e-e623f26ef6e6",
+      "role": "training",
+      "condition": "compute_contention",
+      "static_control": false,
+      "seed": 100,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.99405705954779,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 21,
+          "cpu_core_percent_median": 99.93441454277551,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 14,
+          "cpu_core_percent_median": 12.491866670576453,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.00632235798645,
+          "receive_kbps": 142.5479067681923,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 3.994676631364297,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 20.001311992284627,
+          "receive_kbps": 160.87071251686802,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "01df8c134c2d31ce985141e74faa4cdb3975c13a92025174dbfeab1911aa9ad6"
+    },
+    {
+      "session_id": "47c1f701-cff1-4baf-84d7-ab3006de1af7",
+      "role": "held_out_same_host",
+      "condition": "normal",
+      "static_control": false,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.994179839582163,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 9.99410867281698,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.994071416910812,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.005179020779348,
+          "receive_kbps": 146.4039810539245,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 19.999516933622328,
+          "receive_kbps": 149.2589731814581,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 20.000682137969953,
+          "receive_kbps": 160.9705839124333,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "4ea04f63c9ecba8e9cd00058ebc739ac556174e30e0ec98570bf7677b605e359"
+    },
+    {
+      "session_id": "78fd7bec-c95b-4b97-b986-a326f2a2d2e2",
+      "role": "held_out_same_host",
+      "condition": "normal",
+      "static_control": true,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 4.996759951520533,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.996315591974537,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 4.996813744245839,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "4dc7104bdb18f08b731f0d280901c14ae21bc4231e90b53e6c9fcb0d81ceb2ef"
+    },
+    {
+      "session_id": "901d1641-78a9-4be7-8dd2-7fa62d9fbed6",
+      "role": "training",
+      "condition": "network_loss",
+      "static_control": false,
+      "seed": 100,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.993738723735177,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 9.99391155916781,
+          "measured_drop_ratio": 0.265625,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.99382731258655,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 19.99836737328926,
+          "receive_kbps": 142.48436786121133,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 19.996130192638745,
+          "receive_kbps": 151.35215453327714,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 20.000758996099158,
+          "receive_kbps": 151.93049549351977,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "c01e277672ba633ed201b02d3db169b7a5c900151bad866fc9d84fbd97f13bc2"
+    },
+    {
+      "session_id": "a0f271d0-61d1-4d2f-acac-4a5dd263ee17",
+      "role": "held_out_same_host",
+      "condition": "source_freeze",
+      "static_control": false,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.994019304088841,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.996626902094048,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.994070268640407,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.009163476549602,
+          "receive_kbps": 146.4775743213963,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 19.99770949158859,
+          "receive_kbps": 150.2163515249238,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "ae2bb8c7f545af3e4f49b91d05f394f9531ad1eabaa2765d1ada875bae2d4d79"
+    },
+    {
+      "session_id": "ca977b98-7a7a-4032-a4d5-a39dae7a0c47",
+      "role": "held_out_same_host",
+      "condition": "network_loss",
+      "static_control": false,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.993792106200008,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 9.99406372602385,
+          "measured_drop_ratio": 0.28078817733990147,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.994004996231919,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.00468085526833,
+          "receive_kbps": 145.67203813458167,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 19.999791049668175,
+          "receive_kbps": 149.72218342185514,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 19.999544240882912,
+          "receive_kbps": 158.43640788822375,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "9e81ff12627986b51021a047ac4646d5eb716eb08190582bd61f66a55c0197b5"
+    },
+    {
+      "session_id": "cb9686b3-9148-48d7-93c2-613f977d9521",
+      "role": "training",
+      "condition": "normal",
+      "static_control": false,
+      "seed": 100,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.993678323890578,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 9.993922246154462,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.994046746405061,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.00115630684432,
+          "receive_kbps": 142.55004776144455,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 19.99990374470444,
+          "receive_kbps": 153.43395294787246,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 20.000639207358688,
+          "receive_kbps": 151.82106327075155,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "0ae42899f55e4d5253b48776f2a370b8a3f37d0f92fc222f2e31b0ed213bda2c"
+    },
+    {
+      "session_id": "df82ff8e-7ca3-4d02-872b-bfa2aa173ab3",
+      "role": "validation",
+      "condition": "network_loss",
+      "static_control": false,
+      "seed": 200,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.994217447579592,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 9.99383030885913,
+          "measured_drop_ratio": 0.28426395939086296,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.993697899789968,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.005702705578233,
+          "receive_kbps": 145.0138092759127,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 20.00294492097933,
+          "receive_kbps": 125.17357793358633,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 19.999363895342825,
+          "receive_kbps": 155.59417532539112,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "2aadfc50de9ff7644109f954e87b5feed8a2942972bfcad92f1a1634e503ba02"
+    },
+    {
+      "session_id": "e922094a-a4e5-49ab-af6a-1b95709bad23",
+      "role": "validation",
+      "condition": "normal",
+      "static_control": false,
+      "seed": 200,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.993669410858775,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 9.993908512879685,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.993650808827663,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.003047944431657,
+          "receive_kbps": 145.59018415875138,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 19.99918010091886,
+          "receive_kbps": 147.00719715348836,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 19.997835409141103,
+          "receive_kbps": 154.91750908992685,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "6704573a54f6d0477c88d7f032dabe7aa6eb804f8fb4ebe3a8f951026fd849cf"
+    },
+    {
+      "session_id": "f440ba1a-f48a-45f8-a328-ff52967fe2f8",
+      "role": "validation",
+      "condition": "source_freeze",
+      "static_control": false,
+      "seed": 200,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.993647392312026,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.996818625516576,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.993964450716732,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 15.998100673484172,
+          "receive_kbps": 116.99364952661205,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 19.999662127785044,
+          "receive_kbps": 147.50290012787684,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "4adff38adc42dd07cf24fdc777aebd0e3c10c61a96c33c4206469ee75c6d04ac"
+    },
+    {
+      "session_id": "f51454c4-6850-490a-a5a3-0bb51fba7ec8",
+      "role": "validation",
+      "condition": "compute_contention",
+      "static_control": false,
+      "seed": 200,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.994031389587864,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 21,
+          "cpu_core_percent_median": 99.93531586742385,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 14,
+          "cpu_core_percent_median": 9.993695352373887,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.00761802060987,
+          "receive_kbps": 145.11125197987926,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 3.995889667960566,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 19.99791003162239,
+          "receive_kbps": 161.02997630727896,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "8a8f0310542f3b6215e16bd6ea4b6e42b45be61b86d8898e5c589223ca0d2be3"
+    },
+    {
+      "session_id": "f87a8df8-21a9-41ee-8da8-d782b661a621",
+      "role": "validation",
+      "condition": "normal",
+      "static_control": true,
+      "seed": 200,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 4.997050392599601,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.9968958533423375,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 4.99680981519717,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "7a61202aafea9a0b5953f88f8c5dff92bec804665b32ef36d9c01fc48024fe27"
+    },
+    {
+      "session_id": "f8eac9ad-178a-46b7-adea-365157bff53c",
+      "role": "training",
+      "condition": "source_freeze",
+      "static_control": false,
+      "seed": 100,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.993641770501412,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.996787090884964,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.993574256694568,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 16.001990935712538,
+          "receive_kbps": 116.017255813089,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 16.000019296028334,
+          "receive_kbps": 118.62209139564774,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "2f6e41cbb0294880472dd64b14ad4fc4d7219f121aa93d84f23fef642ce99fdf"
+    },
+    {
+      "session_id": "fd5692c5-041c-48d0-acac-61f2a263db13",
+      "role": "held_out_same_host",
+      "condition": "compute_contention",
+      "static_control": false,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "github-ubuntu24-43723089658",
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 7.4956265025770765,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 21,
+          "cpu_core_percent_median": 99.94612653913423,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 14,
+          "cpu_core_percent_median": 9.99384112058726,
+          "measured_drop_ratio": 0.0,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 16.0028850321153,
+          "receive_kbps": 114.27607205625259,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 19.99866135095145,
+          "receive_kbps": 151.97893159111914,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "df6684d8a0e71c4182439d2ca6c05acbacdb32677afb740d221d2761df72a3f8"
+    },
+    {
+      "session_id": "26a64906-55cd-44c0-ac6d-67f5b40c8258",
+      "role": "held_out_other_host_common_conditions",
+      "condition": "normal",
+      "static_control": true,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "codex-cloud-kernel-6.18",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 2.4974128800525786,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 0.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.9931951238788015,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 4.996182591915865,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 0.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "e86a77a20491e83e357bb0de338afa81479cafae949bf1d96ca5014033b36e04"
+    },
+    {
+      "session_id": "27d51150-74da-48c0-bfcc-2f0612a79529",
+      "role": "held_out_other_host_common_conditions",
+      "condition": "compute_contention",
+      "static_control": false,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "codex-cloud-kernel-6.18",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.991569845111599,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 99.91767882368562,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.992636051797316,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 19.979258333232224,
+          "receive_kbps": 148.2877472062086,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 3.990949561830043,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 19.97120168977574,
+          "receive_kbps": 150.62719265952205,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "ce693e37091a227492380cbf412f307c7a6a2f7051f604b4ae311cbde3aff3e7"
+    },
+    {
+      "session_id": "50391f14-b9e7-4231-91de-11c65ea6705f",
+      "role": "held_out_other_host_common_conditions",
+      "condition": "normal",
+      "static_control": false,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "codex-cloud-kernel-6.18",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.991518245362876,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 9.9922866042346,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.991951370337215,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 20.033462774300805,
+          "receive_kbps": 148.34197216055028,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 20.002488618065293,
+          "receive_kbps": 147.30937514766396,
+          "video_change_fraction": 1.0
+        },
+        "after": {
+          "decoded_fps": 20.00370045059659,
+          "receive_kbps": 156.13419143743485,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "b5995a471d0827ae075604bc83e0cf9e6583a86c86d0be98acf23a3b34775ce9"
+    },
+    {
+      "session_id": "8a702d9d-0075-4c2c-bf0d-d808a87ec2b5",
+      "role": "held_out_other_host_common_conditions",
+      "condition": "source_freeze",
+      "static_control": false,
+      "seed": 300,
+      "engine": "chromium",
+      "browser_version": "159.0.8154.6",
+      "host_label": "codex-cloud-kernel-6.18",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.36",
+      "verification_status": "verified",
+      "measured_condition": {
+        "before": {
+          "valid_os_samples": 12,
+          "cpu_core_percent_median": 9.992633905065537,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        },
+        "during": {
+          "valid_os_samples": 17,
+          "cpu_core_percent_median": 4.996177898943693,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 0.0
+        },
+        "after": {
+          "valid_os_samples": 18,
+          "cpu_core_percent_median": 9.992472845419638,
+          "measured_drop_ratio": null,
+          "source_pixel_change_fraction": 1.0
+        }
+      },
+      "receiver_symptoms": {
+        "before": {
+          "decoded_fps": 19.98814059640898,
+          "receive_kbps": 146.31233757044998,
+          "video_change_fraction": 1.0
+        },
+        "during": {
+          "decoded_fps": 0.0,
+          "receive_kbps": 0.0,
+          "video_change_fraction": 0.0
+        },
+        "after": {
+          "decoded_fps": 19.96924260844895,
+          "receive_kbps": 149.0905606030529,
+          "video_change_fraction": 1.0
+        }
+      },
+      "execution_status": "completed",
+      "source_commit": "142817dee0b327e25ddbd74b783fee20a951fae9",
+      "source_tree_sha256": "3f46ebd68a27e73b3405827048720ae8f05f18e6dd940409d51b600846284184",
+      "manifest_sha256": "4e61177aaa1f27722676075512c70eddac6fcf07f302ea166db0d5def0da21fd"
+    }
+  ],
+  "no_model_fitted_or_tuned": true,
+  "causal_attribution": "unestablished",
+  "limitations": [
+    "One Chromium engine; Firefox pilot ICE failed",
+    "Same Debian12 container userland on distinct host kernels",
+    "Cloud has no netem; network cross-host transfer untested",
+    "Tiny cohort, no efficacy or powered main-study claim"
+  ]
+}
