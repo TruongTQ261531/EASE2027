@@ -1,0 +1,61 @@
+name: isolated-live-lab
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'lab/**'
+      - 'configs/experiments/live_*.json'
+      - '.github/workflows/live-lab.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.13.6'
+      - run: uv python install 3.12 && uv sync --frozen
+      - name: Build isolated lab image with normal TLS verification
+        run: bash lab/build.sh
+      - name: Run live-call pilot in private namespace
+        id: collect
+        continue-on-error: true
+        run: |
+          bash lab/run.sh configs/experiments/live_pilot.json /tmp/ease-live-ci github-ubuntu24-${{ github.run_id }}
+      - name: Audit and seal observations
+        if: steps.collect.outcome == 'success'
+        run: uv run --frozen python -m ease_rtc.live_audit --dataset /tmp/ease-live-ci --seal
+      - name: Export sanitized evidence including unsuccessful attempts
+        if: always()
+        run: |
+          if [ -d /tmp/ease-live-ci ]; then
+            uv run --frozen python scripts/export_results.py --source /tmp/ease-live-ci \
+              --destination data/releases/live-pilot/ci-${{ github.run_id }}
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-lab-${{ github.run_id }}
+          path: data/releases/live-pilot/ci-${{ github.run_id }}/
+          if-no-files-found: warn
+      - name: Publish completed evidence under the user's standing delivery instruction
+        if: always()
+        run: |
+          if [ -d data/releases/live-pilot/ci-${{ github.run_id }} ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/releases/live-pilot/ci-${{ github.run_id }}
+            git commit -m "data: preserve isolated live-call pilot ${{ github.run_id }}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Preserve collector failure status
+        if: steps.collect.outcome != 'success'
+        run: exit 1

@@ -28,9 +28,12 @@ def sha256(path: Path) -> str:
 
 def source_provenance(root: Path) -> dict:
     def git(*args):
-        result = subprocess.run(
-            ["git", "-C", str(root), *args], capture_output=True, text=True, check=False
-        )
+        try:
+            result = subprocess.run(
+                ["git", "-C", str(root), *args], capture_output=True, text=True, check=False
+            )
+        except FileNotFoundError:
+            return None  # Installed artifacts/containers may not include the Git executable.
         return result.stdout.strip() if result.returncode == 0 else None
 
     digest = hashlib.sha256()

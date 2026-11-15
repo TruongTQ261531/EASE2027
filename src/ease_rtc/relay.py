@@ -14,7 +14,7 @@ from ease_rtc.io import sha256
 
 
 @contextmanager
-def local_turn():
+def local_turn(relay_ports: tuple[int, int] | None = None, relay_ip: str = "127.0.0.1"):
     prefix = Path(os.environ.get("EASE_TURN_PREFIX", "/workspace/.local/ease-turn/root"))
     binary = shutil.which("turnserver") or str(prefix / "usr/bin/turnserver")
     if not Path(binary).is_file():
@@ -30,7 +30,7 @@ def local_turn():
             "\n".join(
                 [
                     "listening-ip=127.0.0.1",
-                    "relay-ip=127.0.0.1",
+                    f"relay-ip={relay_ip}",
                     f"listening-port={port}",
                     "no-udp",
                     "no-tls",
@@ -41,6 +41,7 @@ def local_turn():
                     "denied-peer-ip=0.0.0.0-255.255.255.255",
                     "denied-peer-ip=::-ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
                     "allowed-peer-ip=127.0.0.1",
+                    f"allowed-peer-ip={relay_ip}",
                     "lt-cred-mech",
                     "realm=ease.local",
                     f"user=pilot:{credential}",
@@ -50,6 +51,11 @@ def local_turn():
                     f"pidfile={base / 'turn.pid'}",
                     "log-file=stdout",
                 ]
+                + (
+                    [f"min-port={relay_ports[0]}", f"max-port={relay_ports[1]}"]
+                    if relay_ports is not None
+                    else []
+                )
             )
             + "\n"
         )

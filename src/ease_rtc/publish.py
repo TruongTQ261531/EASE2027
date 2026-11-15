@@ -87,6 +87,13 @@ def export(source: Path, destination: Path):
             "license": "CC-BY-4.0 for project-generated synthetic observations; source code MIT",
         },
     )
+    # Live datasets have their own immutable inventory; sanitization creates a new derivative.
+    for lock in destination.glob("**/dataset_lock.json"):
+        from ease_rtc.live_audit import inventory
+
+        record = read_json(lock)
+        record["files_sha256"] = inventory(lock.parent)
+        write_json(lock, record)
 
 
 def main():

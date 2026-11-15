@@ -1,0 +1,12 @@
+{
+  "version": "live-feasibility-pilot-v1",
+  "duration_s": 11,
+  "on_s": 3,
+  "off_s": 7,
+  "network_loss_percent": 30,
+  "busy_ms": 850,
+  "sample_interval_ms": 250,
+  "seeds": [42],
+  "engines": ["chromium", "firefox"],
+  "schedule_seed": 20271116
+}
